@@ -1,0 +1,7 @@
+/* ===== 8. Pourquoi des partenaires ===== */
+.why-nums{display:grid;grid-template-columns:repeat(3,1fr);border-top:2px solid var(--ink)}
+.wn{padding:24px 28px 0 0}
+.wn b{display:block;font-size:clamp(44px,6vw,84px);color:var(--navy)}
+.wn:nth-child(2) b{color:var(--signal-ink)}
+.wn span{display:block;max-width:26ch;margin-top:10px;font-size:15.5px;color:var(--muted)}
+@media (max-width:760px){.why-nums{grid-template-columns:1fr;gap:6px}.wn{padding:18px 0 14px;border-bottom:1px solid var(--line)}.wn b{font-size:52px}}

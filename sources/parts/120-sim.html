@@ -1,0 +1,82 @@
+<section class="sec dark" data-chap="partner" data-label="Simulation de logo" data-rail="Simulateur de logo" id="sim">
+<div class="w" data-cont="sp">
+<div class="spart" data-label="Titre de la section">
+<div class="sh">
+<h2 data-e>Simulation de logo</h2>
+<p class="lead" data-e>Indiquez le site de votre entreprise : nous retrouvons votre logo et l'intégrons à la vidéo de notre J80, puis à notre veste de quart en 3D.</p>
+</div>
+
+</div>
+<div class="spart" data-label="Simulateur de logo">
+<div class="simbar">
+<form class="sim-form" id="simform" novalidate>
+<label for="simdom" data-e>Site de votre entreprise</label>
+<div class="domrow"><input autocomplete="url" id="simdom" inputmode="url" placeholder="votre-entreprise.fr" spellcheck="false" type="text"/><button class="btn" type="submit" data-e>Afficher mon logo</button></div>
+</form>
+<span class="sim-or" data-e>ou</span>
+<div class="upl"><label><input accept="image/png,image/svg+xml,image/jpeg,image/webp,.png,.svg,.jpg,.jpeg,.webp" id="simfile" type="file"/><span data-e>Importer mon logo</span></label><small data-e>PNG ou SVG, fond transparent de préférence</small></div>
+<div class="logo-prev" hidden id="simpreview"><img alt="Aperçu du logo utilisé" id="simthumb"/><span id="simsrc"></span></div>
+</div>
+<p aria-live="polite" id="simmsg" role="status" data-nblk></p>
+
+<div class="sim-tabs" data-nblk><button aria-pressed="true" data-t="boat" type="button">Sur le bateau</button><button aria-pressed="false" data-t="jacket" type="button">Sur la veste</button></div>
+
+<div class="sim-grid" id="simGrid">
+<div class="simcard" id="simBoat">
+<div class="simhead"><h3 data-e>Sur le bateau</h3><p data-e>Votre logo sur la grand-voile, le spinnaker et la coque de notre J80, en pleine navigation.</p></div>
+<div class="stage">
+<div class="screen">
+<canvas aria-label="Vidéo d'un J80 en navigation avec votre logo intégré sur la grand-voile, le spinnaker et la coque" height="720" id="simcv" role="img" width="1280"></canvas>
+<video aria-hidden="true" id="simvid" loop muted playsinline preload="none"></video>
+<div class="simload" id="simload">Chargement de la vidéo...</div>
+</div>
+<div class="simbar2">
+<button aria-label="Mettre en pause" id="simplay" type="button">❚❚</button>
+<input aria-label="Position dans la vidéo" id="simseek" max="733" min="0" type="range" value="0"/>
+<span id="simtc">0,0 s</span>
+</div>
+</div>
+<div class="simctl">
+<fieldset>
+<legend data-e>Emplacements</legend>
+<div class="spots"><label><input checked type="checkbox" value="main"/><span>Grand-voile</span></label><label><input checked type="checkbox" value="spin"/><span>Spinnaker</span></label><label><input checked type="checkbox" value="hull"/><span>Coque</span></label></div>
+</fieldset>
+<label class="tg"><input id="simwhite" type="checkbox"/><span data-e>Logo en blanc sur le spinnaker</span></label>
+<div class="row"><button class="btn ghost sm" id="simshot" type="button" data-e>Télécharger une image</button><button class="btn ghost sm" id="simrec" type="button" data-e>Enregistrer la vidéo</button></div>
+<p class="sim-note light" data-e>Le logo épouse la courbure et les plis des voiles grâce à un suivi 3D de la vidéo, réalisé à l'avance puis calculé en temps réel dans votre navigateur. Sur cette vidéo, le J80 navigue au portant sous spinnaker, foc enroulé. Vidéo : J80, North Sails.</p>
+</div>
+</div>
+
+<div class="simcard" id="simJacket">
+<div class="simhead"><h3 data-e>Sur la veste de quart</h3><p data-e>Votre logo sur les vestes portées toute la CCE par l'équipage : placez-le où vous voulez.</p></div>
+<div class="jk-stage" id="jkStage">
+<div class="jk-views" id="jkViews"><button data-v="dos" type="button">Dos</button><button data-v="face" type="button">Face</button><button data-v="g" type="button">Côté gauche</button><button data-v="d" type="button">Côté droit</button></div>
+<div class="jk-hint" data-e>Glissez pour tourner, pincez ou molette pour zoomer, glissez un logo pour le déplacer.</div>
+<div class="simload" id="jkLoad">Chargement de la veste 3D...</div>
+</div>
+<div class="simctl">
+<div class="jk-add">
+<label class="sel"><span data-e>Emplacement</span><select id="jkZone"><option value="dc">Dos centré</option><option value="pd">Poitrine droite</option><option value="pg">Poitrine gauche</option><option value="md">Manche droite</option><option value="mg">Manche gauche</option><option value="db">Bas du dos</option></select></label>
+<button class="btn sm" id="jkAdd" type="button" data-e>Ajouter sur la veste</button>
+</div>
+<label class="tg"><input checked id="jkWhite" type="checkbox"/><span data-e>Fond blanc derrière le logo (recommandé sur tissu sombre)</span></label>
+<div class="jk-list" id="jkList" data-nblk></div>
+<div class="jk-rng"><label><span data-e>Taille</span> <b id="jkVs"></b><input id="jkSize" max="0.34" min="0.04" step="0.005" type="range"/></label><label><span data-e>Rotation</span> <b id="jkVr"></b><input id="jkRot" max="180" min="-180" step="1" type="range"/></label></div>
+</div>
+</div>
+</div>
+
+<div class="sim-recap">
+<div class="sr-txt">
+<h3 data-e>Votre simulation</h3>
+<textarea aria-label="Récapitulatif de votre simulation" id="simRecap" readonly rows="5"></textarea>
+</div>
+<div class="sr-act">
+<a class="btn" data-pick="Skipper" data-recap href="#contact" data-e>Réserver mon emplacement</a>
+<button class="btn ghost" id="simCopy" type="button" data-e>Copier le récapitulatif</button>
+<p class="sim-note" data-e>Aucun fichier n'est envoyé : votre logo reste dans votre navigateur. Si vous réservez, ce récapitulatif est joint à votre message.</p>
+</div>
+</div>
+</div>
+</div>
+</section>

@@ -1,0 +1,14 @@
+{
+ "pages": [
+  {
+   "id": "index",
+   "file": "index.html",
+   "label": "Accueil"
+  },
+  {
+   "id": "vocabulaire",
+   "file": "vocabulaire.html",
+   "label": "Vocabulaire de la Course"
+  }
+ ]
+}

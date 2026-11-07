@@ -1,0 +1,61 @@
+.skip{position:absolute;left:12px;top:-60px;z-index:100;background:var(--signal);color:var(--abyss);padding:10px 16px;border-radius:6px;font-weight:600;text-decoration:none}
+.skip:focus{top:12px}
+.nav{position:sticky;top:0;z-index:50;background:#ffffffee;backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+.nav .w{display:flex;align-items:center;gap:20px;height:76px;max-width:1360px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--navy);flex:none}
+.brand img{width:58px;height:58px;border-radius:50%;background:#fff;box-shadow:0 0 0 2px var(--navy),0 4px 14px #17508233}
+.brand b{font:800 23px/1 var(--display);letter-spacing:.01em}
+.brand small{display:block;font:500 13px/1.2 var(--text);color:var(--muted);margin-top:3px}
+.school{display:flex;align-items:center;padding-left:16px;margin-left:4px;border-left:1px solid var(--line);height:44px;flex:none}
+.school img{height:40px;width:auto}
+.links{display:flex;align-items:center;gap:4px;margin-left:auto}
+.links a{text-decoration:none;font-weight:500;font-size:15px;color:var(--ink);padding:8px 11px;border-radius:6px;white-space:nowrap}
+.links a:hover,.links a.on{background:var(--foam);color:var(--navy)}
+.links .ig{display:grid;place-items:center;width:40px;height:40px;padding:0}
+.links .ig svg{width:22px;height:22px}
+.links .btn{margin-left:8px;color:var(--abyss)}
+.links .btn:hover{background:#ff8f4f;color:var(--abyss)}
+.burger{display:none;margin-left:auto;width:46px;height:46px;border:0;background:transparent;border-radius:6px;cursor:pointer;color:var(--navy)}
+.burger span{display:block;width:24px;height:2.5px;background:currentColor;margin:5px auto;transition:transform .2s,opacity .2s}
+.nav.open .burger span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}
+.nav.open .burger span:nth-child(2){opacity:0}
+.nav.open .burger span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
+/* Le menu compte 6 liens + Instagram + le bouton : on le resserre avant de passer au menu burger */
+@media (max-width:1399px){
+  .nav .w{gap:14px}
+  .school{padding-left:12px;margin-left:0}
+  .links a{font-size:14px;padding:8px 7px}
+  .links .btn{margin-left:4px}
+}
+@media (max-width:1240px){
+  .burger{display:block}
+  .links{display:none;position:absolute;left:0;right:0;top:100%;flex-direction:column;align-items:stretch;background:#fff;padding:12px 24px 22px;border-bottom:1px solid var(--line);box-shadow:0 18px 30px #0b2a4522;gap:2px}
+  .nav.open .links{display:flex}
+  .links a{font-size:17px;padding:12px}
+  .links .ig{width:auto;display:flex;gap:10px;padding:12px;justify-content:flex-start}
+  .links .ig:after{content:"Instagram"}
+  .links .btn{margin:10px 0 0}
+}
+@media (max-width:700px){.brand img{width:50px;height:50px}.brand b{font-size:20px}.brand small{display:none}.school img{height:28px}.school{padding-left:10px}}
+@media (max-width:380px){.nav .w{gap:8px;padding:0 14px}.brand{gap:8px}.brand img{width:42px;height:42px}.brand b{font-size:18px}.school{padding-left:8px}.burger{width:40px;height:40px}}
+
+/* graduation verticale : repère des 13 parties */
+.rail{position:fixed;right:14px;top:50%;transform:translateY(-50%);z-index:40;display:none}
+.rail ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;align-items:flex-end;gap:0}
+.rail a{display:flex;align-items:center;justify-content:flex-end;gap:10px;height:22px;text-decoration:none;color:var(--muted);font:600 13px/1 var(--text)}
+.rail a span{opacity:0;transform:translateX(6px);transition:opacity .2s,transform .2s;background:var(--abyss);color:#fff;padding:5px 9px;border-radius:5px;white-space:nowrap;pointer-events:none}
+.rail a i{display:block;height:3px;width:12px;border-radius:2px;background:#9fb6cb;transition:width .25s var(--ease),background .25s}
+.rail a:hover span,.rail a:focus-visible span{opacity:1;transform:none}
+.rail a:hover i,.rail a.on i{width:30px;background:var(--signal)}
+@media (min-width:1320px){.rail{display:block}}
+
+/* ouverture de chapitre */
+.chap{position:relative;color:#fff;background:var(--abyss) center/cover no-repeat;padding:clamp(88px,13vw,170px) 0 clamp(52px,7vw,84px);overflow:hidden}
+.chap:before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#0b2a45f2 0,#0b2a45b8 55%,#0b2a4580 100%)}
+.chap:after{content:"";position:absolute;left:0;right:0;bottom:0;height:34px;background:repeating-linear-gradient(90deg,#ffffff55 0 2px,transparent 2px 24px) 0 100%/100% 14px no-repeat,repeating-linear-gradient(90deg,#ffffff99 0 2px,transparent 2px 120px) 0 100%/100% 26px no-repeat;opacity:.55}
+.chap .w{position:relative;z-index:1}
+.chap-t{margin:0;font:800 clamp(52px,9.5vw,132px)/.92 var(--display);letter-spacing:-.01em;max-width:14ch}
+.chap-s{font-size:clamp(17px,1.7vw,22px);color:#c9d8e6;max-width:48ch;margin:22px 0 0}
+.chap-go{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+.chap-go a{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:600;font-size:15px;padding:10px 16px;border-radius:99px;border:1.5px solid #ffffff66;color:#fff}
+.chap-go a:hover{border-color:var(--signal);color:var(--signal-soft)}

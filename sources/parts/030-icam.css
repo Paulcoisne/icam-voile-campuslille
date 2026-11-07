@@ -1,0 +1,40 @@
+/* ===== 2. L'Icam ===== */
+.facts{display:grid;grid-template-columns:repeat(4,1fr);border-top:2px solid var(--ink)}
+.rp{padding:24px 18px 0 0;min-width:0}
+.rp b{display:block;font-size:clamp(40px,5vw,64px);color:var(--navy);overflow-wrap:anywhere}
+.rp b.txt{font-size:clamp(30px,3.4vw,46px);line-height:1.2;padding-top:.12em}
+.rp span{display:block;font-size:15px;color:var(--muted);margin-top:8px}
+.src{font-size:13px;color:var(--muted);margin:22px 0 0}
+.src a{color:var(--navy)}
+.dark .src,.dark .src a{color:#9fb6cb}
+@media (max-width:860px){.facts{grid-template-columns:repeat(2,1fr);row-gap:8px}.rp b{font-size:40px}.rp b.txt{font-size:29px;line-height:1.35}}
+
+.vx{display:block}
+.vx-lens{display:inline-flex;flex-wrap:wrap;gap:4px;padding:4px;background:#fff;border:1.5px solid var(--line);border-radius:99px;margin-bottom:22px}
+.vx-lens button{font:600 15px/1 var(--text);padding:11px 18px;border:0;border-radius:99px;background:transparent;color:var(--ink);cursor:pointer;transition:background .2s,color .2s}
+.vx-lens button:hover{background:var(--foam)}
+.vx-lens button[aria-pressed=true]{background:var(--ink);color:#fff}
+.vx-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;align-items:stretch}
+.vx-c{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;transition:transform .3s var(--ease),box-shadow .3s}
+.vx-c:hover{transform:translateY(-4px);box-shadow:0 18px 36px #0b2a4520}
+.vx-c .ph{border-radius:0;aspect-ratio:16/10}
+.vx-in{position:relative;flex:1;display:flex;flex-direction:column;padding:0 20px 22px}
+.vx-i{width:48px;height:48px;border-radius:50%;background:var(--signal);color:var(--abyss);display:grid;place-items:center;margin:-24px 0 12px;box-shadow:0 0 0 4px #fff;position:relative;z-index:1}
+.vx-i .ic{width:24px;height:24px}
+.vx-in h3{font-size:clamp(25px,2.1vw,30px);line-height:1.02;margin-bottom:16px}
+.vx-cols{display:grid;gap:18px;align-content:start}
+.vx-cols h4{font-size:18px;color:var(--navy);margin-bottom:10px;padding-bottom:7px;border-bottom:2px solid var(--line)}
+.vx-a h4{color:var(--signal-ink);border-color:var(--signal-soft)}
+.vx-cols ul{list-style:none;margin:0;padding:0;display:grid;gap:4px}
+.vx-cols li{position:relative;padding:6px 8px 6px 26px;border-radius:8px;font-size:15.5px;line-height:1.35;cursor:default;transition:background .2s}
+.vx-cols li:before{content:"";position:absolute;left:8px;top:1.05em;width:10px;height:2px;background:var(--navy)}
+.vx-a li:before{background:var(--signal)}
+.vx-cols li:hover,.vx-cols li.pair{background:#ff7a2f1f}
+.vx-cols li:focus-visible{outline-offset:-2px}
+.vx[data-lens=school] .vx-a,.vx[data-lens=asso] .vx-s{display:none}
+.vx[data-lens=school] .vx-s,.vx[data-lens=asso] .vx-a{animation:vxin .4s var(--ease)}
+.vx[data-lens=school] .vx-cols li,.vx[data-lens=asso] .vx-cols li{font-size:17px}
+@keyframes vxin{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.edition .vx[data-lens] .vx-s,.edition .vx[data-lens] .vx-a{display:block!important;animation:none}
+@media (max-width:1060px){.vx-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:620px){.vx-grid{grid-template-columns:1fr}.vx-c .ph{aspect-ratio:16/8}.vx-lens{border-radius:18px;width:100%}.vx-lens button{flex:1 1 auto;padding:11px 12px}}

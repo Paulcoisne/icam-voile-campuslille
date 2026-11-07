@@ -1,0 +1,85 @@
+<section class="sec dark contact" data-bg="bg.contact" data-chap="end" data-label="Contact" data-rail="Contact" id="contact" style="background-image:url(assets/img/g13.webp)">
+<div class="w" data-cont="sp">
+<div class="spart" data-label="Titre de la section">
+<div class="sh">
+<h2 data-e>Et si nous construisions notre prochaine victoire ensemble&nbsp;?</h2>
+<p class="lead" data-e>Rencontrons-nous pour échanger sur vos objectifs de marque employeur. Réponse sous 48 heures ouvrées.</p>
+</div>
+
+</div>
+<div class="spart" data-label="Contact et formulaire">
+<div class="ct-grid">
+<div class="ct-side">
+<h3 class="sub" data-e style="margin-top:0">Comment ça se passe&nbsp;?</h3>
+<ol class="ct-steps" id="ctSteps">
+<li class="on" data-nblk><button aria-expanded="true" type="button"><span class="n">1</span><span class="tx"><b data-e>Un premier échange</b><span data-e>20 minutes pour comprendre vos objectifs.</span></span></button></li>
+<li data-nblk><button aria-expanded="false" type="button"><span class="n">2</span><span class="tx"><b data-e>Une proposition adaptée</b><span data-e>Une formule à votre mesure : sponsoring, mécénat ou sur mesure.</span></span></button></li>
+<li data-nblk><button aria-expanded="false" type="button"><span class="n">3</span><span class="tx"><b data-e>Une convention, puis la course</b><span data-e>Nous signons une convention de partenariat, activons vos contreparties et vous remettons un bilan après la course.</span></span></button></li>
+</ol>
+<div class="ct-ph" id="ctPh">
+<figure class="ph on"><img alt="Skipper concentré à la barre" data-img="img.contact.s1" loading="lazy" src="assets/img/c-sailor.webp"/></figure>
+<figure class="ph"><img alt="Réglages au pied du mât" data-img="img.contact.s2" loading="lazy" src="assets/img/c-rig.webp"/></figure>
+<figure class="ph"><img alt="Flotte de J80 au près" data-img="img.contact.s3" loading="lazy" src="assets/img/g04.webp"/></figure>
+</div>
+
+<div class="ct-person" data-nblk>
+<span aria-hidden="true" class="ct-av" id="ctAv"></span>
+<div class="ct-id"><b data-e>Timothée Stevens</b><span data-e>Président d'Icam Voile Lille</span></div>
+<ul class="ct-lines">
+<li><svg aria-hidden="true" class="ic"><use href="#i-phone"/></svg><a data-e data-tel href="tel:+33766882361">+33 7 66 88 23 61</a></li>
+<li><svg aria-hidden="true" class="ic"><use href="#i-mail"/></svg><a data-e data-mail href="mailto:timothee.stevens@2028.icam.fr">timothee.stevens@2028.icam.fr</a><button class="cp" data-copy type="button">Copier</button></li>
+</ul>
+</div>
+</div>
+
+<form class="ct-form" id="f" novalidate>
+<div class="ct-body">
+<fieldset>
+<legend>Vous</legend>
+<div class="g2">
+<label>Prénom *<input autocomplete="given-name" name="prenom" required/></label>
+<label>Nom *<input autocomplete="family-name" name="nom" required/></label>
+<label class="f">Entreprise ou organisation *<input autocomplete="organization" name="ent" required/></label>
+<label>Fonction<input autocomplete="organization-title" name="fonction"/></label>
+<label>Téléphone<input autocomplete="tel" name="tel" type="tel"/></label>
+<label class="f">E-mail professionnel *<input autocomplete="email" inputmode="email" name="mail" required type="email"/></label>
+</div>
+</fieldset>
+
+<fieldset>
+<legend>Votre soutien</legend>
+<div aria-label="Type de soutien" class="chips" id="ctType" role="radiogroup">
+<label class="chip"><input checked name="type" type="radio" value="Sponsoring (formule)"/><span>Sponsoring</span></label>
+<label class="chip"><input name="type" type="radio" value="Mécénat (don avec réduction d'impôt)"/><span>Mécénat</span></label>
+<label class="chip"><input name="type" type="radio" value="Soutien en nature"/><span>En nature</span></label>
+<label class="chip"><input name="type" type="radio" value="Formule sur mesure"/><span>Sur mesure</span></label>
+</div>
+<div aria-label="Formule envisagée" class="chips" id="ctTier" role="radiogroup"></div>
+<div aria-live="polite" class="ct-sum" id="ctSum"></div>
+</fieldset>
+
+<fieldset>
+<legend>Pour en parler</legend>
+<div class="g2 pref">
+<div><span class="lab">Comment&nbsp;?</span><div aria-label="Mode d'échange" class="chips sm" role="radiogroup"><label class="chip"><input name="how" type="radio" value="Téléphone"/><span>Téléphone</span></label><label class="chip"><input name="how" type="radio" value="Visioconférence"/><span>Visio</span></label><label class="chip"><input name="how" type="radio" value="À Lille"/><span>À Lille</span></label><label class="chip"><input checked name="how" type="radio" value=""/><span>Peu importe</span></label></div></div>
+<div><span class="lab">Quand&nbsp;?</span><div aria-label="Délai souhaité" class="chips sm" role="radiogroup"><label class="chip"><input checked name="when" type="radio" value=""/><span>Dès que possible</span></label><label class="chip"><input name="when" type="radio" value="cette semaine"/><span>Cette semaine</span></label><label class="chip"><input name="when" type="radio" value="dans le mois"/><span>Dans le mois</span></label><label class="chip"><input name="when" type="radio" value="plus tard"/><span>Plus tard</span></label></div></div>
+</div>
+<label class="f">Votre objectif<textarea maxlength="2000" name="message" placeholder="Marque employeur, visibilité, recrutement, cohésion d'équipe..." rows="3"></textarea></label>
+<label class="chk" hidden id="ctAttach"><input id="ctSim" type="checkbox"/>Joindre ma simulation de logo (bateau et veste) à ma demande</label>
+</fieldset>
+
+<input aria-hidden="true" autocomplete="off" name="website" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0" tabindex="-1" type="text"/>
+<label class="chk"><input name="rgpd" required type="checkbox"/>J'accepte que ces informations soient utilisées par Icam Voile Lille pour me recontacter au sujet de ce partenariat.</label>
+<div class="ct-send"><button class="btn" type="submit">Planifier un échange</button><p aria-live="polite" id="msg" role="status"></p></div>
+</div>
+<div aria-live="polite" class="ct-ok" id="ctOk" tabindex="-1">
+<svg aria-hidden="true" class="ic"><use href="#i-check"/></svg>
+<h3 id="ctOkT">Merci.</h3>
+<p>Demande envoyée. Vous recevez un e-mail de confirmation et nous vous rappelons sous 48 heures ouvrées.</p>
+<button class="btn ghost sm" id="ctAgain" type="button">Envoyer une autre demande</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>

@@ -1,0 +1,143 @@
+<div class="chap" data-bg="bg.chap-vocab" data-label="Bandeau d'ouverture" id="chap-vocab" style="background-image:url(assets/img/g16.webp)">
+<div class="w">
+<p class="back"><a href="index.html#cce"><svg aria-hidden="true" class="ic"><use href="#i-chev-l"/></svg><span data-e>Retour au projet</span></a></p>
+<h1 class="chap-t" data-e>Vocabulaire de la Course</h1>
+<p class="chap-s" data-e>Pas besoin d'être marin pour nous suivre. Manipulez le vent, touchez le bateau, parcourez le glossaire : les mots de la voile en quelques minutes.</p>
+<nav aria-label="Sur cette page" class="chap-go" data-nblk><a href="#allures">Les allures</a><a href="#anat">Le bateau</a><a href="#images">En images</a><a href="#glossary">Glossaire</a><a href="#quiz">Quiz</a></nav>
+</div>
+</div>
+<section class="sec alt" data-label="Le vocabulaire de la course" id="vocabulaire">
+<div class="w" data-cont="sp">
+<div class="spart" data-label="A. L'angle du vent sur le voilier">
+<div class="vcard allures" data-rail="Les allures" id="allures">
+<div class="al-stage">
+<svg aria-label="Voilier vu du dessus, le vent arrive du haut" id="alSvg" role="img" viewBox="-200 -205 400 410"></svg>
+</div>
+<div class="al-panel">
+<h3 data-e>Les allures : l'angle entre le bateau et le vent</h3>
+<div class="al-read" aria-live="polite">
+<p class="al-deg num"><b id="alDeg">45</b>°</p>
+<div><h4 id="alName">Près</h4><p id="alSide" class="al-side"></p></div>
+</div>
+<p class="al-desc" id="alDesc"></p>
+<label class="al-range"><span data-e>Faites tourner le bateau</span><input aria-describedby="alDesc" id="alRange" max="180" min="0" step="1" type="range" value="45"/></label>
+<div class="al-quick" role="group" aria-label="Allures types"><button data-a="42" type="button" data-e>Près</button><button data-a="90" type="button" data-e>Travers</button><button data-a="125" type="button" data-e>Largue</button><button data-a="180" type="button" data-e>Vent arrière</button></div>
+<label class="al-tack"><input id="alTack" type="checkbox"/><span data-e>Changer de bord (amures)</span></label>
+</div>
+<div hidden id="alData" data-nblk>
+<span data-k="debout" data-e>Vent debout, la zone interdite</span><span data-d="debout" data-e>Face au vent, les voiles faseyent et le bateau s'arrête. Pour remonter vers le vent, il faut louvoyer : alterner les bords, en virant de bord.</span>
+<span data-k="pres" data-e>Près</span><span data-d="pres" data-e>L'allure la plus proche du vent, à environ 40 degrés. Voiles bordées à fond, bateau très gîté : l'équipage est au rappel.</span>
+<span data-k="bonplein" data-e>Bon plein</span><span data-d="bonplein" data-e>Un peu plus ouvert que le près. Les voiles sont légèrement choquées : le bateau est rapide et stable.</span>
+<span data-k="travers" data-e>Travers</span><span data-d="travers" data-e>Le vent arrive perpendiculairement au bateau. Voiles à moitié choquées : c'est souvent l'allure la plus rapide.</span>
+<span data-k="largue" data-e>Largue</span><span data-d="largue" data-e>Le vent vient de l'arrière du travers. Voiles bien choquées : on envoie ici le spinnaker, la grande voile ballon.</span>
+<span data-k="grandlargue" data-e>Grand largue</span><span data-d="grandlargue" data-e>Le vent souffle de trois quarts arrière. Spinnaker dehors, vitesse maximale, et une barre à surveiller de près.</span>
+<span data-k="arriere" data-e>Vent arrière</span><span data-d="arriere" data-e>Le vent est dans le dos. Grand-voile d'un côté, spinnaker de l'autre, et un risque d'empannage involontaire.</span>
+<span data-k="tribord" data-e>Tribord amures : le vent arrive par la droite</span><span data-k="babord" data-e>Bâbord amures : le vent arrive par la gauche</span>
+</div>
+</div>
+</div>
+<div class="spart" data-label="B. Schéma interactif du bateau">
+<div class="vcard dark anat" data-rail="Le bateau" id="anat">
+<div class="an-stage">
+<div class="an-draw">
+<svg aria-label="Schéma d'un voilier vu de côté" id="anSvg" role="img" viewBox="0 0 640 400"></svg>
+<button aria-label="Grand-voile" class="hs" data-k="main" style="left:39%;top:35%" type="button">1</button>
+<button aria-label="Foc" class="hs" data-k="jib" style="left:69%;top:44%" type="button">2</button>
+<button aria-label="Mât" class="hs" data-k="mast" style="left:53%;top:17%" type="button">3</button>
+<button aria-label="Bôme" class="hs" data-k="boom" style="left:31%;top:57%" type="button">4</button>
+<button aria-label="Étrave" class="hs" data-k="bow" style="left:84%;top:65%" type="button">5</button>
+<button aria-label="Poupe" class="hs" data-k="stern" style="left:12%;top:65%" type="button">6</button>
+<button aria-label="Gouvernail et barre" class="hs" data-k="rudder" style="left:15%;top:84%" type="button">7</button>
+<button aria-label="Quille" class="hs" data-k="keel" style="left:49%;top:90%" type="button">8</button>
+<button aria-label="Spinnaker" class="hs spi" data-k="spi" hidden style="left:84%;top:36%" type="button">9</button>
+</div>
+<label class="an-spi"><input id="anSpi" type="checkbox"/><span data-e>Envoyer le spinnaker</span></label>
+</div>
+<div class="an-panel">
+<h3 data-e>L'anatomie d'un voilier</h3>
+<p class="an-hint" data-e>Touchez un numéro pour découvrir la pièce.</p>
+<div class="an-defs" id="anDefs">
+<div class="an-def" data-k="main"><h4 data-e>1. Grand-voile</h4><p data-e>La voile principale, hissée le long du mât et fixée à la bôme. Elle se règle avec l'écoute de grand-voile.</p></div>
+<div class="an-def" data-k="jib"><h4 data-e>2. Foc</h4><p data-e>La voile d'avant, hissée sur l'étai. Sur un J80, c'est un foc ; sur un voilier habitable, elle peut être plus grande : c'est un génois.</p></div>
+<div class="an-def" data-k="mast"><h4 data-e>3. Mât</h4><p data-e>Le grand tube vertical qui porte les voiles. Il est tenu par l'étai, le pataras et les haubans.</p></div>
+<div class="an-def" data-k="boom"><h4 data-e>4. Bôme</h4><p data-e>La perche horizontale qui tient le bas de la grand-voile. Elle balaie le cockpit quand on change de bord : on baisse la tête.</p></div>
+<div class="an-def" data-k="bow"><h4 data-e>5. Étrave</h4><p data-e>L'avant du bateau, qu'on appelle aussi la proue. C'est là que travaille l'équipier d'avant.</p></div>
+<div class="an-def" data-k="stern"><h4 data-e>6. Poupe</h4><p data-e>L'arrière du bateau, là où se tient le barreur.</p></div>
+<div class="an-def" data-k="rudder"><h4 data-e>7. Gouvernail et barre</h4><p data-e>Le gouvernail dirige le bateau, la barre est ce que tient le barreur pour l'orienter.</p></div>
+<div class="an-def" data-k="keel"><h4 data-e>8. Quille</h4><p data-e>L'aileron lesté sous la coque. Elle empêche le bateau de dériver et le redresse quand il gîte.</p></div>
+<div class="an-def" data-k="spi"><h4 data-e>9. Spinnaker</h4><p data-e>La grande voile ballon, envoyée quand le vent vient de l'arrière. C'est la voile colorée que l'on voit sur nos photos.</p></div>
+</div>
+</div>
+</div>
+</div>
+<div class="spart" data-label="C. Le vocabulaire en images" data-rail="En images" id="images">
+<h3 class="sub" data-e style="margin-top:0">Le vocabulaire en images</h3>
+<div class="termpics">
+<figure class="ph"><img alt="Spinnaker violet et jaune au portant" data-img="img.vocab.1" loading="lazy" src="assets/img/c-spi.webp"/><figcaption data-e>Le spinnaker</figcaption></figure>
+<figure class="ph"><img alt="Flotte de J80 sur la ligne de départ" data-img="img.vocab.2" loading="lazy" src="assets/img/c-fleet.webp"/><figcaption data-e>La ligne de départ</figcaption></figure>
+<figure class="ph"><img alt="Équipage au rappel sur un J80 qui gîte" data-img="img.vocab.3" loading="lazy" src="assets/img/c-deck.webp"/><figcaption data-e>Le rappel</figcaption></figure>
+<figure class="ph"><img alt="Équipier à la barre et au winch" data-img="img.vocab.4" loading="lazy" src="assets/img/g17.webp"/><figcaption data-e>La barre et le winch</figcaption></figure>
+</div>
+</div>
+<div class="spart" data-label="D. Le glossaire complet">
+<h3 class="sub" data-e>Le glossaire</h3>
+<div class="gl" data-rail="Glossaire" id="glossary">
+<div class="gl-bar">
+<div aria-label="Catégories" class="tabs gl-cats" role="group"><button aria-pressed="true" data-c="all" type="button">Tous</button><button aria-pressed="false" data-c="bateau" type="button">Le bateau</button><button aria-pressed="false" data-c="manoeuvre" type="button">Les manœuvres</button><button aria-pressed="false" data-c="course" type="button">La course</button><button aria-pressed="false" data-c="equipage" type="button">L'équipage</button></div>
+<label class="gl-search"><span class="sr">Rechercher un mot</span><input id="glq" placeholder="Rechercher un mot" type="search"/></label>
+</div>
+<div class="terms" id="terms">
+<details data-cat="bateau" open=""><summary data-e>J80 <small>voilier monotype</small></summary><div class="def"><p data-e>Voilier de course de 8 mètres conçu par J/Boats, l'une des séries monotypes les plus répandues au monde. « Monotype » signifie que tous les bateaux sont strictement identiques : la victoire se joue sur la technique, la tactique et la cohésion de l'équipage.</p></div></details>
+<details data-cat="bateau"><summary data-e>Osiris <small>voilier habitable</small></summary><div class="def"><p data-e>Voilier habitable de course-croisière d'environ 35 pieds, soit un peu plus de 10 mètres. Plus grand et plus puissant que le J80, il dispute des parcours côtiers plus longs avec un équipage plus nombreux.</p></div></details>
+<details data-cat="bateau"><summary data-e>Grand-voile, foc, spinnaker <small>les voiles</small></summary><div class="def"><p data-e>La grand-voile est la voile principale, fixée au mât et à la bôme. Le foc est la voile d'avant pour remonter au vent. Au portant, l'équipage envoie le spinnaker, la grande voile ballon que vous voyez en couleurs sur nos photos. Sur un voilier habitable, la voile d'avant peut être un génois, plus grand que le foc.</p></div></details>
+<details data-cat="bateau"><summary data-e>Écoute <small>cordage de réglage</small></summary><div class="def"><p data-e>Le cordage qui commande une voile. On la borde pour rapprocher la voile de l'axe du bateau, on la choque pour la relâcher.</p></div></details>
+<details data-cat="bateau"><summary data-e>Winch <small>treuil</small></summary><div class="def"><p data-e>Le treuil sur lequel on enroule une écoute pour démultiplier l'effort quand on borde une voile.</p></div></details>
+<details data-cat="manoeuvre"><summary data-e>Bâbord, tribord <small>gauche, droite</small></summary><div class="def"><p data-e>Quand on regarde vers l'avant du bateau, bâbord est à gauche et tribord est à droite. Un bateau est dit « tribord amures » quand le vent arrive par sa droite.</p></div></details>
+<details data-cat="manoeuvre"><summary data-e>Virement de bord <small>changer de côté face au vent</small></summary><div class="def"><p data-e>Manœuvre qui consiste à changer d'amure en passant le bateau face au vent. On l'utilise pour remonter vers le vent en zigzag.</p></div></details>
+<details data-cat="manoeuvre"><summary data-e>Empannage <small>changer de côté vent dans le dos</small></summary><div class="def"><p data-e>Manœuvre qui consiste à changer d'amure en passant le vent par l'arrière. La grand-voile passe d'un bord à l'autre : tout l'équipage doit être prêt.</p></div></details>
+<details data-cat="manoeuvre"><summary data-e>Gîte et rappel <small>contrer l'inclinaison</small></summary><div class="def"><p data-e>Sous la poussée du vent, le bateau s'incline : c'est la gîte. L'équipage s'assoit sur le bord du bateau côté vent pour le redresser : c'est le rappel.</p></div></details>
+<details data-cat="course"><summary data-e>Manche <small>une course du programme</small></summary><div class="def"><p data-e>Une régate est composée de plusieurs manches. Chaque manche suit un parcours défini autour de bouées et compte pour le classement.</p></div></details>
+<details data-cat="course"><summary data-e>Ligne de départ <small>le signal et la flotte</small></summary><div class="def"><p data-e>Ligne imaginaire entre une bouée et le bateau du comité de course. Tous les bateaux doivent la franchir à l'instant du signal : les placements sont décisifs.</p></div></details>
+<details data-cat="course"><summary data-e>Près, travers, portant <small>les allures</small></summary><div class="def"><p data-e>Au près, on remonte vers le vent. Au travers, le vent arrive de côté. Au portant, il vient de l'arrière. Manipulez le curseur plus haut pour voir chaque allure.</p></div></details>
+<details data-cat="course"><summary data-e>Licence FFV <small>Fédération Française de Voile</small></summary><div class="def"><p data-e>Licence délivrée par la Fédération Française de Voile, obligatoire pour courir en compétition officielle. Elle inclut l'assurance et valide l'inscription de chaque équipier au classement.</p></div></details>
+<details data-cat="equipage"><summary data-e>Barreur <small>il pilote</small></summary><div class="def"><p data-e>Celui qui tient la barre et dirige le bateau. Il sent le vent et l'état de la mer et traduit les choix de l'équipage en trajectoire.</p></div></details>
+<details data-cat="equipage"><summary data-e>Tacticien <small>il choisit la route</small></summary><div class="def"><p data-e>Il lit le plan d'eau, le vent et les adversaires pour choisir la meilleure route. Il parle moins qu'il n'observe.</p></div></details>
+<details data-cat="equipage"><summary data-e>Régleur <small>il règle les voiles</small></summary><div class="def"><p data-e>Il règle les voiles en continu avec les écoutes pour garder la vitesse du bateau.</p></div></details>
+<details data-cat="equipage"><summary data-e>Équipier d'avant <small>le travail à l'étrave</small></summary><div class="def"><p data-e>Il travaille à l'avant du bateau : envoi et affalage du spinnaker, changement de voile d'avant, communication avec l'arrière.</p></div></details>
+</div>
+<p class="gl-none" hidden>Aucun mot ne correspond à votre recherche.</p>
+</div>
+</div>
+<div class="spart" data-label="E. Quiz : prêt à embarquer ?">
+<div class="vcard quiz" data-rail="Quiz" id="quiz">
+<div class="qz-head"><h3 data-e>Prêt à embarquer&nbsp;?</h3><p class="qz-count" id="qzCount" data-nblk></p></div>
+<div class="qz-bar"><i id="qzBar"></i></div>
+<div class="qz-grid"><div class="qz-stage">
+<div class="qz-q tp" data-ans="1">
+<h4 data-e>Quand on regarde vers l'avant du bateau, où se trouve bâbord&nbsp;?</h4>
+<div class="qz-opts"><button data-e type="button">À droite</button><button data-ok="" data-e type="button">À gauche</button><button data-e type="button">À l'arrière</button></div>
+<p class="qz-exp" data-e>Bâbord est à gauche et tribord à droite, toujours en regardant vers l'avant du bateau.</p>
+</div>
+<div class="qz-q tp" data-ans="0">
+<h4 data-e>Un J80 est un voilier…</h4>
+<div class="qz-opts"><button data-ok="" data-e type="button">Monotype : tous les bateaux sont identiques</button><button data-e type="button">Construit sur mesure pour chaque équipage</button><button data-e type="button">Un dériveur léger à deux équipiers</button></div>
+<p class="qz-exp" data-e>Dans une série monotype, tout le monde navigue sur le même bateau : l'écart se fait sur l'équipage.</p>
+</div>
+<div class="qz-q tp" data-ans="2">
+<h4 data-e>Quelle voile envoie-t-on quand le vent vient de l'arrière&nbsp;?</h4>
+<div class="qz-opts"><button data-e type="button">Le foc</button><button data-e type="button">La bôme</button><button data-ok="" data-e type="button">Le spinnaker</button></div>
+<p class="qz-exp" data-e>Au portant, la grande voile ballon capte le vent et accélère le bateau.</p>
+</div>
+<div class="qz-q tp" data-ans="1">
+<h4 data-e>« Choquer une écoute », c'est…</h4>
+<div class="qz-opts"><button data-e type="button">La tirer à fond</button><button data-ok="" data-e type="button">La relâcher</button><button data-e type="button">La couper</button></div>
+<p class="qz-exp" data-e>Border, c'est tirer l'écoute. Choquer, c'est la lâcher pour laisser la voile s'ouvrir.</p>
+</div>
+<div class="qz-end tp"><h4 id="qzTitle" data-nblk></h4><p id="qzText" data-nblk></p><button class="btn sm" id="qzAgain" type="button">Recommencer</button></div>
+</div>
+<div class="qz-foot"><button class="btn sm" disabled id="qzNext" type="button">Question suivante</button></div>
+</div>
+<figure class="ph qz-ph"><img alt="Équipage de l'Icam au départ d'une manche" data-img="img.vocab.5" loading="lazy" src="assets/img/g11.webp"/><figcaption data-e>Le jour J, tout le monde parle le même langage.</figcaption></figure>
+</div>
+</div>
+</section>

@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+<title>Vocabulaire de la Course | Icam Voile Lille</title>
+<meta content="Les mots de la voile en quelques minutes : angle du vent, schéma du bateau, vocabulaire en images et glossaire complet, pour suivre la Course Croisière EDHEC avec Icam Voile Lille." name="description"/>
+<meta property="og:title" content="Vocabulaire de la Course | Icam Voile Lille"/>
+<meta property="og:description" content="Allures, parties du bateau, glossaire et quiz : tout le vocabulaire pour suivre la Course Croisière EDHEC."/>
+<meta property="og:image" content="assets/img/hero.webp"/>
+<meta name="theme-color" content="#0b2a45"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@500;600;700;800&amp;family=Saira:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<style>
+/* ---- 000-base ---- */
+:root{
+  --abyss:#0b2a45;--deep:#071d31;--navy:#175082;--sea:#2a7ab8;
+  --signal:#ff7a2f;--signal-soft:#ffb06e;--signal-ink:#c4510e;
+  --foam:#eef4f8;--chalk:#f7fafc;--white:#fff;
+  --ink:#0f2c47;--muted:#4f6b84;--line:#d3e0ea;--sky:#9fd3ff;
+  --display:"Saira Condensed","Arial Narrow","Roboto Condensed",Arial,sans-serif;
+  --text:"Saira","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --swell:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='30' viewBox='0 0 120 30'%3E%3Cpath d='M0 15Q15 5 30 15T60 15T90 15T120 15' fill='none' stroke='%23ffffff' stroke-opacity='.05' stroke-width='1'/%3E%3C/svg%3E");
+  --ease:cubic-bezier(.2,.7,.2,1);
+  box-sizing:border-box;
+}
+*,*:before,*:after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:84px;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
+body{margin:0;overflow-x:clip;background:var(--foam);color:var(--ink);font:400 17px/1.6 var(--text);padding-top:env(safe-area-inset-top,0px)}
+img,video,svg,canvas{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--signal);outline-offset:3px}
+h1,h2,h3,h4{font-family:var(--display);font-weight:800;line-height:1.02;margin:0;letter-spacing:-.005em}
+h1,h2,h3,h4,.chap-t{text-wrap:balance}
+.nw{white-space:nowrap}
+p,li,figcaption{text-wrap:pretty}
+h2{font-size:clamp(40px,6vw,76px)}
+h3{font-size:clamp(25px,2.6vw,32px);font-weight:700}
+h4{font-size:22px;font-weight:700}
+p{margin:0 0 1em}
+b,strong{font-weight:600}
+[hidden],.icv-removed{display:none!important}
+.w{max-width:1180px;margin:0 auto;padding:0 24px}
+.sec{padding:104px 0;position:relative}
+.sec.alt{background:#fff}
+.dark{background:var(--abyss) var(--swell);color:#e6eef5}
+.dark h2,.dark h3,.dark h4{color:#fff}
+.sh{max-width:880px;margin-bottom:52px}
+.lead{font-size:clamp(17px,1.6vw,20px);color:var(--muted);max-width:62ch;margin:18px 0 0}
+.dark .lead{color:#b8cadb}
+.sub{margin:72px 0 22px;font-size:clamp(28px,3vw,40px)}
+.sub+.lead{margin-top:0}
+.muted{color:var(--muted)}
+.ic{width:1.25em;height:1.25em;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.ic.fill{fill:currentColor;stroke:none}
+
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* boutons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--signal);color:var(--abyss);font:600 17px/1 var(--text);padding:16px 26px;border-radius:8px;text-decoration:none;border:0;cursor:pointer;transition:background .2s,transform .2s}
+.btn:hover{background:#ff8f4f}
+.btn:active{transform:translateY(1px)}
+.btn.ghost{background:transparent;color:inherit;box-shadow:inset 0 0 0 2px currentColor}
+.btn.ghost:hover{background:#ffffff14}
+.btn.sm{padding:11px 16px;font-size:15px}
+.btn[disabled]{opacity:.45;cursor:not-allowed}
+.link{color:var(--navy);font-weight:600;text-underline-offset:3px}
+.dark .link{color:var(--signal-soft)}
+
+/* onglets et pastilles */
+.tabs{display:flex;flex-wrap:wrap;gap:8px}
+.tabs>[role=tab],.tabs>button[aria-pressed]{font:600 15px/1.1 var(--text);padding:11px 17px;border-radius:99px;border:1.5px solid var(--line);background:#fff;color:var(--ink);cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.tabs>[role=tab]:hover,.tabs>button[aria-pressed]:hover{border-color:var(--navy)}
+.tabs>[role=tab][aria-selected=true],.tabs>button[aria-pressed=true]{background:var(--ink);border-color:var(--ink);color:#fff}
+.dark .tabs>[role=tab],.dark .tabs>button[aria-pressed]{background:transparent;border-color:#ffffff40;color:#e6eef5}
+.dark .tabs>[role=tab]:hover,.dark .tabs>button[aria-pressed]:hover{border-color:#fff}
+.dark .tabs>[role=tab][aria-selected=true],.dark .tabs>button[aria-pressed=true]{background:var(--signal);border-color:var(--signal);color:var(--abyss)}
+.tp[hidden]{display:none!important}
+
+/* cartes et photos */
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px}
+.dark .card{background:#ffffff0d;border-color:#ffffff22}
+.ph{margin:0;position:relative;overflow:hidden;border-radius:12px;background:var(--navy)}
+.ph img{width:100%;height:100%;object-fit:cover}
+.ph figcaption{position:absolute;left:0;right:0;bottom:0;padding:34px 14px 12px;background:linear-gradient(0deg,#0b2a45d9,#0b2a4500);color:#fff;font:500 14px/1.3 var(--text)}
+.num{font-family:var(--display);font-weight:800;font-variant-numeric:tabular-nums;line-height:1}
+
+/* retournement recto/verso */
+.flip{display:block;width:100%;padding:0;border:0;background:none;text-align:left;cursor:pointer;perspective:1400px;color:inherit}
+.flip-in{display:grid;transform-style:preserve-3d;transition:transform .6s var(--ease)}
+.flip.on .flip-in{transform:rotateY(180deg)}
+.flip .face{grid-area:1/1;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:16px;padding:24px;display:flex;flex-direction:column;gap:10px}
+.flip .face.b{transform:rotateY(180deg)}
+.flip .face:not(.b){background:#fff;border:1px solid var(--line);color:var(--ink)}
+.flip .face.b{background:var(--signal);color:var(--abyss)}
+.flip .hint{margin-top:auto;font:600 13px var(--text);display:flex;align-items:center;gap:6px;opacity:.75}
+
+/* flèches de défilement des bandes photo */
+.reel-ctrl{display:flex;gap:8px}
+.reel-ctrl button{width:48px;height:48px;border-radius:50%;border:2px solid currentColor;background:transparent;cursor:pointer;display:grid;place-items:center;opacity:.8}
+.reel-ctrl button:hover{opacity:1;color:var(--signal)}
+
+/* galeries gérées depuis l'admin */
+.gal-strip{--edge:0px;display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:6px}
+.gal-strip::-webkit-scrollbar{display:none}
+.gal-strip .gal-i{flex:0 0 auto;margin:0;position:relative;scroll-snap-align:start;height:clamp(240px,32vw,420px)}
+.gal-strip img{height:100%;width:auto;border-radius:10px;object-fit:cover}
+.gal-strip figcaption{position:absolute;left:12px;right:12px;bottom:10px;color:#fff;font-size:14px;font-weight:500;text-shadow:0 1px 8px #000b}
+.gal-mosaic{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:clamp(78px,10.5vw,138px);grid-auto-flow:dense;gap:10px}
+.gal-mosaic .gal-i{margin:0;position:relative;overflow:hidden;border-radius:10px;background:var(--navy)}
+.gal-mosaic img{width:100%;height:100%;object-fit:cover}
+.gal-mosaic figcaption{position:absolute;left:0;right:0;bottom:0;padding:26px 12px 9px;background:linear-gradient(0deg,#0b2a45cc,#0b2a4500);color:#fff;font-size:13.5px;font-weight:500}
+.gal-mosaic .m0,.gal-mosaic .m1{grid-column:span 3;grid-row:span 2}.gal-mosaic .m2,.gal-mosaic .m3{grid-column:span 2;grid-row:span 2}.gal-mosaic .m4,.gal-mosaic .m5{grid-column:span 1;grid-row:span 2}
+.gal-prints{display:flex;flex-wrap:wrap;gap:22px 18px;justify-content:center;padding:12px 0}
+.gal-prints .gal-i{margin:0;background:#fff;padding:10px 10px 14px;border-radius:4px;box-shadow:0 10px 26px #0b2a4540;width:clamp(150px,19vw,210px);transition:transform .25s var(--ease)}
+.gal-prints .gal-i img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:2px}
+.gal-prints figcaption{font:500 13px/1.3 var(--text);color:var(--muted);padding-top:8px;text-align:center}
+.gal-prints .p0{transform:rotate(-3deg)}.gal-prints .p1{transform:rotate(2deg) translateY(10px)}.gal-prints .p2{transform:rotate(-1.5deg)}.gal-prints .p3{transform:rotate(3deg) translateY(8px)}.gal-prints .p4{transform:rotate(-2.5deg) translateY(4px)}
+.gal-prints .gal-i:hover{transform:rotate(0) translateY(-6px);z-index:2}
+@media (max-width:760px){
+  .gal-mosaic{grid-template-columns:repeat(2,1fr);grid-auto-rows:118px}
+  .gal-mosaic .gal-i{grid-column:span 1!important;grid-row:span 1!important}.gal-mosaic .m0,.gal-mosaic .m1{grid-column:span 2!important;grid-row:span 2!important}
+}
+
+/* mode édition (éditeur visuel de l'admin) */
+.edition .tp{display:block!important;margin:10px 0;outline:1px dashed #ff7a2f66;outline-offset:6px}
+.edition .tp[hidden]{display:block!important}
+.edition .rail,.edition .reel-ctrl{display:none!important}
+.edition .flip-in{transform:none!important;grid-template-columns:1fr 1fr;gap:12px}
+.edition .flip .face{grid-area:auto;backface-visibility:visible;transform:none!important}
+.edition .gal-strip{flex-wrap:wrap}
+.edition [data-n]{font-variant-numeric:tabular-nums}
+
+@media (max-width:760px){
+  body{font-size:16px}
+  .w{padding:0 20px}
+  .sec{padding:60px 0}
+  .sh{margin-bottom:32px}
+  .sub{margin:48px 0 18px}
+  h2{font-size:clamp(38px,11vw,52px)}
+}
+/* ---- 010-nav ---- */
+.skip{position:absolute;left:12px;top:-60px;z-index:100;background:var(--signal);color:var(--abyss);padding:10px 16px;border-radius:6px;font-weight:600;text-decoration:none}
+.skip:focus{top:12px}
+.nav{position:sticky;top:0;z-index:50;background:#ffffffee;backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+.nav .w{display:flex;align-items:center;gap:20px;height:76px;max-width:1360px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--navy);flex:none}
+.brand img{width:58px;height:58px;border-radius:50%;background:#fff;box-shadow:0 0 0 2px var(--navy),0 4px 14px #17508233}
+.brand b{font:800 23px/1 var(--display);letter-spacing:.01em}
+.brand small{display:block;font:500 13px/1.2 var(--text);color:var(--muted);margin-top:3px}
+.school{display:flex;align-items:center;padding-left:16px;margin-left:4px;border-left:1px solid var(--line);height:44px;flex:none}
+.school img{height:40px;width:auto}
+.links{display:flex;align-items:center;gap:4px;margin-left:auto}
+.links a{text-decoration:none;font-weight:500;font-size:15px;color:var(--ink);padding:8px 11px;border-radius:6px;white-space:nowrap}
+.links a:hover,.links a.on{background:var(--foam);color:var(--navy)}
+.links .ig{display:grid;place-items:center;width:40px;height:40px;padding:0}
+.links .ig svg{width:22px;height:22px}
+.links .btn{margin-left:8px;color:var(--abyss)}
+.links .btn:hover{background:#ff8f4f;color:var(--abyss)}
+.burger{display:none;margin-left:auto;width:46px;height:46px;border:0;background:transparent;border-radius:6px;cursor:pointer;color:var(--navy)}
+.burger span{display:block;width:24px;height:2.5px;background:currentColor;margin:5px auto;transition:transform .2s,opacity .2s}
+.nav.open .burger span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}
+.nav.open .burger span:nth-child(2){opacity:0}
+.nav.open .burger span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
+/* Le menu compte 6 liens + Instagram + le bouton : on le resserre avant de passer au menu burger */
+@media (max-width:1399px){
+  .nav .w{gap:14px}
+  .school{padding-left:12px;margin-left:0}
+  .links a{font-size:14px;padding:8px 7px}
+  .links .btn{margin-left:4px}
+}
+@media (max-width:1240px){
+  .burger{display:block}
+  .links{display:none;position:absolute;left:0;right:0;top:100%;flex-direction:column;align-items:stretch;background:#fff;padding:12px 24px 22px;border-bottom:1px solid var(--line);box-shadow:0 18px 30px #0b2a4522;gap:2px}
+  .nav.open .links{display:flex}
+  .links a{font-size:17px;padding:12px}
+  .links .ig{width:auto;display:flex;gap:10px;padding:12px;justify-content:flex-start}
+  .links .ig:after{content:"Instagram"}
+  .links .btn{margin:10px 0 0}
+}
+@media (max-width:700px){.brand img{width:50px;height:50px}.brand b{font-size:20px}.brand small{display:none}.school img{height:28px}.school{padding-left:10px}}
+@media (max-width:380px){.nav .w{gap:8px;padding:0 14px}.brand{gap:8px}.brand img{width:42px;height:42px}.brand b{font-size:18px}.school{padding-left:8px}.burger{width:40px;height:40px}}
+
+/* graduation verticale : repère des 13 parties */
+.rail{position:fixed;right:14px;top:50%;transform:translateY(-50%);z-index:40;display:none}
+.rail ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;align-items:flex-end;gap:0}
+.rail a{display:flex;align-items:center;justify-content:flex-end;gap:10px;height:22px;text-decoration:none;color:var(--muted);font:600 13px/1 var(--text)}
+.rail a span{opacity:0;transform:translateX(6px);transition:opacity .2s,transform .2s;background:var(--abyss);color:#fff;padding:5px 9px;border-radius:5px;white-space:nowrap;pointer-events:none}
+.rail a i{display:block;height:3px;width:12px;border-radius:2px;background:#9fb6cb;transition:width .25s var(--ease),background .25s}
+.rail a:hover span,.rail a:focus-visible span{opacity:1;transform:none}
+.rail a:hover i,.rail a.on i{width:30px;background:var(--signal)}
+@media (min-width:1320px){.rail{display:block}}
+
+/* ouverture de chapitre */
+.chap{position:relative;color:#fff;background:var(--abyss) center/cover no-repeat;padding:clamp(88px,13vw,170px) 0 clamp(52px,7vw,84px);overflow:hidden}
+.chap:before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#0b2a45f2 0,#0b2a45b8 55%,#0b2a4580 100%)}
+.chap:after{content:"";position:absolute;left:0;right:0;bottom:0;height:34px;background:repeating-linear-gradient(90deg,#ffffff55 0 2px,transparent 2px 24px) 0 100%/100% 14px no-repeat,repeating-linear-gradient(90deg,#ffffff99 0 2px,transparent 2px 120px) 0 100%/100% 26px no-repeat;opacity:.55}
+.chap .w{position:relative;z-index:1}
+.chap-t{margin:0;font:800 clamp(52px,9.5vw,132px)/.92 var(--display);letter-spacing:-.01em;max-width:14ch}
+.chap-s{font-size:clamp(17px,1.7vw,22px);color:#c9d8e6;max-width:48ch;margin:22px 0 0}
+.chap-go{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+.chap-go a{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:600;font-size:15px;padding:10px 16px;border-radius:99px;border:1.5px solid #ffffff66;color:#fff}
+.chap-go a:hover{border-color:var(--signal);color:var(--signal-soft)}
+/* ---- 060-vocab ---- */
+/* ===== 5. Vocabulaire ===== */
+.vcard{background:#fff;border:1px solid var(--line);border-radius:22px;padding:clamp(20px,3vw,40px);margin-bottom:28px}
+.vcard.dark{background:var(--abyss) var(--swell);border-color:var(--abyss)}
+.sec.alt .vcard{background:var(--chalk)}
+.sec.alt .vcard.dark{background:var(--abyss) var(--swell)}
+
+/* allures */
+.allures{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(18px,3vw,44px);align-items:center}
+.al-stage svg{width:100%;max-width:460px;margin:0 auto;height:auto;overflow:visible}
+.al-stage .ring{fill:none;stroke:var(--line);stroke-width:2}
+.al-stage .tick{stroke:#b4c6d6;stroke-width:1.2}
+.al-stage .tk{font:600 12px var(--text);fill:var(--muted);text-anchor:middle}
+.al-stage .nogo{fill:#ff7a2f22;stroke:var(--signal);stroke-width:1.5;stroke-dasharray:5 5}
+.al-stage .ngl{font:700 12px var(--text);fill:var(--signal-ink);text-anchor:middle}
+.al-stage .wind{stroke:var(--navy);stroke-width:3;stroke-linecap:round;fill:none}
+.al-stage .windt{font:800 20px var(--display);fill:var(--navy);text-anchor:middle}
+.al-stage .hull{fill:#cfdfec;stroke:var(--abyss);stroke-width:2.5}
+.al-stage .deck{fill:var(--signal);opacity:.9}
+.al-stage .sail{fill:#fff;stroke:var(--abyss);stroke-width:1.8;stroke-linejoin:round}
+.al-stage .spi{fill:var(--signal);stroke:#9a4009;stroke-width:1.6;stroke-linejoin:round}
+.al-stage .spi2{fill:none;stroke:#fff;stroke-width:3;stroke-linecap:round;opacity:.75}
+.al-panel h3{font-size:clamp(24px,2.4vw,32px);margin-bottom:16px}
+.al-read{display:flex;align-items:center;gap:18px;margin-bottom:6px}
+.al-deg{margin:0;font-size:clamp(54px,6vw,76px);color:var(--navy)}
+.al-deg b{font-weight:800}
+.al-read h4{font-size:clamp(30px,3.2vw,42px);color:var(--ink)}
+.al-side{margin:4px 0 0;font-size:14.5px;color:var(--signal-ink);font-weight:600}
+.al-desc{min-height:5.2em;color:var(--muted);max-width:52ch;margin:10px 0 18px}
+.al-range{display:grid;gap:10px;font-weight:600;font-size:15px;margin-bottom:16px}
+input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:30px;background:transparent;cursor:pointer}
+input[type=range]::-webkit-slider-runnable-track{height:6px;border-radius:3px;background:linear-gradient(90deg,var(--signal) 0 19%,var(--line) 19%)}
+input[type=range]::-moz-range-track{height:6px;border-radius:3px;background:var(--line)}
+input[type=range]::-moz-range-progress{height:6px;border-radius:3px;background:var(--signal)}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:28px;height:28px;border-radius:50%;background:var(--abyss);border:4px solid #fff;box-shadow:0 0 0 2px var(--abyss),0 4px 10px #0b2a4540;margin-top:-11px}
+input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;background:var(--abyss);border:4px solid #fff;box-shadow:0 0 0 2px var(--abyss)}
+.al-quick{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.al-quick button{font:600 14.5px var(--text);padding:9px 15px;border-radius:99px;border:1.5px solid var(--line);background:#fff;cursor:pointer}
+.al-quick button:hover{border-color:var(--navy)}
+.al-quick button.on{background:var(--ink);border-color:var(--ink);color:#fff}
+.al-tack{display:flex;align-items:center;gap:10px;font-weight:600;font-size:15px;cursor:pointer}
+.al-tack input{width:20px;height:20px;accent-color:var(--navy)}
+@media (max-width:900px){.allures{grid-template-columns:1fr}.al-stage svg{max-width:340px}.al-desc{min-height:0}}
+
+/* anatomie */
+.anat{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,.85fr);gap:clamp(18px,3vw,40px);align-items:center;color:#e6eef5}
+.an-draw{position:relative;border-radius:16px;overflow:hidden;background:linear-gradient(180deg,#1d5688 0%,#2f78ad 58%,#0e3a5c 58.01%)}
+.an-draw svg{display:block;width:100%;height:auto}
+.hs{position:absolute;width:34px;height:34px;margin:-17px 0 0 -17px;border-radius:50%;border:2px solid #fff;background:var(--signal);color:var(--abyss);font:800 16px/1 var(--display);cursor:pointer;display:grid;place-items:center;box-shadow:0 0 0 0 #ff7a2f88;animation:hsp 2.6s infinite;padding:0}
+@keyframes hsp{0%{box-shadow:0 0 0 0 #ff7a2fa0}70%{box-shadow:0 0 0 12px #ff7a2f00}100%{box-shadow:0 0 0 0 #ff7a2f00}}
+.hs:hover,.hs.on{background:#fff;color:var(--abyss);animation:none}
+.an-spi{display:flex;align-items:center;gap:10px;margin-top:10px;font-weight:600;cursor:pointer}
+.an-spi input{width:20px;height:20px;accent-color:var(--signal)}
+.an-panel h3{font-size:clamp(26px,2.6vw,34px);margin-bottom:6px}
+.an-hint{color:#9fb6cb;font-size:14.5px;margin-bottom:16px}
+.an-def{display:none;background:#ffffff12;border-left:4px solid var(--signal);border-radius:0 12px 12px 0;padding:16px 18px}
+.an-def.on{display:block}
+.an-def h4{font-size:26px;margin-bottom:6px;color:#fff}
+.an-def p{margin:0;color:#dce8f2}
+.edition .an-def{display:block;margin-bottom:8px}
+@media (max-width:900px){.anat{grid-template-columns:1fr}}
+.an-draw .sea{fill:#0e3a5c;opacity:.74}
+
+/* vocabulaire en images */
+.termpics{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:12px}
+.termpics .ph{aspect-ratio:4/5;border-radius:14px}
+.termpics figcaption{font:800 22px/1.1 var(--display);padding:40px 14px 14px}
+@media (max-width:760px){.termpics{grid-template-columns:repeat(2,1fr)}}
+
+/* glossaire */
+.gl{background:#fff;border:1px solid var(--line);border-radius:22px;padding:clamp(18px,3vw,34px);margin-bottom:28px}
+.gl-bar{display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center;margin-bottom:18px}
+.gl-search{max-width:100%}.gl-search input{width:100%;font:500 16px var(--text);padding:11px 16px;border:1.5px solid var(--line);border-radius:99px;min-width:min(240px,100%);color:var(--ink);background:var(--foam)}
+.gl-search input:focus{outline:3px solid var(--signal);border-color:var(--signal)}
+.terms{border-top:2px solid var(--ink)}
+.terms details{border-bottom:1px solid var(--line)}
+.terms summary{list-style:none;cursor:pointer;display:flex;align-items:baseline;gap:16px;padding:18px 0;font:700 clamp(21px,2vw,26px)/1.1 var(--display)}
+.terms summary::-webkit-details-marker{display:none}
+.terms summary small{font:400 15px var(--text);color:var(--muted)}
+.terms summary:after{content:"+";margin-left:auto;font:400 28px/1 var(--text);color:var(--signal);transition:transform .2s}
+.terms details[open] summary:after{transform:rotate(45deg)}
+.terms .def{padding:0 0 20px;max-width:64ch}
+.terms .def p{margin:0}
+.gl-none{margin:18px 0 0;color:var(--muted)}
+
+/* quiz */
+.quiz{background:var(--abyss) var(--swell);border-color:var(--abyss);color:#e6eef5}
+.sec.alt .quiz{background:var(--abyss) var(--swell)}
+.qz-head{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap}
+.qz-head h3{color:#fff;font-size:clamp(30px,3.2vw,42px)}
+.qz-count{margin:0;color:var(--signal-soft);font-weight:600}
+.qz-bar{height:6px;background:#ffffff26;border-radius:3px;overflow:hidden;margin:14px 0 22px}
+.qz-bar i{display:block;height:100%;width:0;background:var(--signal);transition:width .4s var(--ease)}
+.qz-q h4{color:#fff;font-size:clamp(25px,2.6vw,34px);margin-bottom:18px;max-width:30ch}
+.qz-opts{display:grid;gap:10px;max-width:640px}
+.qz-opts button{text-align:left;font:500 17px/1.35 var(--text);padding:15px 18px;border-radius:12px;border:1.5px solid #ffffff44;background:#ffffff0d;color:#fff;cursor:pointer;transition:background .2s,border-color .2s}
+.qz-opts button:hover:not(:disabled){border-color:#fff;background:#ffffff1c}
+.qz-opts button:disabled{cursor:default}
+.qz-opts button.ok{background:#1f9d62;border-color:#1f9d62;color:#fff}
+.qz-opts button.ko{background:#b3261e;border-color:#b3261e;color:#fff}
+.qz-opts button.miss{border-color:#1f9d62}
+.qz-exp{margin:16px 0 0;color:#dce8f2;max-width:60ch;border-left:4px solid var(--signal);padding-left:14px}
+.qz-q:not(.done) .qz-exp{display:none}
+.edition .qz-q .qz-exp{display:block}
+.qz-end h4{color:#fff;font-size:clamp(30px,3.4vw,44px);margin-bottom:10px}
+.qz-end p{max-width:50ch}
+.qz-foot{margin-top:22px}
+.qz-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:clamp(18px,3vw,40px);align-items:stretch}
+.qz-ph{min-height:300px;border-radius:16px}
+.qz-ph figcaption{font:700 21px/1.15 var(--display);padding:48px 18px 18px}
+@media (max-width:860px){.qz-grid{grid-template-columns:1fr}.qz-ph{min-height:200px;order:-1}}
+
+/* en-tête de la page Vocabulaire */
+.back{margin:0 0 18px}
+.back a{display:inline-flex;align-items:center;gap:6px;color:#c9d8e6;text-decoration:none;font-weight:600;font-size:15px}
+.back a:hover{color:var(--signal-soft)}
+.back .ic{width:18px;height:18px}
+/* ---- 150-footer ---- */
+footer{background:#071d31;color:#9fb6cb;padding:40px 0;font-size:14px}
+footer .w{display:flex;flex-wrap:wrap;gap:22px;align-items:center}
+footer .logo{width:62px;height:62px;border-radius:50%;background:#fff}
+footer .fsp{flex:1}
+footer .partner{height:52px;width:auto;background:#fff;border-radius:6px;padding:6px}
+footer a{color:#e6eef5}
+</style>
+</head>
+<body data-page="vocabulaire">
+
+
+<svg aria-hidden="true" focusable="false" height="0" style="position:absolute" width="0"><defs>
+<symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></symbol>
+<symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></symbol>
+<symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+<symbol id="i-leaf" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></symbol>
+<symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16.24 7.76-2.12 6.36-6.36 2.12 2.12-6.36z"/></symbol>
+<symbol id="i-anchor" viewBox="0 0 24 24"><path d="M12 22V8M5 12H2a10 10 0 0 0 20 0h-3"/><circle cx="12" cy="5" r="3"/></symbol>
+<symbol id="i-wind" viewBox="0 0 24 24"><path d="M17.7 7.7a2.5 2.5 0 1 1 1.8 4.3H2M9.6 4.6A2 2 0 1 1 11 8H2M12.6 19.4A2 2 0 1 0 14 16H2"/></symbol>
+<symbol id="i-flag" viewBox="0 0 24 24"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7"/></symbol>
+<symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4v16l13-8z"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+<symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+<symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+<symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></symbol>
+<symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></symbol>
+<symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+<symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></symbol>
+<symbol id="i-camera" viewBox="0 0 24 24"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></symbol>
+<symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+<symbol id="i-sail" viewBox="0 0 24 24"><path d="M12 2v14M12 3.5 5.5 14.5H12M12 6.5l6 8h-6M3 18.5h18l-3.2 3H6.2z"/></symbol>
+<symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
+<symbol id="i-cap" viewBox="0 0 24 24"><path d="m22 10-10-5L2 10l10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></symbol>
+<symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+<symbol id="i-euro" viewBox="0 0 24 24"><path d="M4 10h12M4 14h9M19 6a7.7 7.7 0 0 0-5.2-2A7.9 7.9 0 0 0 6 12c0 4.4 3.5 8 7.8 8 2 0 3.8-.8 5.2-2"/></symbol>
+<symbol id="i-shirt" viewBox="0 0 24 24"><path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/></symbol>
+<symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></symbol>
+<symbol id="i-rec" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.5" fill="currentColor"/></symbol>
+<symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.09-3.09a2 2 0 0 0-2.82 0L6 21"/></symbol>
+<symbol id="i-chev-l" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+<symbol id="i-chev-r" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+<symbol id="i-gauge" viewBox="0 0 24 24"><path d="m12 14 4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/></symbol>
+<symbol id="i-heart" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7z"/></symbol>
+<symbol id="i-lock" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
+<symbol id="i-unlock" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 9.9-1"/></symbol>
+<symbol id="i-rotate" viewBox="0 0 24 24"><path d="M21 12a9 9 0 1 1-3-6.7L21 8M21 3v5h-5"/></symbol>
+</defs></svg>
+<a class="skip" href="#main">Aller au contenu</a>
+<nav aria-label="Navigation principale" class="nav" id="nav">
+<div class="w">
+<a aria-label="Icam Voile Lille, retour en haut de page" class="brand" href="index.html#top">
+<img alt="Logo Icam Voile Lille" height="58" src="assets/img/logo.webp" width="58"/>
+<span><b data-edit="nav.icam-voile-lille">Icam Voile Lille</b><small data-edit="nav.course-croisiere-edhec-2027">Course Croisière EDHEC 2027</small></span>
+</a>
+<a aria-label="Icam, notre école d'ingénieurs" class="school" href="https://www.icam.fr/" rel="noopener" target="_blank"><img alt="Icam" src="assets/img/icam.png"/></a>
+<button aria-controls="links" aria-expanded="false" aria-label="Ouvrir le menu" class="burger" id="burger" type="button"><span></span><span></span><span></span></button>
+<div class="links" id="links">
+<a data-chap="who" data-edit="nav.qui-sommes-nous" data-spy="icam asso" href="index.html#icam">Qui sommes-nous&nbsp;?</a>
+<a data-chap="what" data-edit="nav.la-cce" data-spy="cce" href="index.html#cce">La CCE</a>
+<a data-edit="nav.vocabulaire" data-page="vocabulaire" href="vocabulaire.html">Vocabulaire</a>
+<a data-chap="aim" data-edit="nav.notre-projet" data-spy="obj budget" href="index.html#obj">Notre projet</a>
+<a data-chap="partner" data-edit="nav.partenariat" data-spy="why gain formules sim" href="index.html#why">Partenariat</a>
+<a data-chap="end" data-edit="nav.confiance" data-spy="sponsors contact" href="index.html#sponsors">Confiance</a>
+<a aria-label="Icam Voile sur Instagram" class="ig" data-ig="" href="index.html#" rel="noopener" target="_blank"><svg class="ic" aria-hidden="true"><use href="index.html#i-instagram"/></svg></a>
+<a class="btn sm" data-edit="nav.devenir-partenaire" data-spy="contact" href="index.html#contact">Devenir partenaire</a>
+</div>
+</div>
+</nav>
+<nav aria-label="Parties du site" class="rail"><ol id="rail"></ol></nav>
+<main data-blk="blk.main.vocabulaire" data-cont="ch" data-label="Page entière" id="main">
+
+<div class="chapter" data-blk="blk.ch.vocab" data-chap="vocab" data-cont="sec" data-label="Vocabulaire de la course" id="ch-vocab">
+<div class="chap" data-bg="bg.chap-vocab" data-label="Bandeau d'ouverture" id="chap-vocab" style="background-image:url(assets/img/g16.webp)" data-blk="blk.vocab.chap-vocab">
+<div class="w">
+<p class="back" data-blk="blk.vocab.retour-au-projet"><a href="index.html#cce"><svg aria-hidden="true" class="ic"><use href="#i-chev-l"/></svg><span data-edit="vocab.retour-au-projet">Retour au projet</span></a></p>
+<h1 class="chap-t" data-edit="vocab.vocabulaire-de-la-course">Vocabulaire de la Course</h1>
+<p class="chap-s" data-edit="vocab.pas-besoin-d-etre-marin" data-blk="blk.vocab.pas-besoin-d-etre-marin">Pas besoin d'être marin pour nous suivre. Manipulez le vent, touchez le bateau, parcourez le glossaire : les mots de la voile en quelques minutes.</p>
+<nav aria-label="Sur cette page" class="chap-go"><a href="#allures">Les allures</a><a href="#anat">Le bateau</a><a href="#images">En images</a><a href="#glossary">Glossaire</a><a href="#quiz">Quiz</a></nav>
+</div>
+</div>
+<section class="sec alt" data-label="Le vocabulaire de la course" id="vocabulaire" data-blk="blk.vocab.vocabulaire">
+<div class="w" data-cont="sp" data-blk="blk.vocab.w">
+<div class="spart" data-label="A. L'angle du vent sur le voilier" data-blk="blk.vocab.a-l-angle-du-vent-sur">
+<div class="vcard allures" data-rail="Les allures" id="allures">
+<div class="al-stage">
+<svg aria-label="Voilier vu du dessus, le vent arrive du haut" id="alSvg" role="img" viewBox="-200 -205 400 410"></svg>
+</div>
+<div class="al-panel">
+<h3 data-edit="vocab.les-allures-l-angle-entre" data-blk="blk.vocab.les-allures-l-angle-entre">Les allures : l'angle entre le bateau et le vent</h3>
+<div class="al-read" aria-live="polite">
+<p class="al-deg num" data-blk="blk.vocab.n45"><b id="alDeg">45</b>°</p>
+<div><h4 id="alName">Près</h4><p id="alSide" class="al-side" data-blk="blk.vocab.alside"></p></div>
+</div>
+<p class="al-desc" id="alDesc" data-blk="blk.vocab.aldesc"></p>
+<label class="al-range"><span data-edit="vocab.faites-tourner-le-bateau">Faites tourner le bateau</span><input aria-describedby="alDesc" id="alRange" max="180" min="0" step="1" type="range" value="45"/></label>
+<div class="al-quick" role="group" aria-label="Allures types"><button data-a="42" type="button" data-edit="vocab.pres">Près</button><button data-a="90" type="button" data-edit="vocab.travers">Travers</button><button data-a="125" type="button" data-edit="vocab.largue">Largue</button><button data-a="180" type="button" data-edit="vocab.vent-arriere">Vent arrière</button></div>
+<label class="al-tack"><input id="alTack" type="checkbox"/><span data-edit="vocab.changer-de-bord-amures">Changer de bord (amures)</span></label>
+</div>
+<div hidden id="alData">
+<span data-k="debout" data-edit="vocab.vent-debout-la-zone-interdite">Vent debout, la zone interdite</span><span data-d="debout" data-edit="vocab.face-au-vent-les-voiles">Face au vent, les voiles faseyent et le bateau s'arrête. Pour remonter vers le vent, il faut louvoyer : alterner les bords, en virant de bord.</span>
+<span data-k="pres" data-edit="vocab.pres-2">Près</span><span data-d="pres" data-edit="vocab.l-allure-la-plus-proche">L'allure la plus proche du vent, à environ 40 degrés. Voiles bordées à fond, bateau très gîté : l'équipage est au rappel.</span>
+<span data-k="bonplein" data-edit="vocab.bon-plein">Bon plein</span><span data-d="bonplein" data-edit="vocab.un-peu-plus-ouvert-que">Un peu plus ouvert que le près. Les voiles sont légèrement choquées : le bateau est rapide et stable.</span>
+<span data-k="travers" data-edit="vocab.travers-2">Travers</span><span data-d="travers" data-edit="vocab.le-vent-arrive-perpendiculairement">Le vent arrive perpendiculairement au bateau. Voiles à moitié choquées : c'est souvent l'allure la plus rapide.</span>
+<span data-k="largue" data-edit="vocab.largue-2">Largue</span><span data-d="largue" data-edit="vocab.le-vent-vient-de-l">Le vent vient de l'arrière du travers. Voiles bien choquées : on envoie ici le spinnaker, la grande voile ballon.</span>
+<span data-k="grandlargue" data-edit="vocab.grand-largue">Grand largue</span><span data-d="grandlargue" data-edit="vocab.le-vent-souffle-de-trois">Le vent souffle de trois quarts arrière. Spinnaker dehors, vitesse maximale, et une barre à surveiller de près.</span>
+<span data-k="arriere" data-edit="vocab.vent-arriere-2">Vent arrière</span><span data-d="arriere" data-edit="vocab.le-vent-est-dans-le">Le vent est dans le dos. Grand-voile d'un côté, spinnaker de l'autre, et un risque d'empannage involontaire.</span>
+<span data-k="tribord" data-edit="vocab.tribord-amures-le-vent-arrive">Tribord amures : le vent arrive par la droite</span><span data-k="babord" data-edit="vocab.babord-amures-le-vent-arrive">Bâbord amures : le vent arrive par la gauche</span>
+</div>
+</div>
+</div>
+<div class="spart" data-label="B. Schéma interactif du bateau" data-blk="blk.vocab.b-schema-interactif-du-bateau">
+<div class="vcard dark anat" data-rail="Le bateau" id="anat">
+<div class="an-stage">
+<div class="an-draw">
+<svg aria-label="Schéma d'un voilier vu de côté" id="anSvg" role="img" viewBox="0 0 640 400"></svg>
+<button aria-label="Grand-voile" class="hs" data-k="main" style="left:39%;top:35%" type="button">1</button>
+<button aria-label="Foc" class="hs" data-k="jib" style="left:69%;top:44%" type="button">2</button>
+<button aria-label="Mât" class="hs" data-k="mast" style="left:53%;top:17%" type="button">3</button>
+<button aria-label="Bôme" class="hs" data-k="boom" style="left:31%;top:57%" type="button">4</button>
+<button aria-label="Étrave" class="hs" data-k="bow" style="left:84%;top:65%" type="button">5</button>
+<button aria-label="Poupe" class="hs" data-k="stern" style="left:12%;top:65%" type="button">6</button>
+<button aria-label="Gouvernail et barre" class="hs" data-k="rudder" style="left:15%;top:84%" type="button">7</button>
+<button aria-label="Quille" class="hs" data-k="keel" style="left:49%;top:90%" type="button">8</button>
+<button aria-label="Spinnaker" class="hs spi" data-k="spi" hidden style="left:84%;top:36%" type="button">9</button>
+</div>
+<label class="an-spi"><input id="anSpi" type="checkbox"/><span data-edit="vocab.envoyer-le-spinnaker">Envoyer le spinnaker</span></label>
+</div>
+<div class="an-panel">
+<h3 data-edit="vocab.l-anatomie-d-un-voilier" data-blk="blk.vocab.l-anatomie-d-un-voilier">L'anatomie d'un voilier</h3>
+<p class="an-hint" data-edit="vocab.touchez-un-numero-pour-decouvrir" data-blk="blk.vocab.touchez-un-numero-pour-decouvrir">Touchez un numéro pour découvrir la pièce.</p>
+<div class="an-defs" id="anDefs">
+<div class="an-def" data-k="main"><h4 data-edit="vocab.1-grand-voile">1. Grand-voile</h4><p data-edit="vocab.la-voile-principale-hissee-le" data-blk="blk.vocab.la-voile-principale-hissee-le">La voile principale, hissée le long du mât et fixée à la bôme. Elle se règle avec l'écoute de grand-voile.</p></div>
+<div class="an-def" data-k="jib"><h4 data-edit="vocab.2-foc">2. Foc</h4><p data-edit="vocab.la-voile-d-avant-hissee" data-blk="blk.vocab.la-voile-d-avant-hissee">La voile d'avant, hissée sur l'étai. Sur un J80, c'est un foc ; sur un voilier habitable, elle peut être plus grande : c'est un génois.</p></div>
+<div class="an-def" data-k="mast"><h4 data-edit="vocab.3-mat">3. Mât</h4><p data-edit="vocab.le-grand-tube-vertical-qui" data-blk="blk.vocab.le-grand-tube-vertical-qui">Le grand tube vertical qui porte les voiles. Il est tenu par l'étai, le pataras et les haubans.</p></div>
+<div class="an-def" data-k="boom"><h4 data-edit="vocab.4-bome">4. Bôme</h4><p data-edit="vocab.la-perche-horizontale-qui-tient" data-blk="blk.vocab.la-perche-horizontale-qui-tient">La perche horizontale qui tient le bas de la grand-voile. Elle balaie le cockpit quand on change de bord : on baisse la tête.</p></div>
+<div class="an-def" data-k="bow"><h4 data-edit="vocab.5-etrave">5. Étrave</h4><p data-edit="vocab.l-avant-du-bateau-qu" data-blk="blk.vocab.l-avant-du-bateau-qu">L'avant du bateau, qu'on appelle aussi la proue. C'est là que travaille l'équipier d'avant.</p></div>
+<div class="an-def" data-k="stern"><h4 data-edit="vocab.6-poupe">6. Poupe</h4><p data-edit="vocab.l-arriere-du-bateau-la" data-blk="blk.vocab.l-arriere-du-bateau-la">L'arrière du bateau, là où se tient le barreur.</p></div>
+<div class="an-def" data-k="rudder"><h4 data-edit="vocab.7-gouvernail-et-barre">7. Gouvernail et barre</h4><p data-edit="vocab.le-gouvernail-dirige-le-bateau" data-blk="blk.vocab.le-gouvernail-dirige-le-bateau">Le gouvernail dirige le bateau, la barre est ce que tient le barreur pour l'orienter.</p></div>
+<div class="an-def" data-k="keel"><h4 data-edit="vocab.8-quille">8. Quille</h4><p data-edit="vocab.l-aileron-leste-sous-la" data-blk="blk.vocab.l-aileron-leste-sous-la">L'aileron lesté sous la coque. Elle empêche le bateau de dériver et le redresse quand il gîte.</p></div>
+<div class="an-def" data-k="spi"><h4 data-edit="vocab.9-spinnaker">9. Spinnaker</h4><p data-edit="vocab.la-grande-voile-ballon-envoyee" data-blk="blk.vocab.la-grande-voile-ballon-envoyee">La grande voile ballon, envoyée quand le vent vient de l'arrière. C'est la voile colorée que l'on voit sur nos photos.</p></div>
+</div>
+</div>
+</div>
+</div>
+<div class="spart" data-label="C. Le vocabulaire en images" data-rail="En images" id="images" data-blk="blk.vocab.images">
+<h3 class="sub" data-edit="vocab.le-vocabulaire-en-images" style="margin-top:0" data-blk="blk.vocab.le-vocabulaire-en-images">Le vocabulaire en images</h3>
+<div class="termpics">
+<figure class="ph" data-blk="blk.vocab.le-spinnaker"><img alt="Spinnaker violet et jaune au portant" data-img="img.vocab.1" loading="lazy" src="assets/img/c-spi.webp"/><figcaption data-edit="vocab.le-spinnaker">Le spinnaker</figcaption></figure>
+<figure class="ph" data-blk="blk.vocab.la-ligne-de-depart"><img alt="Flotte de J80 sur la ligne de départ" data-img="img.vocab.2" loading="lazy" src="assets/img/c-fleet.webp"/><figcaption data-edit="vocab.la-ligne-de-depart">La ligne de départ</figcaption></figure>
+<figure class="ph" data-blk="blk.vocab.le-rappel"><img alt="Équipage au rappel sur un J80 qui gîte" data-img="img.vocab.3" loading="lazy" src="assets/img/c-deck.webp"/><figcaption data-edit="vocab.le-rappel">Le rappel</figcaption></figure>
+<figure class="ph" data-blk="blk.vocab.la-barre-et-le-winch"><img alt="Équipier à la barre et au winch" data-img="img.vocab.4" loading="lazy" src="assets/img/g17.webp"/><figcaption data-edit="vocab.la-barre-et-le-winch">La barre et le winch</figcaption></figure>
+</div>
+</div>
+<div class="spart" data-label="D. Le glossaire complet" data-blk="blk.vocab.d-le-glossaire-complet">
+<h3 class="sub" data-edit="vocab.le-glossaire" data-blk="blk.vocab.le-glossaire">Le glossaire</h3>
+<div class="gl" data-rail="Glossaire" id="glossary">
+<div class="gl-bar">
+<div aria-label="Catégories" class="tabs gl-cats" role="group"><button aria-pressed="true" data-c="all" type="button">Tous</button><button aria-pressed="false" data-c="bateau" type="button">Le bateau</button><button aria-pressed="false" data-c="manoeuvre" type="button">Les manœuvres</button><button aria-pressed="false" data-c="course" type="button">La course</button><button aria-pressed="false" data-c="equipage" type="button">L'équipage</button></div>
+<label class="gl-search"><span class="sr">Rechercher un mot</span><input id="glq" placeholder="Rechercher un mot" type="search"/></label>
+</div>
+<div class="terms" id="terms">
+<details data-cat="bateau" open="" data-blk="blk.vocab.j80-voilier-monotype-voilier-de"><summary data-edit="vocab.j80-voilier-monotype">J80 <small>voilier monotype</small></summary><div class="def"><p data-edit="vocab.voilier-de-course-de-8" data-blk="blk.vocab.voilier-de-course-de-8">Voilier de course de 8 mètres conçu par J/Boats, l'une des séries monotypes les plus répandues au monde. « Monotype » signifie que tous les bateaux sont strictement identiques : la victoire se joue sur la technique, la tactique et la cohésion de l'équipage.</p></div></details>
+<details data-cat="bateau" data-blk="blk.vocab.osiris-voilier-habitable-voilier-h"><summary data-edit="vocab.osiris-voilier-habitable">Osiris <small>voilier habitable</small></summary><div class="def"><p data-edit="vocab.voilier-habitable-de-course-croisi" data-blk="blk.vocab.voilier-habitable-de-course-croisi">Voilier habitable de course-croisière d'environ 35 pieds, soit un peu plus de 10 mètres. Plus grand et plus puissant que le J80, il dispute des parcours côtiers plus longs avec un équipage plus nombreux.</p></div></details>
+<details data-cat="bateau" data-blk="blk.vocab.grand-voile-foc-spinnaker-les"><summary data-edit="vocab.grand-voile-foc-spinnaker-les">Grand-voile, foc, spinnaker <small>les voiles</small></summary><div class="def"><p data-edit="vocab.la-grand-voile-est-la" data-blk="blk.vocab.la-grand-voile-est-la">La grand-voile est la voile principale, fixée au mât et à la bôme. Le foc est la voile d'avant pour remonter au vent. Au portant, l'équipage envoie le spinnaker, la grande voile ballon que vous voyez en couleurs sur nos photos. Sur un voilier habitable, la voile d'avant peut être un génois, plus grand que le foc.</p></div></details>
+<details data-cat="bateau" data-blk="blk.vocab.ecoute-cordage-de-reglage-le"><summary data-edit="vocab.ecoute-cordage-de-reglage">Écoute <small>cordage de réglage</small></summary><div class="def"><p data-edit="vocab.le-cordage-qui-commande-une" data-blk="blk.vocab.le-cordage-qui-commande-une">Le cordage qui commande une voile. On la borde pour rapprocher la voile de l'axe du bateau, on la choque pour la relâcher.</p></div></details>
+<details data-cat="bateau" data-blk="blk.vocab.winch-treuil-le-treuil-sur"><summary data-edit="vocab.winch-treuil">Winch <small>treuil</small></summary><div class="def"><p data-edit="vocab.le-treuil-sur-lequel-on" data-blk="blk.vocab.le-treuil-sur-lequel-on">Le treuil sur lequel on enroule une écoute pour démultiplier l'effort quand on borde une voile.</p></div></details>
+<details data-cat="manoeuvre" data-blk="blk.vocab.babord-tribord-gauche-droite-quand"><summary data-edit="vocab.babord-tribord-gauche-droite">Bâbord, tribord <small>gauche, droite</small></summary><div class="def"><p data-edit="vocab.quand-on-regarde-vers-l" data-blk="blk.vocab.quand-on-regarde-vers-l">Quand on regarde vers l'avant du bateau, bâbord est à gauche et tribord est à droite. Un bateau est dit « tribord amures » quand le vent arrive par sa droite.</p></div></details>
+<details data-cat="manoeuvre" data-blk="blk.vocab.virement-de-bord-changer-de"><summary data-edit="vocab.virement-de-bord-changer-de">Virement de bord <small>changer de côté face au vent</small></summary><div class="def"><p data-edit="vocab.man-uvre-qui-consiste-a" data-blk="blk.vocab.man-uvre-qui-consiste-a">Manœuvre qui consiste à changer d'amure en passant le bateau face au vent. On l'utilise pour remonter vers le vent en zigzag.</p></div></details>
+<details data-cat="manoeuvre" data-blk="blk.vocab.empannage-changer-de-cote-vent"><summary data-edit="vocab.empannage-changer-de-cote-vent">Empannage <small>changer de côté vent dans le dos</small></summary><div class="def"><p data-edit="vocab.man-uvre-qui-consiste-a-2" data-blk="blk.vocab.man-uvre-qui-consiste-a-2">Manœuvre qui consiste à changer d'amure en passant le vent par l'arrière. La grand-voile passe d'un bord à l'autre : tout l'équipage doit être prêt.</p></div></details>
+<details data-cat="manoeuvre" data-blk="blk.vocab.gite-et-rappel-contrer-l"><summary data-edit="vocab.gite-et-rappel-contrer-l">Gîte et rappel <small>contrer l'inclinaison</small></summary><div class="def"><p data-edit="vocab.sous-la-poussee-du-vent" data-blk="blk.vocab.sous-la-poussee-du-vent">Sous la poussée du vent, le bateau s'incline : c'est la gîte. L'équipage s'assoit sur le bord du bateau côté vent pour le redresser : c'est le rappel.</p></div></details>
+<details data-cat="course" data-blk="blk.vocab.manche-une-course-du-programme"><summary data-edit="vocab.manche-une-course-du-programme">Manche <small>une course du programme</small></summary><div class="def"><p data-edit="vocab.une-regate-est-composee-de" data-blk="blk.vocab.une-regate-est-composee-de">Une régate est composée de plusieurs manches. Chaque manche suit un parcours défini autour de bouées et compte pour le classement.</p></div></details>
+<details data-cat="course" data-blk="blk.vocab.ligne-de-depart-le-signal"><summary data-edit="vocab.ligne-de-depart-le-signal">Ligne de départ <small>le signal et la flotte</small></summary><div class="def"><p data-edit="vocab.ligne-imaginaire-entre-une-bouee" data-blk="blk.vocab.ligne-imaginaire-entre-une-bouee">Ligne imaginaire entre une bouée et le bateau du comité de course. Tous les bateaux doivent la franchir à l'instant du signal : les placements sont décisifs.</p></div></details>
+<details data-cat="course" data-blk="blk.vocab.pres-travers-portant-les-allures"><summary data-edit="vocab.pres-travers-portant-les-allures">Près, travers, portant <small>les allures</small></summary><div class="def"><p data-edit="vocab.au-pres-on-remonte-vers" data-blk="blk.vocab.au-pres-on-remonte-vers">Au près, on remonte vers le vent. Au travers, le vent arrive de côté. Au portant, il vient de l'arrière. Manipulez le curseur plus haut pour voir chaque allure.</p></div></details>
+<details data-cat="course" data-blk="blk.vocab.licence-ffv-federation-francaise-d"><summary data-edit="vocab.licence-ffv-federation-francaise-d">Licence FFV <small>Fédération Française de Voile</small></summary><div class="def"><p data-edit="vocab.licence-delivree-par-la-federation" data-blk="blk.vocab.licence-delivree-par-la-federation">Licence délivrée par la Fédération Française de Voile, obligatoire pour courir en compétition officielle. Elle inclut l'assurance et valide l'inscription de chaque équipier au classement.</p></div></details>
+<details data-cat="equipage" data-blk="blk.vocab.barreur-il-pilote-celui-qui"><summary data-edit="vocab.barreur-il-pilote">Barreur <small>il pilote</small></summary><div class="def"><p data-edit="vocab.celui-qui-tient-la-barre" data-blk="blk.vocab.celui-qui-tient-la-barre">Celui qui tient la barre et dirige le bateau. Il sent le vent et l'état de la mer et traduit les choix de l'équipage en trajectoire.</p></div></details>
+<details data-cat="equipage" data-blk="blk.vocab.tacticien-il-choisit-la-route"><summary data-edit="vocab.tacticien-il-choisit-la-route">Tacticien <small>il choisit la route</small></summary><div class="def"><p data-edit="vocab.il-lit-le-plan-d" data-blk="blk.vocab.il-lit-le-plan-d">Il lit le plan d'eau, le vent et les adversaires pour choisir la meilleure route. Il parle moins qu'il n'observe.</p></div></details>
+<details data-cat="equipage" data-blk="blk.vocab.regleur-il-regle-les-voiles"><summary data-edit="vocab.regleur-il-regle-les-voiles">Régleur <small>il règle les voiles</small></summary><div class="def"><p data-edit="vocab.il-regle-les-voiles-en" data-blk="blk.vocab.il-regle-les-voiles-en">Il règle les voiles en continu avec les écoutes pour garder la vitesse du bateau.</p></div></details>
+<details data-cat="equipage" data-blk="blk.vocab.equipier-d-avant-le-travail"><summary data-edit="vocab.equipier-d-avant-le-travail">Équipier d'avant <small>le travail à l'étrave</small></summary><div class="def"><p data-edit="vocab.il-travaille-a-l-avant" data-blk="blk.vocab.il-travaille-a-l-avant">Il travaille à l'avant du bateau : envoi et affalage du spinnaker, changement de voile d'avant, communication avec l'arrière.</p></div></details>
+</div>
+<p class="gl-none" hidden data-blk="blk.vocab.aucun-mot-ne-correspond-a">Aucun mot ne correspond à votre recherche.</p>
+</div>
+</div>
+<div class="spart" data-label="E. Quiz : prêt à embarquer ?" data-blk="blk.vocab.e-quiz-pret-a-embarquer">
+<div class="vcard quiz" data-rail="Quiz" id="quiz">
+<div class="qz-head"><h3 data-edit="vocab.pret-a-embarquer" data-blk="blk.vocab.pret-a-embarquer">Prêt à embarquer&nbsp;?</h3><p class="qz-count" id="qzCount"></p></div>
+<div class="qz-bar"><i id="qzBar"></i></div>
+<div class="qz-grid"><div class="qz-stage">
+<div class="qz-q tp" data-ans="1">
+<h4 data-edit="vocab.quand-on-regarde-vers-l-2">Quand on regarde vers l'avant du bateau, où se trouve bâbord&nbsp;?</h4>
+<div class="qz-opts"><button data-edit="vocab.a-droite" type="button">À droite</button><button data-ok="" data-edit="vocab.a-gauche" type="button">À gauche</button><button data-edit="vocab.a-l-arriere" type="button">À l'arrière</button></div>
+<p class="qz-exp" data-edit="vocab.babord-est-a-gauche-et" data-blk="blk.vocab.babord-est-a-gauche-et">Bâbord est à gauche et tribord à droite, toujours en regardant vers l'avant du bateau.</p>
+</div>
+<div class="qz-q tp" data-ans="0">
+<h4 data-edit="vocab.un-j80-est-un-voilier">Un J80 est un voilier…</h4>
+<div class="qz-opts"><button data-ok="" data-edit="vocab.monotype-tous-les-bateaux-sont" type="button">Monotype : tous les bateaux sont identiques</button><button data-edit="vocab.construit-sur-mesure-pour-chaque" type="button">Construit sur mesure pour chaque équipage</button><button data-edit="vocab.un-deriveur-leger-a-deux" type="button">Un dériveur léger à deux équipiers</button></div>
+<p class="qz-exp" data-edit="vocab.dans-une-serie-monotype-tout" data-blk="blk.vocab.dans-une-serie-monotype-tout">Dans une série monotype, tout le monde navigue sur le même bateau : l'écart se fait sur l'équipage.</p>
+</div>
+<div class="qz-q tp" data-ans="2">
+<h4 data-edit="vocab.quelle-voile-envoie-t-on">Quelle voile envoie-t-on quand le vent vient de l'arrière&nbsp;?</h4>
+<div class="qz-opts"><button data-edit="vocab.le-foc" type="button">Le foc</button><button data-edit="vocab.la-bome" type="button">La bôme</button><button data-ok="" data-edit="vocab.le-spinnaker-2" type="button">Le spinnaker</button></div>
+<p class="qz-exp" data-edit="vocab.au-portant-la-grande-voile" data-blk="blk.vocab.au-portant-la-grande-voile">Au portant, la grande voile ballon capte le vent et accélère le bateau.</p>
+</div>
+<div class="qz-q tp" data-ans="1">
+<h4 data-edit="vocab.choquer-une-ecoute-c-est">« Choquer une écoute », c'est…</h4>
+<div class="qz-opts"><button data-edit="vocab.la-tirer-a-fond" type="button">La tirer à fond</button><button data-ok="" data-edit="vocab.la-relacher" type="button">La relâcher</button><button data-edit="vocab.la-couper" type="button">La couper</button></div>
+<p class="qz-exp" data-edit="vocab.border-c-est-tirer-l" data-blk="blk.vocab.border-c-est-tirer-l">Border, c'est tirer l'écoute. Choquer, c'est la lâcher pour laisser la voile s'ouvrir.</p>
+</div>
+<div class="qz-end tp"><h4 id="qzTitle"></h4><p id="qzText"></p><button class="btn sm" id="qzAgain" type="button">Recommencer</button></div>
+</div>
+<div class="qz-foot"><button class="btn sm" disabled id="qzNext" type="button">Question suivante</button></div>
+</div>
+<figure class="ph qz-ph" data-blk="blk.vocab.le-jour-j-tout-le"><img alt="Équipage de l'Icam au départ d'une manche" data-img="img.vocab.5" loading="lazy" src="assets/img/g11.webp"/><figcaption data-edit="vocab.le-jour-j-tout-le">Le jour J, tout le monde parle le même langage.</figcaption></figure>
+</div>
+</div>
+</section>
+
+</div>
+</main>
+<footer>
+<div class="w">
+<img alt="" class="logo" src="assets/img/logo.webp"/>
+<div><span data-edit="footer.icam-voile-lille-association-des">Icam Voile Lille, association des élèves ingénieurs de l'Icam</span><br/><span data-edit="footer.course-croisiere-edhec-2027-les">Course Croisière EDHEC 2027, Les Sables-d'Olonne</span><br/><a data-ig="" href="#" rel="noopener" target="_blank">Instagram</a></div>
+<span class="fsp"></span>
+<img alt="Icam" class="partner" src="assets/img/icam.png" style="padding:8px 10px"/>
+<img alt="Course Croisière EDHEC" class="partner" src="assets/img/cce.webp"/>
+<img alt="Fédération Française de Voile" class="partner" src="assets/img/ffv.webp"/>
+</div>
+</footer>
+
+
+<script>
+(function(){
+"use strict";
+/* ---- 000-core ---- */
+/* ===== Noyau : outils communs, contenu éditable, rendu ===== */
+var DEFAULTS=/*DEFAULTS_BEGIN*/{"v":3,"team":[{"prenom":"Timothée","nom":"Stevens","role":"Président","team":"Bureau","promo":"","voile":"","qualite":"","defi":"","lead":true,"photo":""},{"prenom":"","nom":"","role":"Trésorier","team":"Bureau","promo":"","voile":"","qualite":"","defi":"","lead":false,"photo":""},{"prenom":"","nom":"","role":"Responsable partenariats","team":"Bureau","promo":"","voile":"","qualite":"","defi":"","lead":false,"photo":""},{"prenom":"","nom":"","role":"Membre du bureau","team":"Bureau","promo":"","voile":"","qualite":"","defi":"","lead":false,"photo":""},{"prenom":"","nom":"","role":"Responsable CCE","team":"CCE","promo":"","voile":"","qualite":"","defi":"","lead":true,"photo":""},{"prenom":"","nom":"","role":"Membre du pôle CCE","team":"CCE","promo":"","voile":"","qualite":"","defi":"","lead":false,"photo":""},{"prenom":"","nom":"","role":"Membre du pôle CCE","team":"CCE","promo":"","voile":"","qualite":"","defi":"","lead":false,"photo":""},{"prenom":"","nom":"","role":"Membre du pôle CCE","team":"CCE","promo":"","voile":"","qualite":"","defi":"","lead":false,"photo":""},{"prenom":"","nom":"","role":"Membre du pôle CCE","team":"CCE","promo":"","voile":"","qualite":"","defi":"","lead":false,"photo":""},{"prenom":"","nom":"","role":"Responsable communication","team":"Com","promo":"","voile":"","qualite":"","defi":"","lead":true,"photo":""},{"prenom":"","nom":"","role":"Membre du pôle Com","team":"Com","promo":"","voile":"","qualite":"","defi":"","lead":false,"photo":""},{"prenom":"","nom":"","role":"Membre du pôle Com","team":"Com","promo":"","voile":"","qualite":"","defi":"","lead":false,"photo":""},{"prenom":"","nom":"","role":"Responsable événements internes","team":"Événement interne","promo":"","voile":"","qualite":"","defi":"","lead":true,"photo":""},{"prenom":"","nom":"","role":"Membre du pôle","team":"Événement interne","promo":"","voile":"","qualite":"","defi":"","lead":false,"photo":""},{"prenom":"","nom":"","role":"Membre du pôle","team":"Événement interne","promo":"","voile":"","qualite":"","defi":"","lead":false,"photo":""},{"prenom":"","nom":"","role":"Responsable événements externes","team":"Événement externe","promo":"","voile":"","qualite":"","defi":"","lead":true,"photo":""},{"prenom":"","nom":"","role":"Membre du pôle","team":"Événement externe","promo":"","voile":"","qualite":"","defi":"","lead":false,"photo":""},{"prenom":"","nom":"","role":"Membre du pôle","team":"Événement externe","promo":"","voile":"","qualite":"","defi":"","lead":false,"photo":""}],"budget":{"already":0,"lines":[{"label":"Location des voiliers","amount":5000,"detail":"Pour une semaine, location d'un OSIRIS (~3000 €) et J80 (~2 000 €)"},{"label":"Inscriptions à la CCE","amount":4900,"detail":"Inscription Défi Mer 3 380 € (13 personnes), Défi Terre 1000 € (5 personnes) et des 2 bateaux 520 €"},{"label":"Vestes de quart","amount":3600,"detail":"18 vestes de quart, portées toute la CCE et régulièrement par la suite, floquées aux couleurs des partenaires (200 € l'unité)"},{"label":"2 Week-ends d'entraînement","amount":1200,"detail":"2 week-ends en mer pour apprendre à naviguer ensemble : location du bateau, port, carburant (600 € par week-end)"},{"label":"Logistique","amount":1150,"detail":"Transports (600 €), Alimentation (500 €), Gasoil (50 €)"},{"label":"Marquage, broderie et stickers","amount":1000,"detail":"Drapeaux partenaires / Stickers sur voiles / Marquage sur coque / Flocage vestes / Broderie polaires"},{"label":"Assurance","amount":1000,"detail":"Assurance (100 €), Rachat de caution (400 €) et Imprévus (500 €)"},{"label":"Licences FFV","amount":949,"detail":"13 licences de la Fédération Française de Voile (73 € l'unité)"}],"equiv":[{"amount":73,"label":"une licence FFV"},{"amount":200,"label":"une veste de quart floquée"},{"amount":260,"label":"l'inscription d'un équipier en régate"},{"amount":600,"label":"un week-end d'entraînement en mer"},{"amount":3000,"label":"la location du voilier OSIRIS d'environ 35 pieds"}]},"sponsors":[{"name":"Les Toits du Nord","year":2026,"url":"","domain":"","logo":""},{"name":"Aires d'entreprises","year":2026,"url":"","domain":"","logo":""},{"name":"Deloitte","year":2026,"url":"https://www.deloitte.com/fr/fr.html","domain":"deloitte.com","logo":""}],"social":{"instagramUrl":"https://www.instagram.com/icam_voile/","followers":1400,"goal":2000,"linkedin":500},"tiers":[{"id":"Matelot","price":500},{"id":"Équipier","price":1000},{"id":"Barreur","price":3000},{"id":"Skipper","price":6000,"limited":true},{"id":"Amiral","price":10000,"plus":true,"limited":true}],"perks":[["Photos, vidéos HD (caméra + drone) de la course (mise en valeur de votre logo)",1,1,1,"oui + montages sur demande","oui + montages sur demande"],["Logo sur le drapeau partenaires","Petit","Moyen","Grand","Grand","Grand, Principal"],["Remerciements sur Instagram et LinkedIn","Collectifs","Collectifs","Dédiés","Dédiés","Dédiés, selon vos envies"],["Diffusion de vos offres de stage et d'emploi aux élèves de l'Icam",0,1,1,1,1],["Logo sur les vestes de quart de l'équipage",0,"Petit","Moyen","Moyen","Grand, Principal"],["Vlogs et stories spécialisés pendant la course (placement de produit)",0,0,1,1,1],["Intervention de l'équipage dans votre entreprise auprès de vos collaborateurs",0,0,0,1,1],["Logo sur la coque → voir simulateur en dessous",0,0,0,1,1],["Logo sur une voile (grand-voile, génois ou spinnaker) → voir simulateur en dessous.",0,0,0,0,1],["Intervention de votre entreprise à l'ICAM",0,0,0,0,1],["Visite du bateau ou sortie en mer pour vos collaborateurs (à convenir ensemble)",0,0,0,0,1]],"sim":{"surfaces":{"main":{"enabled":true,"checked":true,"scale":90,"label":"Grand-voile"},"spin":{"enabled":true,"checked":true,"scale":92,"label":"Spinnaker"},"hull":{"enabled":true,"checked":true,"scale":94,"label":"Coque"}},"watermark":{"enabled":true,"opacity":90,"size":13},"demoText":"VOTRE LOGO","demoLogo":"","jacket":{"enabled":true}},"youtube":"BNgGzrUfmxU","gallery":{"y2026":[{"src":"assets/img/g04.webp","cap":""},{"src":"assets/img/c-far.webp","cap":""},{"src":"assets/img/g11.webp","cap":""},{"src":"assets/img/c-top.webp","cap":""},{"src":"assets/img/c-hero-crew.webp","cap":""}],"icam":[{"src":"assets/img/g15.webp","cap":"Travail d'équipe sur le pont"},{"src":"assets/img/c-fleet.webp","cap":"Se mesurer à la flotte"},{"src":"assets/img/c-work.webp","cap":"Préparer, régler, réparer"},{"src":"assets/img/c-sailor.webp","cap":"Concentration"},{"src":"assets/img/g23.webp","cap":"À la barre"},{"src":"assets/img/c-far.webp","cap":"En flotte"}]},"hidden":[],"texts":{},"images":{},"legacy":{"blk.hero.1":"blk.hero.course-croisiere-edhec-59e-edition","blk.hero.2":"blk.hero.nous-ne-partons-pas-pour","blk.hero.3":"blk.hero.en-rappel-au-pres","blk.hero.4":"blk.hero.depart-groupe-en-j80","blk.hero.5":"blk.hero.a-la-barre-par-mer","blk.hero.6":"blk.hero.avant-le-premier-jour-de","blk.hero.7":"blk.hero.n217","blk.icam.1":"blk.icam.qui-sommes-nous","blk.icam.2":"blk.icam.une-ecole-d-ingenieurs-une","blk.icam.3":"blk.icam.notre-ecole-l-icam","blk.icam.4":"blk.icam.ecole-d-ingenieurs-generaliste-ped","blk.icam.5":"blk.icam.sources-au-futur-wikipedia","blk.icam.6":"blk.icam.quatre-valeurs-qu-on-ne","blk.icam.9":"blk.icam.equipier-au-travail-sur-le","blk.icam.10":"blk.icam.equipage-uni-sur-un-voilier","blk.icam.11":"blk.icam.voilier-en-pleine-mer","blk.icam.12":"blk.icam.audace","blk.icam.13":"blk.icam.oser-entreprendre","blk.icam.14":"blk.icam.prendre-des-initiatives","blk.icam.15":"blk.icam.des-projets-menes-par-les","blk.icam.16":"blk.icam.monter-un-projet-de-a","blk.icam.17":"blk.icam.se-mesurer-a-de-grandes","blk.icam.18":"blk.icam.prendre-le-depart-face-a","blk.icam.19":"blk.icam.travail-manuel-et-pratique","blk.icam.20":"blk.icam.apprendre-en-faisant","blk.icam.21":"blk.icam.pedagogie-de-l-experience","blk.icam.22":"blk.icam.projets-et-stages-des-la","blk.icam.23":"blk.icam.preparer-le-bateau-et-le","blk.icam.24":"blk.icam.regler-reparer-naviguer","blk.icam.25":"blk.icam.week-ends-en-mer-avant","blk.icam.26":"blk.icam.sens-du-collectif","blk.icam.27":"blk.icam.projets-en-equipe","blk.icam.28":"blk.icam.vie-associative","blk.icam.29":"blk.icam.classes-a-taille-humaine","blk.icam.30":"blk.icam.18-membres-5-poles","blk.icam.31":"blk.icam.un-equipage-chacun-compte-a","blk.icam.32":"blk.icam.un-responsable-par-pole","blk.icam.33":"blk.icam.responsabilite-environnementale-et-2","blk.icam.34":"blk.icam.ingenieurs-conscients-et-engages","blk.icam.35":"blk.icam.formation-humaine-et-ethique","blk.icam.36":"blk.icam.l-humain-au-c-ur","blk.icam.37":"blk.icam.respect-de-la-mer-et","blk.icam.38":"blk.icam.budget-transparent-bilan-aux-parte","blk.icam.39":"blk.icam.une-cce-engagee-pour-l","blk.icam.40":"blk.icam.l-icam-en-action-2","blk.asso.1":"blk.asso.icam-voile-l-association-de","blk.asso.2":"blk.asso.une-association-d-eleves-ingenieur","blk.asso.3":"blk.asso.les-membres-d-icam-voile","blk.asso.4":"blk.asso.cinq-poles-un-seul-equipage","blk.asso.5":"blk.asso.le-bureau-pilote-quatre-poles","blk.asso.6":"blk.asso.les-membres-2","blk.asso.7":"blk.asso.survolez-ou-touchez-un-visage","blk.asso.8":"blk.asso.notre-saison-en-cinq-temps-2","blk.asso.9":"blk.asso.de-la-constitution-de-l","blk.asso.10":"blk.asso.1-constituer-l-equipage-recrutemen","blk.asso.11":"blk.asso.recrutement-repartition-en-poles-l","blk.asso.12":"blk.asso.l-equipe-d-icam-voile","blk.asso.13":"blk.asso.2-financer-le-projet-recherche","blk.asso.14":"blk.asso.recherche-de-partenaires-pour-reun","blk.asso.15":"blk.asso.voilier-habitable-en-navigation","blk.asso.16":"blk.asso.3-s-entrainer-week-ends","blk.asso.17":"blk.asso.week-ends-en-mer-pour","blk.asso.18":"blk.asso.preparation-des-voiles-sur-le","blk.asso.19":"blk.asso.4-courir-la-59e-cce","blk.asso.20":"blk.asso.la-59e-cce-aux-sables","blk.asso.21":"blk.asso.depart-groupe-de-j80","blk.asso.22":"blk.asso.5-rendre-compte-bilan-financier","blk.asso.23":"blk.asso.bilan-financier-envoye-a-chaque","blk.asso.24":"blk.asso.equipier-a-la-barre","blk.asso.25":"blk.asso.suivez-la-campagne-en-direct","blk.asso.26":"blk.asso.entrainements-preparation-du-batea","blk.cce.1":"blk.cce.a-quoi-participons-nous","blk.cce.2":"blk.cce.la-plus-grande-competition-sportiv","blk.cce.3":"blk.cce.la-course-croisiere-edhec","blk.cce.4":"blk.cce.depuis-1969-des-etudiants-organise","blk.cce.5":"blk.cce.chiffres-de-l-edition-2026","blk.cce.8":"blk.cce.deux-defis-trois-equipes-2","blk.cce.9":"blk.cce.nous-nous-engageons-sur-le","blk.cce.10":"blk.cce.departs-groupes-en-flotte-manches","blk.cce.11":"blk.cce.le-j80-voilier-monotype-de","blk.cce.12":"blk.cce.j80-vu-du-ciel-equipage","blk.cce.13":"blk.cce.voilier-monotype-de-8-metres","blk.cce.14":"blk.cce.l-osiris-voilier-habitable-de","blk.cce.15":"blk.cce.voilier-habitable-osiris-en-naviga","blk.cce.16":"blk.cce.voilier-habitable-de-course-croisi","blk.cce.17":"blk.cce.cree-en-1994-un-raid","blk.cce.18":"blk.cce.l-equipe-terre-cinq-personnes","blk.cce.19":"blk.cce.l-equipage-d-icam-voile","blk.cce.20":"blk.cce.cinq-personnes-s-engagent-sur","blk.cce.21":"blk.cce.environ-12-000-visiteurs-sur","blk.cce.22":"blk.cce.visible-de-tous-les-logos","blk.cce.23":"blk.cce.flotte-de-j80-au-depart","blk.cce.24":"blk.cce.les-logos-de-nos-partenaires","blk.cce.25":"blk.cce.la-cce-en-video-2","blk.cce.26":"blk.cce.bande-annonce-de-la-51e","blk.cce.27":"blk.cce.la-video-se-charge-uniquement","blk.vocab.3":"blk.vocab.les-allures-l-angle-entre","blk.vocab.4":"blk.vocab.n45","blk.vocab.5":"blk.vocab.alside","blk.vocab.6":"blk.vocab.aldesc","blk.vocab.7":"blk.vocab.l-anatomie-d-un-voilier","blk.vocab.8":"blk.vocab.touchez-un-numero-pour-decouvrir","blk.vocab.9":"blk.vocab.la-voile-principale-hissee-le","blk.vocab.10":"blk.vocab.la-voile-d-avant-hissee","blk.vocab.11":"blk.vocab.le-grand-tube-vertical-qui","blk.vocab.12":"blk.vocab.la-perche-horizontale-qui-tient","blk.vocab.13":"blk.vocab.l-avant-du-bateau-qu","blk.vocab.14":"blk.vocab.l-arriere-du-bateau-la","blk.vocab.15":"blk.vocab.le-gouvernail-dirige-le-bateau","blk.vocab.16":"blk.vocab.l-aileron-leste-sous-la","blk.vocab.17":"blk.vocab.la-grande-voile-ballon-envoyee","blk.vocab.18":"blk.vocab.le-vocabulaire-en-images","blk.vocab.19":"blk.vocab.le-spinnaker","blk.vocab.20":"blk.vocab.la-ligne-de-depart","blk.vocab.21":"blk.vocab.le-rappel","blk.vocab.22":"blk.vocab.la-barre-et-le-winch","blk.vocab.23":"blk.vocab.le-glossaire","blk.vocab.24":"blk.vocab.j80-voilier-monotype-voilier-de","blk.vocab.25":"blk.vocab.voilier-de-course-de-8","blk.vocab.26":"blk.vocab.osiris-voilier-habitable-voilier-h","blk.vocab.27":"blk.vocab.voilier-habitable-de-course-croisi","blk.vocab.28":"blk.vocab.grand-voile-foc-spinnaker-les","blk.vocab.29":"blk.vocab.la-grand-voile-est-la","blk.vocab.30":"blk.vocab.ecoute-cordage-de-reglage-le","blk.vocab.31":"blk.vocab.le-cordage-qui-commande-une","blk.vocab.32":"blk.vocab.winch-treuil-le-treuil-sur","blk.vocab.33":"blk.vocab.le-treuil-sur-lequel-on","blk.vocab.34":"blk.vocab.babord-tribord-gauche-droite-quand","blk.vocab.35":"blk.vocab.quand-on-regarde-vers-l","blk.vocab.36":"blk.vocab.virement-de-bord-changer-de","blk.vocab.37":"blk.vocab.man-uvre-qui-consiste-a","blk.vocab.38":"blk.vocab.empannage-changer-de-cote-vent","blk.vocab.39":"blk.vocab.man-uvre-qui-consiste-a-2","blk.vocab.40":"blk.vocab.gite-et-rappel-contrer-l","blk.vocab.41":"blk.vocab.sous-la-poussee-du-vent","blk.vocab.42":"blk.vocab.manche-une-course-du-programme","blk.vocab.43":"blk.vocab.une-regate-est-composee-de","blk.vocab.44":"blk.vocab.ligne-de-depart-le-signal","blk.vocab.45":"blk.vocab.ligne-imaginaire-entre-une-bouee","blk.vocab.46":"blk.vocab.pres-travers-portant-les-allures","blk.vocab.47":"blk.vocab.au-pres-on-remonte-vers","blk.vocab.48":"blk.vocab.licence-ffv-federation-francaise-d","blk.vocab.49":"blk.vocab.licence-delivree-par-la-federation","blk.vocab.50":"blk.vocab.barreur-il-pilote-celui-qui","blk.vocab.51":"blk.vocab.celui-qui-tient-la-barre","blk.vocab.52":"blk.vocab.tacticien-il-choisit-la-route","blk.vocab.53":"blk.vocab.il-lit-le-plan-d","blk.vocab.54":"blk.vocab.regleur-il-regle-les-voiles","blk.vocab.55":"blk.vocab.il-regle-les-voiles-en","blk.vocab.56":"blk.vocab.equipier-d-avant-le-travail","blk.vocab.57":"blk.vocab.il-travaille-a-l-avant","blk.vocab.58":"blk.vocab.aucun-mot-ne-correspond-a","blk.vocab.59":"blk.vocab.pret-a-embarquer","blk.vocab.60":"blk.vocab.babord-est-a-gauche-et","blk.vocab.61":"blk.vocab.dans-une-serie-monotype-tout","blk.vocab.62":"blk.vocab.au-portant-la-grande-voile","blk.vocab.63":"blk.vocab.border-c-est-tirer-l","blk.vocab.64":"blk.vocab.le-jour-j-tout-le","blk.obj.1":"blk.obj.notre-asso-a-la-cce","blk.obj.2":"blk.obj.ce-que-nous-venons-y","blk.obj.3":"blk.obj.objectifs-et-ambitions","blk.obj.4":"blk.obj.nous-ne-partons-pas-pour","blk.obj.5":"blk.obj.trois-equipes-un-seul-projet-2","blk.obj.6":"blk.obj.deux-bateaux-sur-le-defi","blk.obj.7":"blk.obj.defi-mer-le-sprint","blk.obj.8":"blk.obj.un-monotype-de-8-metres","blk.obj.9":"blk.obj.des-departs-propres-des-man","blk.obj.10":"blk.obj.tenir-la-cadence-de-la","blk.obj.11":"blk.obj.debriefer-chaque-course-pour-progr","blk.obj.12":"blk.obj.defi-mer-la-course-cotiere","blk.obj.13":"blk.obj.un-voilier-habitable-d-environ","blk.obj.14":"blk.obj.lire-la-meteo-et-le","blk.obj.15":"blk.obj.tenir-la-distance-sans-epuiser","blk.obj.16":"blk.obj.decider-a-plusieurs-vite-et","blk.obj.17":"blk.obj.defi-terre-la-base-arriere","blk.obj.18":"blk.obj.sans-elle-aucun-bateau-ne","blk.obj.19":"blk.obj.organiser-la-logistique-de-toute","blk.obj.20":"blk.obj.preparer-les-voiles-le-materiel","blk.obj.21":"blk.obj.suivre-la-meteo-reparer-et","blk.obj.22":"blk.obj.notre-ambition-marche-apres-marche-2","blk.obj.23":"blk.obj.etre-prets-arriver-sur-la","blk.obj.24":"blk.obj.arriver-sur-la-ligne-avec","blk.obj.25":"blk.obj.tenir-la-semaine-enchainer-manches","blk.obj.26":"blk.obj.enchainer-manches-et-epreuves-pend","blk.obj.27":"blk.obj.progresser-etre-meilleurs-le-derni","blk.obj.28":"blk.obj.etre-meilleurs-le-dernier-jour","blk.obj.29":"blk.obj.se-faire-une-place-representer","blk.obj.30":"blk.obj.representer-l-icam-parmi-les","blk.obj.31":"blk.obj.ce-que-cette-aventure-nous","blk.obj.32":"blk.obj.un-projet-de-cette-taille","blk.obj.33":"blk.obj.preparation-du-materiel","blk.obj.34":"blk.obj.skipper-concentre","blk.obj.35":"blk.obj.reglages-au-pied-du-mat","blk.obj.36":"blk.obj.man-uvre-d-equipage","blk.obj.37":"blk.obj.equipage-au-winch-dans-la","blk.obj.38":"blk.obj.voilier-au-pres-vu-du","blk.obj.39":"blk.obj.dans-notre-projet-un-budget","blk.obj.40":"blk.obj.demain-en-entreprise-cadrer-budget","blk.obj.41":"blk.obj.sur-l-eau-choisir-la","blk.obj.42":"blk.obj.demain-en-entreprise-decider-sans","blk.obj.43":"blk.obj.sur-le-bateau-regler-entretenir","blk.obj.44":"blk.obj.demain-en-entreprise-fiabiliser-co","blk.obj.45":"blk.obj.a-bord-personne-ne-gagne","blk.obj.46":"blk.obj.demain-en-entreprise-travailler-av","blk.obj.47":"blk.obj.en-course-mer-formee-fatigue","blk.obj.48":"blk.obj.demain-en-entreprise-garder-son","blk.obj.49":"blk.obj.pour-nos-partenaires-chaque-euro","blk.obj.50":"blk.obj.demain-en-entreprise-agir-avec","blk.obj.52":"blk.obj.un-projet-serieux-a-un","blk.budget.1":"blk.budget.budget-previsionnel","blk.budget.2":"blk.budget.un-budget-construit-poste-par","blk.budget.3":"blk.budget.ou-va-chaque-euro","blk.budget.4":"blk.budget.votre-soutien-concretement","blk.budget.5":"blk.budget.chaque-euro-est-affecte-a","blk.why.1":"blk.why.partenariat","blk.why.2":"blk.why.pourquoi-nous-avons-besoin-de","blk.why.3":"blk.why.pourquoi-avons-nous-besoin-de","blk.why.4":"blk.why.nous-apportons-le-temps-le","blk.gain.1":"blk.gain.ce-que-votre-entreprise-y","blk.gain.4":"blk.gain.rencontrez-vos-futurs-ingenieurs-a","blk.gain.5":"blk.gain.diffusion-de-vos-offres-de","blk.gain.6":"blk.gain.intervention-de-votre-entreprise-a","blk.gain.7":"blk.gain.des-etudiants-qui-montent-un","blk.gain.9":"blk.gain.votre-logo-la-ou-le","blk.gain.10":"blk.gain.camera-et-drone-pendant-la","blk.gain.11":"blk.gain.votre-logo-sur-le-drapeau","blk.gain.12":"blk.gain.remerciements-sur-instagram-et-lin","blk.gain.14":"blk.gain.un-recit-concret-a-partager","blk.gain.15":"blk.gain.intervention-de-l-equipage-dans","blk.gain.16":"blk.gain.visite-du-bateau-ou-sortie","blk.gain.17":"blk.gain.cohesion-d-equipe-depassement-de","blk.gain.18":"blk.gain.des-valeurs-partagees-2","blk.gain.19":"blk.gain.ce-sont-les-valeurs-de","blk.gain.20":"blk.gain.oser-se-mesurer-aux-grandes","blk.gain.21":"blk.gain.des-ingenieurs-qui-preparent-regle","blk.gain.22":"blk.gain.un-equipage-ou-personne-ne","blk.gain.23":"blk.gain.un-budget-suivi-poste-par","blk.gain.26":"blk.gain.pret-a-embarquer-choisissez-la","blk.formules.1":"blk.formules.nos-formules-de-partenariat","blk.formules.2":"blk.formules.chaque-formule-inclut-les-contrepa","blk.formules.3":"blk.formules.logo-sur-coque-marquage-adhesif","blk.sim.1":"blk.sim.simulation-de-logo","blk.sim.2":"blk.sim.indiquez-le-site-de-votre","blk.sim.3":"blk.sim.sur-le-bateau","blk.sim.4":"blk.sim.votre-logo-sur-la-grand","blk.sim.5":"blk.sim.le-logo-epouse-la-courbure","blk.sim.6":"blk.sim.sur-la-veste-de-quart","blk.sim.7":"blk.sim.votre-logo-sur-les-vestes","blk.sim.8":"blk.sim.votre-simulation","blk.sim.9":"blk.sim.aucun-fichier-n-est-envoye","blk.sponsors.1":"blk.sponsors.la-suite-s-ecrit-avec","blk.sponsors.2":"blk.sponsors.ils-nous-ont-fait-confiance","blk.sponsors.3":"blk.sponsors.ils-nous-ont-fait-confiance-2","blk.sponsors.4":"blk.sponsors.merci-aux-entreprises-qui-ont","blk.sponsors.5":"blk.sponsors.sptally","blk.sponsors.6":"blk.sponsors.votre-entreprise-a-t-elle","blk.sponsors.7":"blk.sponsors.2026-en-images-2","blk.sponsors.8":"blk.sponsors.et-si-la-prochaine-edition","blk.contact.1":"blk.contact.et-si-nous-construisions-notre","blk.contact.2":"blk.contact.rencontrons-nous-pour-echanger-sur","blk.contact.3":"blk.contact.comment-ca-se-passe","blk.contact.4":"blk.contact.skipper-concentre-a-la-barre","blk.contact.5":"blk.contact.reglages-au-pied-du-mat","blk.contact.6":"blk.contact.flotte-de-j80-au-pres","blk.contact.7":"blk.contact.33-7-66-88-23","blk.contact.8":"blk.contact.timothee-stevens-2028-icam-fr","blk.contact.9":"blk.contact.msg","blk.contact.10":"blk.contact.ctokt","blk.contact.11":"blk.contact.demande-envoyee-vous-recevez-un"}}/*DEFAULTS_END*/;
+var RACE_START="2027-04-10T09:00:00+02:00";
+var POLES=["Bureau","CCE","Com","Événement interne","Événement externe"];
+var EDIT=/[?&]edition=/.test(location.search);
+if(EDIT)document.documentElement.classList.add("edition");
+var reduce=!!(window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches);
+function fr(n){return Math.round(n).toLocaleString("fr-FR")}
+function eur(n){return fr(n)+" €"}
+function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})}
+function safeUrl(u){u=String(u||"");return /^(https?:\/\/|\/api\/media\/|assets\/)/.test(u)?u:""}
+function $(s,r){return(r||document).querySelector(s)}
+function $$(s,r){return[].slice.call((r||document).querySelectorAll(s))}
+function clamp(v,a,b){return Math.max(a,Math.min(b,v))}
+function onView(el,fn,th,margin){if(!el)return;if(EDIT||!("IntersectionObserver" in window)){fn();return}
+  var io=new IntersectionObserver(function(es){if(es[0].isIntersecting){io.disconnect();fn()}},{threshold:th==null?.25:th,rootMargin:margin||"0px"});io.observe(el)}
+function countUp(el,to,suffix){suffix=suffix||"";if(reduce||EDIT){el.textContent=fr(to)+suffix;return}
+  var t0=performance.now();(function f(t){var p=Math.min((t-t0)/1300,1),e=1-Math.pow(1-p,3);el.textContent=fr(to*e)+suffix;if(p<1)requestAnimationFrame(f)})(t0)}
+/* Compteurs : tout élément [data-n] s'anime à l'arrivée à l'écran */
+function armCounters(root){$$("[data-n]",root).forEach(function(el){if(el.dataset.armed)return;el.dataset.armed=1;onView(el,function(){countUp(el,+el.dataset.n,el.dataset.suffix||"")},.4)})}
+function faceImg(m,alt){var u=safeUrl(m&&m.photo);if(!u)return"";var z=Math.max(1,Math.min(4,+m.zoom||1)),x=Math.max(0,Math.min(100,m.fx==null||m.fx===""?50:+m.fx)),y=Math.max(0,Math.min(100,m.fy==null||m.fy===""?50:+m.fy));
+  return'<img src="'+esc(u)+'" alt="'+esc(alt||"")+'" loading="lazy" style="object-position:'+x+'% '+y+'%;transform-origin:'+x+'% '+y+'%;transform:scale('+z+')">'}
+function icon(id,cls){return'<svg class="ic'+(cls?" "+cls:"")+'" aria-hidden="true"><use href="#i-'+id+'"/></svg>'}
+
+var ICV={R:[]};
+ICV.on=function(f){ICV.R.push(f)};
+
+/* ----- Pôles : noms canoniques et alias ----- */
+function poleKey(s){return String(s||"").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"").replace(/[^a-z]/g,"")}
+var POLE_ALIAS={bureau:"Bureau",cce:"CCE",com:"Com",communication:"Com",
+  eventinterne:"Événement interne",evenementinterne:"Événement interne",evenementsinternes:"Événement interne",eventsinternes:"Événement interne",
+  eventexterne:"Événement externe",evenementexterne:"Événement externe",evenementsexternes:"Événement externe",eventsexternes:"Événement externe"};
+function canonPole(s){var k=poleKey(s);return POLE_ALIAS[k]||null}
+
+/* ----- Migration du contenu enregistré par l'ancienne version (avant les 13 parties) ----- */
+function migrate(D){
+  if(!D)return D;
+  if(!(D.v>=2))D=migrate2(D);
+  if(!(D.v>=3)){D=Object.assign({},D);D.v=3;
+    var L=DEFAULTS.legacy||{};
+    D.removed=(D.removed||[]).map(function(k){return L[k]||(/^blk\.[a-z]+\.\d+$/.test(k)?null:k)}).filter(Boolean);
+    D.dups=(D.dups||[]).map(function(d){var s=L[d.src]||(/^blk\.[a-z]+\.\d+$/.test(d.src)?null:d.src),a=L[d.after]||(/^blk\.[a-z]+\.\d+$/.test(d.after||"")?null:d.after);return s?{id:d.id,src:s,after:a||s}:null}).filter(Boolean)}
+  return D}
+function migrate2(D){
+  if(!D||D.v>=2)return D;
+  var o=Object.assign({},D);o.v=2;
+  o.team=(D.team||[]).map(function(m){var n=Object.assign({},m);delete n.motivation;delete n.anciennete;delete n.cce;delete n.origine;
+    n.team=canonPole(n.team)||"CCE";return n});
+  var imgs=D.images||{},keep={};["img.top.1","img.equipe.13","bg.contact"].forEach(function(k){if(imgs[k])keep[k]=imgs[k]});o.images=keep;
+  o.gallery=Object.assign({},D.gallery||{});delete o.gallery.course;   /* la galerie « En course » n'existe plus (accueil simplifié) */
+  var map={projet:["cce","vocab","obj"],equipe:["asso"],budget:["budget"],offres:["why","gain"],"formules-bloc":["formules"],simulateur:["sim"],sponsors:["sponsors"],contact:["contact"]},h=[];
+  (D.hidden||[]).forEach(function(id){(map[id]||[]).forEach(function(x){if(h.indexOf(x)<0)h.push(x)})});o.hidden=h;
+  o.removed=[];o.dups=[];
+  return o}
+
+function withDefaults(c){var d=DEFAULTS,o=Object.assign({},c),cs=c.sim||{};
+  ["budget","tiers","perks","youtube","team","sponsors"].forEach(function(k){if(o[k]==null)o[k]=d[k]});
+  if(!o.tiers.length)o.tiers=d.tiers;if(!o.perks.length)o.perks=d.perks;
+  o.social=Object.assign({},d.social,c.social||{});
+  o.sim=Object.assign({},d.sim,cs);o.sim.surfaces=Object.assign({},d.sim.surfaces,cs.surfaces||{});o.sim.watermark=Object.assign({},d.sim.watermark,cs.watermark||{});o.sim.jacket=Object.assign({},d.sim.jacket,cs.jacket||{});
+  o.gallery=Object.assign({},c.gallery||{});
+  return o}
+
+/* ----- Textes modifiables depuis l'admin ----- */
+function richText(s){return esc(s).replace(/\*\*([^*]+)\*\*/g,"<b>$1</b>").replace(/\n/g,"<br>")}
+var OKTAG={B:1,STRONG:1,I:1,EM:1,U:1,BR:1,A:1,SMALL:1,SPAN:1};
+function sanitize(html){var t=document.createElement("template");t.innerHTML=String(html);
+  (function walk(n){[].slice.call(n.childNodes).forEach(function(c){
+    if(c.nodeType===3)return;if(c.nodeType!==1){c.remove();return}walk(c);
+    if(c.tagName==="DIV"||c.tagName==="P"){var f=document.createDocumentFragment();if(c.previousSibling)f.appendChild(document.createElement("br"));while(c.firstChild)f.appendChild(c.firstChild);c.replaceWith(f);return}
+    if(!OKTAG[c.tagName]){var g=document.createDocumentFragment();while(c.firstChild)g.appendChild(c.firstChild);c.replaceWith(g);return}
+    var href=c.getAttribute("href");[].slice.call(c.attributes).forEach(function(a){c.removeAttribute(a.name)});
+    if(c.tagName==="A"){if(href&&/^(https?:|mailto:|tel:|#|\/)/i.test(href)){c.setAttribute("href",href);if(/^https?:/i.test(href)){c.setAttribute("target","_blank");c.setAttribute("rel","noopener")}}}})})(t.content);
+  return t.innerHTML}
+function applyTexts(T){if(!T)return;$$("[data-edit]").forEach(function(el){var v=T[el.dataset.edit];if(typeof v!=="string")return;el.innerHTML=/[<&]/.test(v)?sanitize(v):richText(v);
+  if(el.tagName==="LI")el.classList.toggle("icv-removed",!el.textContent.trim()&&!el.querySelector("img"));
+  if(el.dataset.n!==undefined){var num=parseInt(el.textContent.replace(/[^0-9]/g,""),10);if(!isNaN(num))el.dataset.n=num}})}
+function applyImages(I){if(!I)return;$$("[data-img]").forEach(function(el){var u=safeUrl(I[el.dataset.img]);if(u)el.src=u});
+  $$("[data-bg]").forEach(function(el){var u=safeUrl(I[el.dataset.bg]);if(u)el.style.backgroundImage="url('"+u.replace(/'/g,"")+"')"})}
+function safeHref(u){u=String(u||"").trim();return /^(https?:\/\/|mailto:|tel:|#|\/|assets\/|index\.html|vocabulaire\.html)/i.test(u)?u:""}
+/* Liens modifiés depuis l'admin : D.links[clé du bloc ou du texte] = adresse */
+var LINK0={};
+function applyLinks(L){$$("a[data-edit],a[data-blk]").forEach(function(a){var id=a.dataset.edit||a.dataset.blk;
+  if(!(id in LINK0))LINK0[id]=a.getAttribute("href");var u=safeHref((L||{})[a.dataset.edit]||(L||{})[a.dataset.blk]);
+  if(u){a.setAttribute("href",u);if(/^https?:/i.test(u)){a.setAttribute("target","_blank");a.setAttribute("rel","noopener")}else{a.removeAttribute("target")}}
+  else if(LINK0[id]!=null){a.setAttribute("href",LINK0[id])}})}
+var SECTION_IDS=["icam","asso","cce","obj","budget","why","gain","formules","sim","sponsors","contact"];
+function applySections(hidden){hidden=hidden||[];SECTION_IDS.forEach(function(id){var el=document.getElementById(id);if(el)el.hidden=hidden.indexOf(id)>=0});
+  $$("[data-spy]").forEach(function(a){var ids=a.dataset.spy.split(" "),all=ids.every(function(id){return hidden.indexOf(id)>=0});if(!a.classList.contains("btn"))a.hidden=all})}
+
+/* ----- Structure : blocs supprimés, dupliqués ou ajoutés depuis l'admin ----- */
+function rekey(root,id){[root].concat($$("[data-edit],[data-img],[data-blk]",root)).forEach(function(e){["edit","img","blk"].forEach(function(k){if(e.dataset[k])e.dataset[k]=e.dataset[k]+"~"+id})})}
+function blk(k){return k?document.querySelector('[data-blk="'+String(k).replace(/["\\]/g,"")+'"]'):null}
+/* position d'origine de chaque bloc (repère) : permet de rétablir l'ordre avant d'appliquer celui de l'admin */
+var MK=[];
+function initMarkers(){if(MK.length||!document.querySelector("[data-cont]"))return;
+  $$("[data-blk]").forEach(function(el){var p=el.parentElement;if(p&&p.hasAttribute("data-cont")){var m=document.createComment("");p.insertBefore(m,el);MK.push([el,m])}})}
+function restoreOrder(){MK.forEach(function(x){var el=x[0],m=x[1];if(m.parentNode&&m.nextSibling!==el)m.parentNode.insertBefore(el,m.nextSibling)})}
+
+/* Blocs ajoutés : chaque type fabrique son HTML ; les textes passent par data-edit (clé cb.<id>.<emplacement>) */
+var CB={
+  title:{label:"Titre",kind:"sp",html:function(i){return'<h3 class="sub" data-edit="cb.'+i+'.t">Nouveau titre</h3>'},tx:{t:"Nouveau titre"}},
+  text:{label:"Paragraphe",kind:"sp",html:function(i){return'<p class="cb-p" data-edit="cb.'+i+'.t">Écrivez votre texte ici.</p>'},tx:{t:"Écrivez votre texte ici."}},
+  image:{label:"Image",kind:"sp",html:function(i,p){return'<figure class="ph cb-img"><img alt="" data-img="cb.'+i+'.i" loading="lazy" src="'+esc(p&&p.src||"assets/img/g04.webp")+'"/><figcaption data-edit="cb.'+i+'.c">Légende de la photo</figcaption></figure>'},tx:{c:"Légende de la photo"}},
+  button:{label:"Bouton",kind:"sp",html:function(i,p){return'<p class="cb-btn"><a class="btn" data-edit="cb.'+i+'.t" href="'+esc(safeHref(p&&p.href)||"#contact")+'">Texte du bouton</a></p>'},tx:{t:"Texte du bouton"}},
+  callout:{label:"Encadré",kind:"sp",html:function(i){return'<div class="cb-call"><h4 data-edit="cb.'+i+'.t">Titre de l\u2019encadré</h4><p data-edit="cb.'+i+'.p">Un message important, une date, une annonce.</p></div>'},tx:{t:"Titre de l\u2019encadré",p:"Un message important, une date, une annonce."}},
+  columns:{label:"Deux colonnes",kind:"sp",html:function(i){return'<div class="cb-cols"><div><h4 data-edit="cb.'+i+'.t1">Première colonne</h4><p data-edit="cb.'+i+'.p1">Votre texte.</p></div><div><h4 data-edit="cb.'+i+'.t2">Seconde colonne</h4><p data-edit="cb.'+i+'.p2">Votre texte.</p></div></div>'},tx:{t1:"Première colonne",p1:"Votre texte.",t2:"Seconde colonne",p2:"Votre texte."}},
+  video:{label:"Vidéo YouTube",kind:"sp",html:function(i,p){var y=/^[A-Za-z0-9_-]{6,20}$/.test(p&&p.yt||"")?p.yt:"";return y?'<div class="cb-vid"><iframe allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/'+y+'?rel=0" title="Vidéo"></iframe></div>':'<div class="cb-vid cb-vid-empty"><span>Collez le lien YouTube dans le panneau de droite.</span></div>'},tx:{}},
+  space:{label:"Espace vide",kind:"sp",html:function(){return'<div class="cb-space" aria-hidden="true"></div>'},tx:{}},
+  divider:{label:"Séparateur",kind:"sp",html:function(){return'<hr class="cb-hr"/>'},tx:{}},
+  section:{label:"Section complète",kind:"sec",html:function(i){return'<div class="w" data-blk="blk.cb.'+i+'.w" data-cont="sp"><div class="spart" data-blk="blk.cb.'+i+'.sh" data-label="Titre de la section"><div class="sh"><h2 data-edit="cb.'+i+'.h">Titre de la nouvelle section</h2><p class="lead" data-edit="cb.'+i+'.l">Une phrase pour présenter cette section.</p></div></div></div>'},tx:{h:"Titre de la nouvelle section",l:"Une phrase pour présenter cette section."}}
+};
+ICV.CB=CB;
+function buildCustom(D){var C=D.custom||{};Object.keys(C).forEach(function(id){var c=C[id],T=CB[c.type];if(!T||!/^[a-z0-9]{3,8}$/.test(id))return;
+    var par=blk(c.parent);if(!par)return;var el;
+    if(c.type==="section"){el=document.createElement("section");el.className="sec cb-sec"+(c.alt?" alt":"");el.id="cb-"+id;el.innerHTML=T.html(id,c.props)}
+    else{el=document.createElement("div");el.className="spart cb cb-"+c.type;el.innerHTML=T.html(id,c.props)}
+    el.dataset.cb=id;el.dataset.blk="blk.cb."+id;el.dataset.label=c.label||T.label;
+    par.appendChild(el)})}
+function applyStructure(D){$$("[data-dup]").forEach(function(e){e.remove()});$$("[data-cb]").forEach(function(e){e.remove()});
+  initMarkers();restoreOrder();buildCustom(D);
+  (D.dups||[]).forEach(function(d){var src=blk(d.src),after=blk(d.after||d.src)||src;if(!src||!after||src.querySelector("[id]"))return;
+    var c=src.cloneNode(true);c.dataset.dup=d.id;c.classList.remove("icv-removed");rekey(c,d.id);after.parentNode.insertBefore(c,after.nextSibling)});
+  $$(".icv-removed").forEach(function(e){e.classList.remove("icv-removed")});
+  (D.removed||[]).forEach(function(k){var e=blk(k);if(e)e.classList.add("icv-removed")})}
+
+/* ----- Mise en page : ordre des blocs, styles, thème (tout est modifiable depuis l'admin) ----- */
+var FONTS={
+  "Saira Condensed":{s:'"Saira Condensed","Arial Narrow","Roboto Condensed",Arial,sans-serif'},
+  "Saira":{s:'"Saira","Segoe UI",Roboto,Helvetica,Arial,sans-serif'},
+  "Oswald":{s:'"Oswald","Arial Narrow",Arial,sans-serif',g:"Oswald:wght@500;600;700"},
+  "Barlow Condensed":{s:'"Barlow Condensed","Arial Narrow",Arial,sans-serif',g:"Barlow+Condensed:wght@500;600;700"},
+  "Montserrat":{s:'"Montserrat","Segoe UI",Arial,sans-serif',g:"Montserrat:wght@400;500;600;700"},
+  "Poppins":{s:'"Poppins","Segoe UI",Arial,sans-serif',g:"Poppins:wght@400;500;600;700"},
+  "Playfair Display":{s:'"Playfair Display",Georgia,serif',g:"Playfair+Display:wght@500;700"},
+  "Georgia":{s:'Georgia,"Times New Roman",serif'},
+  "Système":{s:'system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif'}
+};
+ICV.FONTS=FONTS;
+var COL=/^(#[0-9a-fA-F]{3,8}|rgba?\([0-9 ,.%]+\)|transparent|currentColor|var\(--[a-z-]+\))$/,LEN=/^(-?\d+(\.\d+)?(px|rem|em|%|vw|vh|ch)?|auto|none)$/,NUM=/^-?\d+(\.\d+)?$/;
+function kw(){var l=[].slice.call(arguments);return function(v){return l.indexOf(v)>=0}}
+var SHADOW={none:"none",sm:"0 2px 8px #0b2a4526",md:"0 10px 28px #0b2a4530",lg:"0 24px 56px #0b2a4545"};
+var CSSP={"color":COL,"background-color":COL,"border-color":COL,"font-size":LEN,"line-height":NUM,"letter-spacing":LEN,"font-weight":kw("400","500","600","700","800"),"font-style":kw("normal","italic"),
+  "text-align":kw("left","center","right","justify"),"text-transform":kw("none","uppercase","lowercase","capitalize"),"text-decoration":kw("none","underline","line-through"),
+  "margin-top":LEN,"margin-right":LEN,"margin-bottom":LEN,"margin-left":LEN,"padding-top":LEN,"padding-right":LEN,"padding-bottom":LEN,"padding-left":LEN,
+  "width":LEN,"max-width":LEN,"height":LEN,"min-height":LEN,"border-radius":LEN,"border-width":LEN,"border-style":kw("none","solid","dashed","dotted"),"opacity":NUM,
+  "display":kw("none","block","flex","grid","inline-block"),"gap":LEN,"flex-direction":kw("row","column","row-reverse","column-reverse"),
+  "justify-content":kw("flex-start","center","flex-end","space-between","space-around"),"align-items":kw("flex-start","center","flex-end","stretch"),"flex-wrap":kw("wrap","nowrap"),
+  "object-fit":kw("cover","contain"),"object-position":/^\d{1,3}% \d{1,3}%$/,"aspect-ratio":/^\d+(\.\d+)? ?\/ ?\d+(\.\d+)?$/,
+  "grid-columns":/^[1-6]$/,"shadow":kw("none","sm","md","lg"),"font-family":function(v){return !!FONTS[v]}};
+ICV.CSSP=CSSP;
+function cssDecl(p){var o=[];Object.keys(p||{}).forEach(function(n){var v=String(p[n]).trim(),t=CSSP[n];if(!t||v===""||/[;{}<>\\]|url\(|expression|@import/i.test(v))return;
+  if(!(typeof t==="function"?t(v):t.test(v)))return;
+  if(t===LEN&&NUM.test(v)&&+v!==0)v+="px";
+  if(n==="grid-columns")o.push("grid-template-columns:repeat("+v+",minmax(0,1fr))!important");
+  else if(n==="shadow")o.push("box-shadow:"+SHADOW[v]+"!important");
+  else if(n==="font-family")o.push("font-family:"+FONTS[v].s+"!important");
+  else o.push(n+":"+v+"!important")});return o.join(";")}
+var MQ={d:"",t:"@media (max-width:900px)",m:"@media (max-width:600px)"},HQ={d:"@media (min-width:901px)",t:"@media (min-width:601px) and (max-width:900px)",m:"@media (max-width:600px)"};
+function selOf(k){k=String(k).replace(/[^A-Za-z0-9._~-]/g,"");return k?'[data-blk="'+k+'"],[data-edit="'+k+'"],[data-img="'+k+'"]':""}
+function usedFonts(D){var f={},S=D.styles||{},T=D.theme||{};Object.keys(S).forEach(function(k){["d","t","m"].forEach(function(d){var n=S[k]&&S[k][d]&&S[k][d]["font-family"];if(FONTS[n])f[n]=1})});
+  ["--display","--text"].forEach(function(v){if(FONTS[T[v]])f[T[v]]=1});return Object.keys(f)}
+function ensureFonts(D){var need=usedFonts(D).filter(function(n){return FONTS[n].g});var id="icv-fonts",l=document.getElementById(id);
+  if(!need.length){if(l)l.remove();return}var href="https://fonts.googleapis.com/css2?"+need.map(function(n){return"family="+FONTS[n].g}).join("&")+"&display=swap";
+  if(!l){l=document.createElement("link");l.id=id;l.rel="stylesheet";document.head.appendChild(l)}if(l.getAttribute("href")!==href)l.setAttribute("href",href)}
+var THEME_VARS=["--abyss","--deep","--navy","--sea","--signal","--signal-soft","--signal-ink","--foam","--chalk","--ink","--muted","--line","--sky","--display","--text"];
+ICV.THEME_VARS=THEME_VARS;
+function buildCSS(D){var out=[],S=D.styles||{},H=(D.layout||{}).hide||{},T=D.theme||{},tv=[];
+  THEME_VARS.forEach(function(v){var x=T[v];if(x==null||x==="")return;if(v==="--display"||v==="--text"){if(FONTS[x])tv.push(v+":"+FONTS[x].s)}else if(COL.test(x))tv.push(v+":"+x)});
+  if(tv.length)out.push(":root{"+tv.join(";")+"}");
+  Object.keys(S).forEach(function(k){var sel=selOf(k);if(!sel)return;["d","t","m"].forEach(function(d){var c=cssDecl(S[k][d]);if(!c)return;var r=sel+"{"+c+"}";out.push(MQ[d]?MQ[d]+"{"+r+"}":r)})});
+  Object.keys(H).forEach(function(k){var sel=selOf(k);if(!sel)return;["d","t","m"].forEach(function(d){if(!H[k][d])return;
+    var r=EDIT?sel+"{opacity:.28!important;outline:2px dashed #e0462f!important;outline-offset:-2px}":sel+"{display:none!important}";out.push(HQ[d]+"{"+r+"}")})});
+  return out.join("\n")}
+ICV.buildCSS=buildCSS;
+function applyLayout(D){var L=D.layout||{},O=L.order||{};
+  Object.keys(O).forEach(function(ck){var cont=blk(ck);if(!cont||!Array.isArray(O[ck]))return;
+    var want=O[ck].map(blk).filter(function(e){return e&&e!==cont&&!e.contains(cont)});if(!want.length)return;
+    var kids=[].slice.call(cont.children),set=want,first=kids.length,ref=null,i;
+    want.forEach(function(e){var x=kids.indexOf(e);if(x>=0&&x<first)first=x});
+    for(i=first;i<kids.length;i++){if(set.indexOf(kids[i])<0){ref=kids[i];break}}
+    want.forEach(function(e){cont.insertBefore(e,ref)})});
+  var st=document.getElementById("icv-custom");if(!st){st=document.createElement("style");st.id="icv-custom";document.head.appendChild(st)}
+  var css=buildCSS(D);if(st.textContent!==css)st.textContent=css;ensureFonts(D)}
+ICV.P=[];ICV.post=function(f){ICV.P.push(f)};
+
+/* ----- Galeries photo (ajout, retrait et ordre depuis l'admin) ----- */
+var GAL={};
+function galleryItems(D,name){var g=(D.gallery||{})[name];return Array.isArray(g)?g:(DEFAULTS.gallery[name]||[])}
+GAL.strip=function(box,items){box.innerHTML=items.map(function(it,i){var u=safeUrl(it.src);return u?'<figure class="gal-i"><img src="'+esc(u)+'" alt="'+esc(it.cap||"Photo Icam Voile")+'" loading="lazy">'+(it.cap?'<figcaption>'+esc(it.cap)+'</figcaption>':'')+'</figure>':''}).join("")};
+GAL.mosaic=function(box,items){box.innerHTML=items.map(function(it,i){var u=safeUrl(it.src);return u?'<figure class="gal-i m'+(i%6)+'"><img src="'+esc(u)+'" alt="'+esc(it.cap||"Photo Icam Voile")+'" loading="lazy">'+(it.cap?'<figcaption>'+esc(it.cap)+'</figcaption>':'')+'</figure>':''}).join("")};
+GAL.prints=function(box,items){box.innerHTML=items.map(function(it,i){var u=safeUrl(it.src);return u?'<figure class="gal-i p'+(i%5)+'"><img src="'+esc(u)+'" alt="'+esc(it.cap||"Photo Icam Voile")+'" loading="lazy">'+(it.cap?'<figcaption>'+esc(it.cap)+'</figcaption>':'')+'</figure>':''}).join("")};
+GAL.reel=function(box,items){var ok=items.filter(function(it){return safeUrl(it.src)});
+  var one=ok.map(function(it){var u=safeUrl(it.src);return'<figure class="gal-i"><img src="'+esc(u)+'" alt="'+esc(it.cap||"Photo Icam Voile")+'" loading="lazy">'+(it.cap?'<figcaption>'+esc(it.cap)+'</figcaption>':'')+'</figure>'}).join("");
+  var still=reduce||EDIT||ok.length<2,reps=still?1:Math.max(2,Math.ceil(3200/(ok.length*354)));
+  var clone=one.replace(/<figure class="gal-i"/g,'<figure class="gal-i" aria-hidden="true"'),h=one;for(var k=1;k<reps;k++)h+=clone;
+  box.innerHTML=ok.length?'<div class="rl-track" style="--rl-reps:'+reps+';--rl-d:'+Math.round(ok.length*8.8)+'s">'+h+'</div>':""};
+ICV.on(function(D){$$("[data-gallery]").forEach(function(box){var items=galleryItems(D,box.dataset.gallery),t=box.dataset.gtype||"strip";
+  (GAL[t]||GAL.strip)(box,items);box.hidden=!items.length&&!EDIT;box.dispatchEvent(new CustomEvent("galleryrender",{bubbles:true}))})});
+
+/* ----- Rendu global ----- */
+function renderAll(D){
+  D=withDefaults(migrate(D));ICV.D=D;
+  applyStructure(D);
+  ICV.R.forEach(function(f){try{f(D)}catch(e){if(window.console)console.error(e)}});
+  applyTexts(D.texts);applyImages(D.images);applyLinks(D.links);
+  applyLayout(D);applySections(D.hidden);
+  ICV.P.forEach(function(f){try{f(D)}catch(e){if(window.console)console.error(e)}});
+  window.SIMCFG=D.sim||null;try{window.dispatchEvent(new CustomEvent("simcfg",{detail:D.sim||null}))}catch(e){}
+  armCounters(document)}
+/* ---- 010-nav ---- */
+/* ===== Navigation, repère latéral, onglets génériques ===== */
+var nav=$("#nav"),burger=$("#burger");
+burger.addEventListener("click",function(){var o=nav.classList.toggle("open");burger.setAttribute("aria-expanded",o);burger.setAttribute("aria-label",o?"Fermer le menu":"Ouvrir le menu")});
+$$("#links a").forEach(function(a){a.addEventListener("click",function(){nav.classList.remove("open");burger.setAttribute("aria-expanded","false")})});
+
+/* Repère latéral : une graduation par bloc portant data-rail, dans l'ordre réel de la page (suit les déplacements faits depuis l'admin) */
+var spy=null;
+function chapOf(el){var c=el.closest&&el.closest(".chapter");return c?c.dataset.chap:(el.dataset.chap||"")}
+function setActive(id){$$("#rail a").forEach(function(a){a.classList.toggle("on",a.dataset.part===id)});
+  var el=document.getElementById(id),ch=el?chapOf(el):"";$$("#links a[data-chap]").forEach(function(a){a.classList.toggle("on",a.dataset.chap===ch)})}
+function buildRail(){var ol=$("#rail");if(!ol)return;ol.innerHTML="";if(spy){spy.disconnect();spy=null}
+  var els=$$("[data-rail]").filter(function(el){return el.id&&!el.hidden&&!el.closest(".icv-removed")});
+  els.forEach(function(el){var li=document.createElement("li");li.innerHTML='<a href="#'+esc(el.id)+'" data-part="'+esc(el.id)+'"><span>'+esc(el.dataset.rail)+'</span><i></i></a>';ol.appendChild(li)});
+  if("IntersectionObserver" in window){spy=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)setActive(e.target.id)})},{rootMargin:"-45% 0px -50% 0px"});els.forEach(function(el){spy.observe(el)})}}
+$$("#links a[data-page]").forEach(function(a){a.classList.toggle("on",a.dataset.page===document.body.dataset.page)});
+ICV.post(buildRail);
+
+/* Onglets génériques : .tabs [role=tab][aria-controls] + .tp. Les panneaux restent dans le HTML (textes modifiables). */
+function initTabs(root,onChange){
+  var tabs=$$('[role=tab]',root);if(!tabs.length)return;
+  function sel(t,focus){tabs.forEach(function(x){var on=x===t;x.setAttribute("aria-selected",on);x.tabIndex=on?0:-1;var p=document.getElementById(x.getAttribute("aria-controls"));if(p)p.hidden=!on});
+    if(focus)t.focus();if(onChange)onChange(t)}
+  tabs.forEach(function(t,i){t.addEventListener("click",function(){sel(t)});
+    t.addEventListener("keydown",function(e){var k=e.key,n=k==="ArrowRight"||k==="ArrowDown"?1:k==="ArrowLeft"||k==="ArrowUp"?-1:0;if(!n)return;e.preventDefault();sel(tabs[(i+n+tabs.length)%tabs.length],true)})});
+  var cur=tabs.filter(function(t){return t.getAttribute("aria-selected")==="true"})[0]||tabs[0];sel(cur);
+  return{select:function(k){var t=typeof k==="number"?tabs[k]:k;if(t)sel(t)}}}
+
+/* Cartes recto/verso */
+document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest(".flip");if(!b||EDIT)return;var on=b.classList.toggle("on");b.setAttribute("aria-pressed",on)});
+$$(".flip").forEach(function(b){b.setAttribute("aria-pressed","false")});
+
+/* Bandes photo : flèches */
+function bindReel(box,prev,next){if(!box||!prev||!next)return;
+  function by(d){var f=box.querySelector(".gal-i");box.scrollBy({left:d*(f?f.getBoundingClientRect().width+14:360),behavior:reduce?"auto":"smooth"})}
+  prev.onclick=function(){by(-1)};next.onclick=function(){by(1)}}
+/* ---- 060-vocab ---- */
+/* ===== 5. Vocabulaire : allures, anatomie, glossaire, quiz ===== */
+
+/* --- Allures : l'angle du bateau par rapport au vent --- */
+(function(){
+  var svg=$("#alSvg");if(!svg)return;
+  var ns="http://www.w3.org/2000/svg",R=170,i,out='';
+  out+='<circle class="ring" r="'+R+'"/>';
+  for(i=0;i<360;i+=10){var a=i*Math.PI/180,l=i%30===0?14:8;out+='<line class="tick" x1="'+(Math.sin(a)*(R-l)).toFixed(1)+'" y1="'+(-Math.cos(a)*(R-l)).toFixed(1)+'" x2="'+(Math.sin(a)*R).toFixed(1)+'" y2="'+(-Math.cos(a)*R).toFixed(1)+'"/>'}
+  [45,90,135,180].forEach(function(d){[1,-1].forEach(function(s){if(d===180&&s===-1)return;var a=d*Math.PI/180;out+='<text class="tk" x="'+(s*Math.sin(a)*(R+17)).toFixed(1)+'" y="'+(-Math.cos(a)*(R+17)+4).toFixed(1)+'">'+d+'°</text>'})});
+  var w=35*Math.PI/180;
+  out+='<path class="nogo" d="M0 0 L'+(-Math.sin(w)*R).toFixed(1)+' '+(-Math.cos(w)*R).toFixed(1)+' A'+R+' '+R+' 0 0 1 '+(Math.sin(w)*R).toFixed(1)+' '+(-Math.cos(w)*R).toFixed(1)+'Z"/><text class="ngl" x="0" y="-118">zone interdite</text>';
+  [-32,0,32].forEach(function(x){out+='<path class="wind" d="M'+x+' -226 V-184 M'+(x-7)+' -193 L'+x+' -182 L'+(x+7)+' -193"/>'});
+  out+='<text class="windt" x="64" y="-204">Vent</text>';
+  out+='<g id="alBoat"><path class="hull" d="M0 -80C20 -52 22 24 12 70L-12 70C-22 24 -20 -52 0 -80Z"/><path class="deck" d="M-9 36L9 36L11 56L-11 56Z"/><g id="alSails"></g><g id="alSpi" opacity="0"></g><circle cx="0" cy="-18" r="4" fill="#0b2a45"/></g>';
+  svg.innerHTML=out;
+  var boat=$("#alBoat"),sails=$("#alSails"),spi=$("#alSpi"),range=$("#alRange"),tack=$("#alTack"),cur=45,tw=45;
+  function txt(sel,attr){var e=$("#alData ["+attr+'="'+sel+'"]');return e?e.textContent:""}
+  function bin(a){return a<35?"debout":a<55?"pres":a<75?"bonplein":a<105?"travers":a<140?"largue":a<170?"grandlargue":"arriere"}
+  function f1(n){return n.toFixed(1)}
+  /* voile vue du dessus : lentille entre le point d'attache et la pointe, ventre côté sous le vent */
+  function lens(x0,y0,x1,y1,sg,belly){var vx=x1-x0,vy=y1-y0,l=Math.sqrt(vx*vx+vy*vy)||1,px=sg*vy/l,py=-sg*vx/l,cx=(x0+x1)/2+px*belly,cy=(y0+y1)/2+py*belly;
+    return"M"+f1(x0)+" "+f1(y0)+"Q"+f1(cx)+" "+f1(cy)+" "+f1(x1)+" "+f1(y1)+"Z"}
+  function draw(a){
+    /* s = -1 : tribord amures (vent par la droite, bateau tourné vers la gauche du vent) ; s = +1 : bâbord amures */
+    var s=tack.checked?1:-1,b=clamp((a-30)*.58,4,86)*Math.PI/180,j=b*.7,mx=0,my=-18,L=84;
+    var ex=s*Math.sin(b)*L,ey=my+Math.cos(b)*L,jx=s*Math.sin(j)*64,jy=-74+Math.cos(j)*64;
+    var op=clamp((a-100)/16,0,1),off=-s*clamp((a-118)*.55,-6,34);
+    sails.innerHTML='<path class="sail" d="'+lens(mx,my,ex,ey,s,a>=120?26:18)+'"/>'+
+      '<line x1="'+mx+'" y1="'+my+'" x2="'+f1(ex)+'" y2="'+f1(ey)+'" stroke="#0b2a45" stroke-width="2.4" stroke-linecap="round"/>'+
+      '<g opacity="'+f1(1-op)+'"><path class="sail" d="'+lens(0,-74,jx,jy,s,9)+'"/></g>';
+    spi.setAttribute("opacity",f1(op));
+    spi.innerHTML=op>0?'<path class="spi" d="M0 -76C'+f1(off-74)+' -118 '+f1(off-44)+' -176 '+f1(off)+' -170C'+f1(off+44)+' -176 '+f1(off+74)+' -118 0 -76Z"/><path class="spi2" d="M0 -76C'+f1(off-30)+' -110 '+f1(off-14)+' -150 '+f1(off)+' -170"/>':"";
+    boat.setAttribute("transform","rotate("+f1(s*a)+")")}
+  function read(a){var k=bin(a);$("#alDeg").textContent=Math.round(a);$("#alName").textContent=txt(k,"data-k");$("#alDesc").textContent=txt(k,"data-d");
+    $("#alSide").textContent=a<35?"":txt(tack.checked?"babord":"tribord","data-k");
+    $$(".al-quick button").forEach(function(b){b.classList.toggle("on",Math.abs(+b.dataset.a-a)<6)});
+    }
+  var raf=0;
+  function go(a,fast){tw=a;cancelAnimationFrame(raf);if(fast||reduce||EDIT){cur=a;draw(cur);read(cur);return}
+    (function step(){var d=tw-cur;if(Math.abs(d)<.6){cur=tw}else cur+=d*.22;draw(cur);read(cur);if(cur!==tw)raf=requestAnimationFrame(step)})()}
+  range.addEventListener("input",function(){go(+range.value,true)});
+  $$(".al-quick button").forEach(function(b){b.addEventListener("click",function(){range.value=b.dataset.a;go(+b.dataset.a)})});
+  tack.addEventListener("change",function(){go(+range.value,true)});
+  ICV.on(function(){go(+range.value,true)});
+})();
+
+/* --- Anatomie d'un voilier : schéma et points cliquables --- */
+(function(){
+  var svg=$("#anSvg");if(!svg)return;
+  svg.innerHTML=
+   '<defs><linearGradient id="spg" x1="0" x2="1"><stop offset="0" stop-color="#ff7a2f"/><stop offset=".55" stop-color="#ffb06e"/><stop offset="1" stop-color="#2a7ab8"/></linearGradient></defs>'+
+   '<path d="M300 312L322 312L328 366L296 366Z" fill="#9fb6cb"/><ellipse cx="312" cy="372" rx="26" ry="8" fill="#7f9bb3"/><path d="M82 262L98 262L106 328L90 328Z" fill="#9fb6cb"/>'+
+   '<path d="M64 258L546 244C540 282 508 308 448 314L156 314C104 308 72 286 64 258Z" fill="#f3f8fc"/><path d="M66 267L542 252" stroke="#ff7a2f" stroke-width="6" fill="none"/>'+
+   '<path d="M262 246L284 226L372 226L388 245Z" fill="#cfdde9"/>'+
+   '<path d="M340 24L546 244M340 24L70 252" stroke="#9fb6cb" stroke-width="1.5" fill="none"/>'+
+   '<g id="anJib"><path d="M366 52Q380 150 352 236L530 227Z" fill="#eaf3fa" stroke="#9fb6cb" stroke-width="1.5"/></g>'+
+   '<path d="M336 30Q204 104 112 222L336 226Z" fill="#f3f8fc" stroke="#9fb6cb" stroke-width="1.5"/>'+
+   '<path d="M340 246V22" stroke="#cfdae5" stroke-width="6" stroke-linecap="round"/><path d="M340 230L108 224" stroke="#cfdae5" stroke-width="5" stroke-linecap="round"/>'+
+   '<path d="M118 224L150 246M150 246L132 246" stroke="#9fb6cb" stroke-width="1.5" fill="none"/>'+
+   '<path d="M92 258L150 232" stroke="#9fb6cb" stroke-width="3" stroke-linecap="round"/>'+
+   '<g id="anSpiG" opacity="0"><path d="M344 26C470 -8 636 76 590 200C575 240 548 246 540 246C520 170 450 90 344 26Z" fill="url(#spg)" stroke="#ffffff88" stroke-width="1.5"/></g>'+
+   '<path class="sea" d="M0 300Q40 290 80 300T160 300T240 300T320 300T400 300T480 300T560 300T640 300L640 400L0 400Z"/><path d="M0 300Q40 290 80 300T160 300T240 300T320 300T400 300T480 300T560 300T640 300" fill="none" stroke="#2a7ab8" stroke-width="2.5"/>';
+  var root=$("#anat"),hs=$$(".hs",root),defs=$$(".an-def",root),spi=$("#anSpiG"),jib=$("#anJib"),toggle=$("#anSpi"),hover=window.matchMedia&&matchMedia("(hover:hover)").matches;
+  function select(k){hs.forEach(function(h){h.classList.toggle("on",h.dataset.k===k)});defs.forEach(function(d){d.classList.toggle("on",d.dataset.k===k)})}
+  hs.forEach(function(h){h.addEventListener("click",function(){select(h.dataset.k)});h.addEventListener("mouseenter",function(){if(hover)select(h.dataset.k)});h.addEventListener("focus",function(){select(h.dataset.k)})});
+  toggle.addEventListener("change",function(){var on=toggle.checked,h=$(".hs.spi",root);spi.setAttribute("opacity",on?1:0);jib.setAttribute("opacity",on?.3:1);h.hidden=!on;if(on)select("spi");else if(h.classList.contains("on"))select("main")});
+  select("main");
+})();
+
+/* --- Glossaire : filtre par catégorie et recherche --- */
+(function(){
+  var root=$("#glossary");if(!root)return;var cat="all",q="",items=$$("#terms details"),none=$(".gl-none",root);
+  function norm(s){return String(s).toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"")}
+  function apply(){var n=0;items.forEach(function(d){var ok=(cat==="all"||d.dataset.cat===cat)&&(!q||norm(d.textContent).indexOf(q)>=0);d.hidden=!ok&&!EDIT;if(ok)n++});none.hidden=n>0||EDIT}
+  $$(".gl-cats button",root).forEach(function(b){b.addEventListener("click",function(){cat=b.dataset.c;$$(".gl-cats button",root).forEach(function(x){x.setAttribute("aria-pressed",x===b)});apply()})});
+  $("#glq").addEventListener("input",function(){q=norm(this.value.trim());apply()});
+})();
+
+/* --- Quiz éclair --- */
+(function(){
+  var root=$("#quiz");if(!root)return;var qs=$$(".qz-q",root),end=$(".qz-end",root),next=$("#qzNext"),bar=$("#qzBar"),cnt=$("#qzCount"),i=0,score=0,done=0;
+  function show(n){i=n;qs.forEach(function(q,k){q.hidden=k!==n;if(k===n){q.classList.remove("done");$$("button",q).forEach(function(b){b.disabled=false;b.className=""})}});end.hidden=true;
+    cnt.textContent="Question "+(n+1)+" sur "+qs.length;next.disabled=true;next.textContent=n===qs.length-1?"Voir mon résultat":"Question suivante";next.hidden=false;bar.style.width=(done/qs.length*100)+"%"}
+  function finish(){qs.forEach(function(q){q.hidden=true});end.hidden=false;next.hidden=true;cnt.textContent="Résultat";bar.style.width="100%";
+    $("#qzTitle").textContent=score===qs.length?"Quatre sur quatre : prêt à embarquer\u00a0!":score>=qs.length-1?score+" sur "+qs.length+" : vous avez le pied marin.":score+" sur "+qs.length+" : un tour de glossaire et on y retourne ?";
+    $("#qzText").textContent=score===qs.length?"Vous parlez déjà le langage du ponton. Reste à nous suivre sur l'eau.":"Les définitions sont juste au-dessus, et notre équipage répond volontiers à vos questions."}
+  qs.forEach(function(q){$$(".qz-opts button",q).forEach(function(b){b.addEventListener("click",function(){if(q.classList.contains("done"))return;q.classList.add("done");done++;
+    var ok=b.hasAttribute("data-ok");if(ok)score++;$$(".qz-opts button",q).forEach(function(x){x.disabled=true;if(x.hasAttribute("data-ok"))x.classList.add(x===b?"ok":"miss");else if(x===b)x.classList.add("ko")});
+    next.disabled=false;bar.style.width=(done/qs.length*100)+"%"})})});
+  next.addEventListener("click",function(){if(i<qs.length-1)show(i+1);else finish()});
+  $("#qzAgain").addEventListener("click",function(){score=0;done=0;show(0)});
+  if(EDIT){qs.forEach(function(q){q.hidden=false;q.classList.add("done")});end.hidden=false;next.hidden=true}else show(0);
+})();
+/* ---- 900-boot ---- */
+/* ===== Démarrage : contenu par défaut, puis contenu publié depuis l'admin ===== */
+renderAll(DEFAULTS);
+window.__icv={render:renderAll,sanitize:sanitize,defaults:DEFAULTS,ICV:ICV,
+  /* mise à jour légère (ordre, styles, thème) sans refaire tous les widgets */
+  layout:function(D){D=withDefaults(migrate(D));ICV.D=D;applyLayout(D);ICV.P.forEach(function(f){try{f(D)}catch(e){}})},
+  rich:richText,safeHref:safeHref,safeUrl:safeUrl};
+window.__icvReady=(location.protocol==="file:"?Promise.resolve():fetch("/api/content",{cache:"no-store"}).then(function(r){return r.ok?r.json():null}).then(function(c){
+  if(c&&(Array.isArray(c.team)||c.v))renderAll(c)}).catch(function(){}));
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+/* ===== 5. Vocabulaire ===== */
+.vcard{background:#fff;border:1px solid var(--line);border-radius:22px;padding:clamp(20px,3vw,40px);margin-bottom:28px}
+.vcard.dark{background:var(--abyss) var(--swell);border-color:var(--abyss)}
+.sec.alt .vcard{background:var(--chalk)}
+.sec.alt .vcard.dark{background:var(--abyss) var(--swell)}
+
+/* allures */
+.allures{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(18px,3vw,44px);align-items:center}
+.al-stage svg{width:100%;max-width:460px;margin:0 auto;height:auto;overflow:visible}
+.al-stage .ring{fill:none;stroke:var(--line);stroke-width:2}
+.al-stage .tick{stroke:#b4c6d6;stroke-width:1.2}
+.al-stage .tk{font:600 12px var(--text);fill:var(--muted);text-anchor:middle}
+.al-stage .nogo{fill:#ff7a2f22;stroke:var(--signal);stroke-width:1.5;stroke-dasharray:5 5}
+.al-stage .ngl{font:700 12px var(--text);fill:var(--signal-ink);text-anchor:middle}
+.al-stage .wind{stroke:var(--navy);stroke-width:3;stroke-linecap:round;fill:none}
+.al-stage .windt{font:800 20px var(--display);fill:var(--navy);text-anchor:middle}
+.al-stage .hull{fill:#cfdfec;stroke:var(--abyss);stroke-width:2.5}
+.al-stage .deck{fill:var(--signal);opacity:.9}
+.al-stage .sail{fill:#fff;stroke:var(--abyss);stroke-width:1.8;stroke-linejoin:round}
+.al-stage .spi{fill:var(--signal);stroke:#9a4009;stroke-width:1.6;stroke-linejoin:round}
+.al-stage .spi2{fill:none;stroke:#fff;stroke-width:3;stroke-linecap:round;opacity:.75}
+.al-panel h3{font-size:clamp(24px,2.4vw,32px);margin-bottom:16px}
+.al-read{display:flex;align-items:center;gap:18px;margin-bottom:6px}
+.al-deg{margin:0;font-size:clamp(54px,6vw,76px);color:var(--navy)}
+.al-deg b{font-weight:800}
+.al-read h4{font-size:clamp(30px,3.2vw,42px);color:var(--ink)}
+.al-side{margin:4px 0 0;font-size:14.5px;color:var(--signal-ink);font-weight:600}
+.al-desc{min-height:5.2em;color:var(--muted);max-width:52ch;margin:10px 0 18px}
+.al-range{display:grid;gap:10px;font-weight:600;font-size:15px;margin-bottom:16px}
+input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:30px;background:transparent;cursor:pointer}
+input[type=range]::-webkit-slider-runnable-track{height:6px;border-radius:3px;background:linear-gradient(90deg,var(--signal) 0 19%,var(--line) 19%)}
+input[type=range]::-moz-range-track{height:6px;border-radius:3px;background:var(--line)}
+input[type=range]::-moz-range-progress{height:6px;border-radius:3px;background:var(--signal)}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:28px;height:28px;border-radius:50%;background:var(--abyss);border:4px solid #fff;box-shadow:0 0 0 2px var(--abyss),0 4px 10px #0b2a4540;margin-top:-11px}
+input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;background:var(--abyss);border:4px solid #fff;box-shadow:0 0 0 2px var(--abyss)}
+.al-quick{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.al-quick button{font:600 14.5px var(--text);padding:9px 15px;border-radius:99px;border:1.5px solid var(--line);background:#fff;cursor:pointer}
+.al-quick button:hover{border-color:var(--navy)}
+.al-quick button.on{background:var(--ink);border-color:var(--ink);color:#fff}
+.al-tack{display:flex;align-items:center;gap:10px;font-weight:600;font-size:15px;cursor:pointer}
+.al-tack input{width:20px;height:20px;accent-color:var(--navy)}
+@media (max-width:900px){.allures{grid-template-columns:1fr}.al-stage svg{max-width:340px}.al-desc{min-height:0}}
+
+/* anatomie */
+.anat{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,.85fr);gap:clamp(18px,3vw,40px);align-items:center;color:#e6eef5}
+.an-draw{position:relative;border-radius:16px;overflow:hidden;background:linear-gradient(180deg,#1d5688 0%,#2f78ad 58%,#0e3a5c 58.01%)}
+.an-draw svg{display:block;width:100%;height:auto}
+.hs{position:absolute;width:34px;height:34px;margin:-17px 0 0 -17px;border-radius:50%;border:2px solid #fff;background:var(--signal);color:var(--abyss);font:800 16px/1 var(--display);cursor:pointer;display:grid;place-items:center;box-shadow:0 0 0 0 #ff7a2f88;animation:hsp 2.6s infinite;padding:0}
+@keyframes hsp{0%{box-shadow:0 0 0 0 #ff7a2fa0}70%{box-shadow:0 0 0 12px #ff7a2f00}100%{box-shadow:0 0 0 0 #ff7a2f00}}
+.hs:hover,.hs.on{background:#fff;color:var(--abyss);animation:none}
+.an-spi{display:flex;align-items:center;gap:10px;margin-top:10px;font-weight:600;cursor:pointer}
+.an-spi input{width:20px;height:20px;accent-color:var(--signal)}
+.an-panel h3{font-size:clamp(26px,2.6vw,34px);margin-bottom:6px}
+.an-hint{color:#9fb6cb;font-size:14.5px;margin-bottom:16px}
+.an-def{display:none;background:#ffffff12;border-left:4px solid var(--signal);border-radius:0 12px 12px 0;padding:16px 18px}
+.an-def.on{display:block}
+.an-def h4{font-size:26px;margin-bottom:6px;color:#fff}
+.an-def p{margin:0;color:#dce8f2}
+.edition .an-def{display:block;margin-bottom:8px}
+@media (max-width:900px){.anat{grid-template-columns:1fr}}
+.an-draw .sea{fill:#0e3a5c;opacity:.74}
+
+/* vocabulaire en images */
+.termpics{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:12px}
+.termpics .ph{aspect-ratio:4/5;border-radius:14px}
+.termpics figcaption{font:800 22px/1.1 var(--display);padding:40px 14px 14px}
+@media (max-width:760px){.termpics{grid-template-columns:repeat(2,1fr)}}
+
+/* glossaire */
+.gl{background:#fff;border:1px solid var(--line);border-radius:22px;padding:clamp(18px,3vw,34px);margin-bottom:28px}
+.gl-bar{display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center;margin-bottom:18px}
+.gl-search{max-width:100%}.gl-search input{width:100%;font:500 16px var(--text);padding:11px 16px;border:1.5px solid var(--line);border-radius:99px;min-width:min(240px,100%);color:var(--ink);background:var(--foam)}
+.gl-search input:focus{outline:3px solid var(--signal);border-color:var(--signal)}
+.terms{border-top:2px solid var(--ink)}
+.terms details{border-bottom:1px solid var(--line)}
+.terms summary{list-style:none;cursor:pointer;display:flex;align-items:baseline;gap:16px;padding:18px 0;font:700 clamp(21px,2vw,26px)/1.1 var(--display)}
+.terms summary::-webkit-details-marker{display:none}
+.terms summary small{font:400 15px var(--text);color:var(--muted)}
+.terms summary:after{content:"+";margin-left:auto;font:400 28px/1 var(--text);color:var(--signal);transition:transform .2s}
+.terms details[open] summary:after{transform:rotate(45deg)}
+.terms .def{padding:0 0 20px;max-width:64ch}
+.terms .def p{margin:0}
+.gl-none{margin:18px 0 0;color:var(--muted)}
+
+/* quiz */
+.quiz{background:var(--abyss) var(--swell);border-color:var(--abyss);color:#e6eef5}
+.sec.alt .quiz{background:var(--abyss) var(--swell)}
+.qz-head{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap}
+.qz-head h3{color:#fff;font-size:clamp(30px,3.2vw,42px)}
+.qz-count{margin:0;color:var(--signal-soft);font-weight:600}
+.qz-bar{height:6px;background:#ffffff26;border-radius:3px;overflow:hidden;margin:14px 0 22px}
+.qz-bar i{display:block;height:100%;width:0;background:var(--signal);transition:width .4s var(--ease)}
+.qz-q h4{color:#fff;font-size:clamp(25px,2.6vw,34px);margin-bottom:18px;max-width:30ch}
+.qz-opts{display:grid;gap:10px;max-width:640px}
+.qz-opts button{text-align:left;font:500 17px/1.35 var(--text);padding:15px 18px;border-radius:12px;border:1.5px solid #ffffff44;background:#ffffff0d;color:#fff;cursor:pointer;transition:background .2s,border-color .2s}
+.qz-opts button:hover:not(:disabled){border-color:#fff;background:#ffffff1c}
+.qz-opts button:disabled{cursor:default}
+.qz-opts button.ok{background:#1f9d62;border-color:#1f9d62;color:#fff}
+.qz-opts button.ko{background:#b3261e;border-color:#b3261e;color:#fff}
+.qz-opts button.miss{border-color:#1f9d62}
+.qz-exp{margin:16px 0 0;color:#dce8f2;max-width:60ch;border-left:4px solid var(--signal);padding-left:14px}
+.qz-q:not(.done) .qz-exp{display:none}
+.edition .qz-q .qz-exp{display:block}
+.qz-end h4{color:#fff;font-size:clamp(30px,3.4vw,44px);margin-bottom:10px}
+.qz-end p{max-width:50ch}
+.qz-foot{margin-top:22px}
+.qz-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:clamp(18px,3vw,40px);align-items:stretch}
+.qz-ph{min-height:300px;border-radius:16px}
+.qz-ph figcaption{font:700 21px/1.15 var(--display);padding:48px 18px 18px}
+@media (max-width:860px){.qz-grid{grid-template-columns:1fr}.qz-ph{min-height:200px;order:-1}}
+
+/* en-tête de la page Vocabulaire */
+.back{margin:0 0 18px}
+.back a{display:inline-flex;align-items:center;gap:6px;color:#c9d8e6;text-decoration:none;font-weight:600;font-size:15px}
+.back a:hover{color:var(--signal-soft)}
+.back .ic{width:18px;height:18px}

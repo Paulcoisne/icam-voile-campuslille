@@ -1,0 +1,6 @@
+footer{background:#071d31;color:#9fb6cb;padding:40px 0;font-size:14px}
+footer .w{display:flex;flex-wrap:wrap;gap:22px;align-items:center}
+footer .logo{width:62px;height:62px;border-radius:50%;background:#fff}
+footer .fsp{flex:1}
+footer .partner{height:52px;width:auto;background:#fff;border-radius:6px;padding:6px}
+footer a{color:#e6eef5}

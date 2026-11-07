@@ -1,0 +1,789 @@
+{
+ "v": 3,
+ "team": [
+  {
+   "prenom": "Timothée",
+   "nom": "Stevens",
+   "role": "Président",
+   "team": "Bureau",
+   "promo": "",
+   "voile": "",
+   "qualite": "",
+   "defi": "",
+   "lead": true,
+   "photo": ""
+  },
+  {
+   "prenom": "",
+   "nom": "",
+   "role": "Trésorier",
+   "team": "Bureau",
+   "promo": "",
+   "voile": "",
+   "qualite": "",
+   "defi": "",
+   "lead": false,
+   "photo": ""
+  },
+  {
+   "prenom": "",
+   "nom": "",
+   "role": "Responsable partenariats",
+   "team": "Bureau",
+   "promo": "",
+   "voile": "",
+   "qualite": "",
+   "defi": "",
+   "lead": false,
+   "photo": ""
+  },
+  {
+   "prenom": "",
+   "nom": "",
+   "role": "Membre du bureau",
+   "team": "Bureau",
+   "promo": "",
+   "voile": "",
+   "qualite": "",
+   "defi": "",
+   "lead": false,
+   "photo": ""
+  },
+  {
+   "prenom": "",
+   "nom": "",
+   "role": "Responsable CCE",
+   "team": "CCE",
+   "promo": "",
+   "voile": "",
+   "qualite": "",
+   "defi": "",
+   "lead": true,
+   "photo": ""
+  },
+  {
+   "prenom": "",
+   "nom": "",
+   "role": "Membre du pôle CCE",
+   "team": "CCE",
+   "promo": "",
+   "voile": "",
+   "qualite": "",
+   "defi": "",
+   "lead": false,
+   "photo": ""
+  },
+  {
+   "prenom": "",
+   "nom": "",
+   "role": "Membre du pôle CCE",
+   "team": "CCE",
+   "promo": "",
+   "voile": "",
+   "qualite": "",
+   "defi": "",
+   "lead": false,
+   "photo": ""
+  },
+  {
+   "prenom": "",
+   "nom": "",
+   "role": "Membre du pôle CCE",
+   "team": "CCE",
+   "promo": "",
+   "voile": "",
+   "qualite": "",
+   "defi": "",
+   "lead": false,
+   "photo": ""
+  },
+  {
+   "prenom": "",
+   "nom": "",
+   "role": "Membre du pôle CCE",
+   "team": "CCE",
+   "promo": "",
+   "voile": "",
+   "qualite": "",
+   "defi": "",
+   "lead": false,
+   "photo": ""
+  },
+  {
+   "prenom": "",
+   "nom": "",
+   "role": "Responsable communication",
+   "team": "Com",
+   "promo": "",
+   "voile": "",
+   "qualite": "",
+   "defi": "",
+   "lead": true,
+   "photo": ""
+  },
+  {
+   "prenom": "",
+   "nom": "",
+   "role": "Membre du pôle Com",
+   "team": "Com",
+   "promo": "",
+   "voile": "",
+   "qualite": "",
+   "defi": "",
+   "lead": false,
+   "photo": ""
+  },
+  {
+   "prenom": "",
+   "nom": "",
+   "role": "Membre du pôle Com",
+   "team": "Com",
+   "promo": "",
+   "voile": "",
+   "qualite": "",
+   "defi": "",
+   "lead": false,
+   "photo": ""
+  },
+  {
+   "prenom": "",
+   "nom": "",
+   "role": "Responsable événements internes",
+   "team": "Événement interne",
+   "promo": "",
+   "voile": "",
+   "qualite": "",
+   "defi": "",
+   "lead": true,
+   "photo": ""
+  },
+  {
+   "prenom": "",
+   "nom": "",
+   "role": "Membre du pôle",
+   "team": "Événement interne",
+   "promo": "",
+   "voile": "",
+   "qualite": "",
+   "defi": "",
+   "lead": false,
+   "photo": ""
+  },
+  {
+   "prenom": "",
+   "nom": "",
+   "role": "Membre du pôle",
+   "team": "Événement interne",
+   "promo": "",
+   "voile": "",
+   "qualite": "",
+   "defi": "",
+   "lead": false,
+   "photo": ""
+  },
+  {
+   "prenom": "",
+   "nom": "",
+   "role": "Responsable événements externes",
+   "team": "Événement externe",
+   "promo": "",
+   "voile": "",
+   "qualite": "",
+   "defi": "",
+   "lead": true,
+   "photo": ""
+  },
+  {
+   "prenom": "",
+   "nom": "",
+   "role": "Membre du pôle",
+   "team": "Événement externe",
+   "promo": "",
+   "voile": "",
+   "qualite": "",
+   "defi": "",
+   "lead": false,
+   "photo": ""
+  },
+  {
+   "prenom": "",
+   "nom": "",
+   "role": "Membre du pôle",
+   "team": "Événement externe",
+   "promo": "",
+   "voile": "",
+   "qualite": "",
+   "defi": "",
+   "lead": false,
+   "photo": ""
+  }
+ ],
+ "budget": {
+  "already": 0,
+  "lines": [
+   {
+    "label": "Location des voiliers",
+    "amount": 5000,
+    "detail": "Pour une semaine, location d'un OSIRIS (~3000 €) et J80 (~2 000 €)"
+   },
+   {
+    "label": "Inscriptions à la CCE",
+    "amount": 4900,
+    "detail": "Inscription Défi Mer 3 380 € (13 personnes), Défi Terre 1000 € (5 personnes) et des 2 bateaux 520 €"
+   },
+   {
+    "label": "Vestes de quart",
+    "amount": 3600,
+    "detail": "18 vestes de quart, portées toute la CCE et régulièrement par la suite, floquées aux couleurs des partenaires (200 € l'unité)"
+   },
+   {
+    "label": "2 Week-ends d'entraînement",
+    "amount": 1200,
+    "detail": "2 week-ends en mer pour apprendre à naviguer ensemble : location du bateau, port, carburant (600 € par week-end)"
+   },
+   {
+    "label": "Logistique",
+    "amount": 1150,
+    "detail": "Transports (600 €), Alimentation (500 €), Gasoil (50 €)"
+   },
+   {
+    "label": "Marquage, broderie et stickers",
+    "amount": 1000,
+    "detail": "Drapeaux partenaires / Stickers sur voiles / Marquage sur coque / Flocage vestes / Broderie polaires"
+   },
+   {
+    "label": "Assurance",
+    "amount": 1000,
+    "detail": "Assurance (100 €), Rachat de caution (400 €) et Imprévus (500 €)"
+   },
+   {
+    "label": "Licences FFV",
+    "amount": 949,
+    "detail": "13 licences de la Fédération Française de Voile (73 € l'unité)"
+   }
+  ],
+  "equiv": [
+   {
+    "amount": 73,
+    "label": "une licence FFV"
+   },
+   {
+    "amount": 200,
+    "label": "une veste de quart floquée"
+   },
+   {
+    "amount": 260,
+    "label": "l'inscription d'un équipier en régate"
+   },
+   {
+    "amount": 600,
+    "label": "un week-end d'entraînement en mer"
+   },
+   {
+    "amount": 3000,
+    "label": "la location du voilier OSIRIS d'environ 35 pieds"
+   }
+  ]
+ },
+ "sponsors": [
+  {
+   "name": "Les Toits du Nord",
+   "year": 2026,
+   "url": "",
+   "domain": "",
+   "logo": ""
+  },
+  {
+   "name": "Aires d'entreprises",
+   "year": 2026,
+   "url": "",
+   "domain": "",
+   "logo": ""
+  },
+  {
+   "name": "Deloitte",
+   "year": 2026,
+   "url": "https://www.deloitte.com/fr/fr.html",
+   "domain": "deloitte.com",
+   "logo": ""
+  }
+ ],
+ "social": {
+  "instagramUrl": "https://www.instagram.com/icam_voile/",
+  "followers": 1400,
+  "goal": 2000,
+  "linkedin": 500
+ },
+ "tiers": [
+  {
+   "id": "Matelot",
+   "price": 500
+  },
+  {
+   "id": "Équipier",
+   "price": 1000
+  },
+  {
+   "id": "Barreur",
+   "price": 3000
+  },
+  {
+   "id": "Skipper",
+   "price": 6000,
+   "limited": true
+  },
+  {
+   "id": "Amiral",
+   "price": 10000,
+   "plus": true,
+   "limited": true
+  }
+ ],
+ "perks": [
+  [
+   "Photos, vidéos HD (caméra + drone) de la course (mise en valeur de votre logo)",
+   1,
+   1,
+   1,
+   "oui + montages sur demande",
+   "oui + montages sur demande"
+  ],
+  [
+   "Logo sur le drapeau partenaires",
+   "Petit",
+   "Moyen",
+   "Grand",
+   "Grand",
+   "Grand, Principal"
+  ],
+  [
+   "Remerciements sur Instagram et LinkedIn",
+   "Collectifs",
+   "Collectifs",
+   "Dédiés",
+   "Dédiés",
+   "Dédiés, selon vos envies"
+  ],
+  [
+   "Diffusion de vos offres de stage et d'emploi aux élèves de l'Icam",
+   0,
+   1,
+   1,
+   1,
+   1
+  ],
+  [
+   "Logo sur les vestes de quart de l'équipage",
+   0,
+   "Petit",
+   "Moyen",
+   "Moyen",
+   "Grand, Principal"
+  ],
+  [
+   "Vlogs et stories spécialisés pendant la course (placement de produit)",
+   0,
+   0,
+   1,
+   1,
+   1
+  ],
+  [
+   "Intervention de l'équipage dans votre entreprise auprès de vos collaborateurs",
+   0,
+   0,
+   0,
+   1,
+   1
+  ],
+  [
+   "Logo sur la coque → voir simulateur en dessous",
+   0,
+   0,
+   0,
+   1,
+   1
+  ],
+  [
+   "Logo sur une voile (grand-voile, génois ou spinnaker) → voir simulateur en dessous.",
+   0,
+   0,
+   0,
+   0,
+   1
+  ],
+  [
+   "Intervention de votre entreprise à l'ICAM",
+   0,
+   0,
+   0,
+   0,
+   1
+  ],
+  [
+   "Visite du bateau ou sortie en mer pour vos collaborateurs (à convenir ensemble)",
+   0,
+   0,
+   0,
+   0,
+   1
+  ]
+ ],
+ "sim": {
+  "surfaces": {
+   "main": {
+    "enabled": true,
+    "checked": true,
+    "scale": 90,
+    "label": "Grand-voile"
+   },
+   "spin": {
+    "enabled": true,
+    "checked": true,
+    "scale": 92,
+    "label": "Spinnaker"
+   },
+   "hull": {
+    "enabled": true,
+    "checked": true,
+    "scale": 94,
+    "label": "Coque"
+   }
+  },
+  "watermark": {
+   "enabled": true,
+   "opacity": 90,
+   "size": 13
+  },
+  "demoText": "VOTRE LOGO",
+  "demoLogo": "",
+  "jacket": {
+   "enabled": true
+  }
+ },
+ "youtube": "BNgGzrUfmxU",
+ "gallery": {
+  "y2026": [
+   {
+    "src": "assets/img/g04.webp",
+    "cap": ""
+   },
+   {
+    "src": "assets/img/c-far.webp",
+    "cap": ""
+   },
+   {
+    "src": "assets/img/g11.webp",
+    "cap": ""
+   },
+   {
+    "src": "assets/img/c-top.webp",
+    "cap": ""
+   },
+   {
+    "src": "assets/img/c-hero-crew.webp",
+    "cap": ""
+   }
+  ],
+  "icam": [
+   {
+    "src": "assets/img/g15.webp",
+    "cap": "Travail d'équipe sur le pont"
+   },
+   {
+    "src": "assets/img/c-fleet.webp",
+    "cap": "Se mesurer à la flotte"
+   },
+   {
+    "src": "assets/img/c-work.webp",
+    "cap": "Préparer, régler, réparer"
+   },
+   {
+    "src": "assets/img/c-sailor.webp",
+    "cap": "Concentration"
+   },
+   {
+    "src": "assets/img/g23.webp",
+    "cap": "À la barre"
+   },
+   {
+    "src": "assets/img/c-far.webp",
+    "cap": "En flotte"
+   }
+  ]
+ },
+ "hidden": [],
+ "texts": {},
+ "images": {},
+ "legacy": {
+  "blk.hero.1": "blk.hero.course-croisiere-edhec-59e-edition",
+  "blk.hero.2": "blk.hero.nous-ne-partons-pas-pour",
+  "blk.hero.3": "blk.hero.en-rappel-au-pres",
+  "blk.hero.4": "blk.hero.depart-groupe-en-j80",
+  "blk.hero.5": "blk.hero.a-la-barre-par-mer",
+  "blk.hero.6": "blk.hero.avant-le-premier-jour-de",
+  "blk.hero.7": "blk.hero.n217",
+  "blk.icam.1": "blk.icam.qui-sommes-nous",
+  "blk.icam.2": "blk.icam.une-ecole-d-ingenieurs-une",
+  "blk.icam.3": "blk.icam.notre-ecole-l-icam",
+  "blk.icam.4": "blk.icam.ecole-d-ingenieurs-generaliste-ped",
+  "blk.icam.5": "blk.icam.sources-au-futur-wikipedia",
+  "blk.icam.6": "blk.icam.quatre-valeurs-qu-on-ne",
+  "blk.icam.9": "blk.icam.equipier-au-travail-sur-le",
+  "blk.icam.10": "blk.icam.equipage-uni-sur-un-voilier",
+  "blk.icam.11": "blk.icam.voilier-en-pleine-mer",
+  "blk.icam.12": "blk.icam.audace",
+  "blk.icam.13": "blk.icam.oser-entreprendre",
+  "blk.icam.14": "blk.icam.prendre-des-initiatives",
+  "blk.icam.15": "blk.icam.des-projets-menes-par-les",
+  "blk.icam.16": "blk.icam.monter-un-projet-de-a",
+  "blk.icam.17": "blk.icam.se-mesurer-a-de-grandes",
+  "blk.icam.18": "blk.icam.prendre-le-depart-face-a",
+  "blk.icam.19": "blk.icam.travail-manuel-et-pratique",
+  "blk.icam.20": "blk.icam.apprendre-en-faisant",
+  "blk.icam.21": "blk.icam.pedagogie-de-l-experience",
+  "blk.icam.22": "blk.icam.projets-et-stages-des-la",
+  "blk.icam.23": "blk.icam.preparer-le-bateau-et-le",
+  "blk.icam.24": "blk.icam.regler-reparer-naviguer",
+  "blk.icam.25": "blk.icam.week-ends-en-mer-avant",
+  "blk.icam.26": "blk.icam.sens-du-collectif",
+  "blk.icam.27": "blk.icam.projets-en-equipe",
+  "blk.icam.28": "blk.icam.vie-associative",
+  "blk.icam.29": "blk.icam.classes-a-taille-humaine",
+  "blk.icam.30": "blk.icam.18-membres-5-poles",
+  "blk.icam.31": "blk.icam.un-equipage-chacun-compte-a",
+  "blk.icam.32": "blk.icam.un-responsable-par-pole",
+  "blk.icam.33": "blk.icam.responsabilite-environnementale-et-2",
+  "blk.icam.34": "blk.icam.ingenieurs-conscients-et-engages",
+  "blk.icam.35": "blk.icam.formation-humaine-et-ethique",
+  "blk.icam.36": "blk.icam.l-humain-au-c-ur",
+  "blk.icam.37": "blk.icam.respect-de-la-mer-et",
+  "blk.icam.38": "blk.icam.budget-transparent-bilan-aux-parte",
+  "blk.icam.39": "blk.icam.une-cce-engagee-pour-l",
+  "blk.icam.40": "blk.icam.l-icam-en-action-2",
+  "blk.asso.1": "blk.asso.icam-voile-l-association-de",
+  "blk.asso.2": "blk.asso.une-association-d-eleves-ingenieur",
+  "blk.asso.3": "blk.asso.les-membres-d-icam-voile",
+  "blk.asso.4": "blk.asso.cinq-poles-un-seul-equipage",
+  "blk.asso.5": "blk.asso.le-bureau-pilote-quatre-poles",
+  "blk.asso.6": "blk.asso.les-membres-2",
+  "blk.asso.7": "blk.asso.survolez-ou-touchez-un-visage",
+  "blk.asso.8": "blk.asso.notre-saison-en-cinq-temps-2",
+  "blk.asso.9": "blk.asso.de-la-constitution-de-l",
+  "blk.asso.10": "blk.asso.1-constituer-l-equipage-recrutemen",
+  "blk.asso.11": "blk.asso.recrutement-repartition-en-poles-l",
+  "blk.asso.12": "blk.asso.l-equipe-d-icam-voile",
+  "blk.asso.13": "blk.asso.2-financer-le-projet-recherche",
+  "blk.asso.14": "blk.asso.recherche-de-partenaires-pour-reun",
+  "blk.asso.15": "blk.asso.voilier-habitable-en-navigation",
+  "blk.asso.16": "blk.asso.3-s-entrainer-week-ends",
+  "blk.asso.17": "blk.asso.week-ends-en-mer-pour",
+  "blk.asso.18": "blk.asso.preparation-des-voiles-sur-le",
+  "blk.asso.19": "blk.asso.4-courir-la-59e-cce",
+  "blk.asso.20": "blk.asso.la-59e-cce-aux-sables",
+  "blk.asso.21": "blk.asso.depart-groupe-de-j80",
+  "blk.asso.22": "blk.asso.5-rendre-compte-bilan-financier",
+  "blk.asso.23": "blk.asso.bilan-financier-envoye-a-chaque",
+  "blk.asso.24": "blk.asso.equipier-a-la-barre",
+  "blk.asso.25": "blk.asso.suivez-la-campagne-en-direct",
+  "blk.asso.26": "blk.asso.entrainements-preparation-du-batea",
+  "blk.cce.1": "blk.cce.a-quoi-participons-nous",
+  "blk.cce.2": "blk.cce.la-plus-grande-competition-sportiv",
+  "blk.cce.3": "blk.cce.la-course-croisiere-edhec",
+  "blk.cce.4": "blk.cce.depuis-1969-des-etudiants-organise",
+  "blk.cce.5": "blk.cce.chiffres-de-l-edition-2026",
+  "blk.cce.8": "blk.cce.deux-defis-trois-equipes-2",
+  "blk.cce.9": "blk.cce.nous-nous-engageons-sur-le",
+  "blk.cce.10": "blk.cce.departs-groupes-en-flotte-manches",
+  "blk.cce.11": "blk.cce.le-j80-voilier-monotype-de",
+  "blk.cce.12": "blk.cce.j80-vu-du-ciel-equipage",
+  "blk.cce.13": "blk.cce.voilier-monotype-de-8-metres",
+  "blk.cce.14": "blk.cce.l-osiris-voilier-habitable-de",
+  "blk.cce.15": "blk.cce.voilier-habitable-osiris-en-naviga",
+  "blk.cce.16": "blk.cce.voilier-habitable-de-course-croisi",
+  "blk.cce.17": "blk.cce.cree-en-1994-un-raid",
+  "blk.cce.18": "blk.cce.l-equipe-terre-cinq-personnes",
+  "blk.cce.19": "blk.cce.l-equipage-d-icam-voile",
+  "blk.cce.20": "blk.cce.cinq-personnes-s-engagent-sur",
+  "blk.cce.21": "blk.cce.environ-12-000-visiteurs-sur",
+  "blk.cce.22": "blk.cce.visible-de-tous-les-logos",
+  "blk.cce.23": "blk.cce.flotte-de-j80-au-depart",
+  "blk.cce.24": "blk.cce.les-logos-de-nos-partenaires",
+  "blk.cce.25": "blk.cce.la-cce-en-video-2",
+  "blk.cce.26": "blk.cce.bande-annonce-de-la-51e",
+  "blk.cce.27": "blk.cce.la-video-se-charge-uniquement",
+  "blk.vocab.3": "blk.vocab.les-allures-l-angle-entre",
+  "blk.vocab.4": "blk.vocab.n45",
+  "blk.vocab.5": "blk.vocab.alside",
+  "blk.vocab.6": "blk.vocab.aldesc",
+  "blk.vocab.7": "blk.vocab.l-anatomie-d-un-voilier",
+  "blk.vocab.8": "blk.vocab.touchez-un-numero-pour-decouvrir",
+  "blk.vocab.9": "blk.vocab.la-voile-principale-hissee-le",
+  "blk.vocab.10": "blk.vocab.la-voile-d-avant-hissee",
+  "blk.vocab.11": "blk.vocab.le-grand-tube-vertical-qui",
+  "blk.vocab.12": "blk.vocab.la-perche-horizontale-qui-tient",
+  "blk.vocab.13": "blk.vocab.l-avant-du-bateau-qu",
+  "blk.vocab.14": "blk.vocab.l-arriere-du-bateau-la",
+  "blk.vocab.15": "blk.vocab.le-gouvernail-dirige-le-bateau",
+  "blk.vocab.16": "blk.vocab.l-aileron-leste-sous-la",
+  "blk.vocab.17": "blk.vocab.la-grande-voile-ballon-envoyee",
+  "blk.vocab.18": "blk.vocab.le-vocabulaire-en-images",
+  "blk.vocab.19": "blk.vocab.le-spinnaker",
+  "blk.vocab.20": "blk.vocab.la-ligne-de-depart",
+  "blk.vocab.21": "blk.vocab.le-rappel",
+  "blk.vocab.22": "blk.vocab.la-barre-et-le-winch",
+  "blk.vocab.23": "blk.vocab.le-glossaire",
+  "blk.vocab.24": "blk.vocab.j80-voilier-monotype-voilier-de",
+  "blk.vocab.25": "blk.vocab.voilier-de-course-de-8",
+  "blk.vocab.26": "blk.vocab.osiris-voilier-habitable-voilier-h",
+  "blk.vocab.27": "blk.vocab.voilier-habitable-de-course-croisi",
+  "blk.vocab.28": "blk.vocab.grand-voile-foc-spinnaker-les",
+  "blk.vocab.29": "blk.vocab.la-grand-voile-est-la",
+  "blk.vocab.30": "blk.vocab.ecoute-cordage-de-reglage-le",
+  "blk.vocab.31": "blk.vocab.le-cordage-qui-commande-une",
+  "blk.vocab.32": "blk.vocab.winch-treuil-le-treuil-sur",
+  "blk.vocab.33": "blk.vocab.le-treuil-sur-lequel-on",
+  "blk.vocab.34": "blk.vocab.babord-tribord-gauche-droite-quand",
+  "blk.vocab.35": "blk.vocab.quand-on-regarde-vers-l",
+  "blk.vocab.36": "blk.vocab.virement-de-bord-changer-de",
+  "blk.vocab.37": "blk.vocab.man-uvre-qui-consiste-a",
+  "blk.vocab.38": "blk.vocab.empannage-changer-de-cote-vent",
+  "blk.vocab.39": "blk.vocab.man-uvre-qui-consiste-a-2",
+  "blk.vocab.40": "blk.vocab.gite-et-rappel-contrer-l",
+  "blk.vocab.41": "blk.vocab.sous-la-poussee-du-vent",
+  "blk.vocab.42": "blk.vocab.manche-une-course-du-programme",
+  "blk.vocab.43": "blk.vocab.une-regate-est-composee-de",
+  "blk.vocab.44": "blk.vocab.ligne-de-depart-le-signal",
+  "blk.vocab.45": "blk.vocab.ligne-imaginaire-entre-une-bouee",
+  "blk.vocab.46": "blk.vocab.pres-travers-portant-les-allures",
+  "blk.vocab.47": "blk.vocab.au-pres-on-remonte-vers",
+  "blk.vocab.48": "blk.vocab.licence-ffv-federation-francaise-d",
+  "blk.vocab.49": "blk.vocab.licence-delivree-par-la-federation",
+  "blk.vocab.50": "blk.vocab.barreur-il-pilote-celui-qui",
+  "blk.vocab.51": "blk.vocab.celui-qui-tient-la-barre",
+  "blk.vocab.52": "blk.vocab.tacticien-il-choisit-la-route",
+  "blk.vocab.53": "blk.vocab.il-lit-le-plan-d",
+  "blk.vocab.54": "blk.vocab.regleur-il-regle-les-voiles",
+  "blk.vocab.55": "blk.vocab.il-regle-les-voiles-en",
+  "blk.vocab.56": "blk.vocab.equipier-d-avant-le-travail",
+  "blk.vocab.57": "blk.vocab.il-travaille-a-l-avant",
+  "blk.vocab.58": "blk.vocab.aucun-mot-ne-correspond-a",
+  "blk.vocab.59": "blk.vocab.pret-a-embarquer",
+  "blk.vocab.60": "blk.vocab.babord-est-a-gauche-et",
+  "blk.vocab.61": "blk.vocab.dans-une-serie-monotype-tout",
+  "blk.vocab.62": "blk.vocab.au-portant-la-grande-voile",
+  "blk.vocab.63": "blk.vocab.border-c-est-tirer-l",
+  "blk.vocab.64": "blk.vocab.le-jour-j-tout-le",
+  "blk.obj.1": "blk.obj.notre-asso-a-la-cce",
+  "blk.obj.2": "blk.obj.ce-que-nous-venons-y",
+  "blk.obj.3": "blk.obj.objectifs-et-ambitions",
+  "blk.obj.4": "blk.obj.nous-ne-partons-pas-pour",
+  "blk.obj.5": "blk.obj.trois-equipes-un-seul-projet-2",
+  "blk.obj.6": "blk.obj.deux-bateaux-sur-le-defi",
+  "blk.obj.7": "blk.obj.defi-mer-le-sprint",
+  "blk.obj.8": "blk.obj.un-monotype-de-8-metres",
+  "blk.obj.9": "blk.obj.des-departs-propres-des-man",
+  "blk.obj.10": "blk.obj.tenir-la-cadence-de-la",
+  "blk.obj.11": "blk.obj.debriefer-chaque-course-pour-progr",
+  "blk.obj.12": "blk.obj.defi-mer-la-course-cotiere",
+  "blk.obj.13": "blk.obj.un-voilier-habitable-d-environ",
+  "blk.obj.14": "blk.obj.lire-la-meteo-et-le",
+  "blk.obj.15": "blk.obj.tenir-la-distance-sans-epuiser",
+  "blk.obj.16": "blk.obj.decider-a-plusieurs-vite-et",
+  "blk.obj.17": "blk.obj.defi-terre-la-base-arriere",
+  "blk.obj.18": "blk.obj.sans-elle-aucun-bateau-ne",
+  "blk.obj.19": "blk.obj.organiser-la-logistique-de-toute",
+  "blk.obj.20": "blk.obj.preparer-les-voiles-le-materiel",
+  "blk.obj.21": "blk.obj.suivre-la-meteo-reparer-et",
+  "blk.obj.22": "blk.obj.notre-ambition-marche-apres-marche-2",
+  "blk.obj.23": "blk.obj.etre-prets-arriver-sur-la",
+  "blk.obj.24": "blk.obj.arriver-sur-la-ligne-avec",
+  "blk.obj.25": "blk.obj.tenir-la-semaine-enchainer-manches",
+  "blk.obj.26": "blk.obj.enchainer-manches-et-epreuves-pend",
+  "blk.obj.27": "blk.obj.progresser-etre-meilleurs-le-derni",
+  "blk.obj.28": "blk.obj.etre-meilleurs-le-dernier-jour",
+  "blk.obj.29": "blk.obj.se-faire-une-place-representer",
+  "blk.obj.30": "blk.obj.representer-l-icam-parmi-les",
+  "blk.obj.31": "blk.obj.ce-que-cette-aventure-nous",
+  "blk.obj.32": "blk.obj.un-projet-de-cette-taille",
+  "blk.obj.33": "blk.obj.preparation-du-materiel",
+  "blk.obj.34": "blk.obj.skipper-concentre",
+  "blk.obj.35": "blk.obj.reglages-au-pied-du-mat",
+  "blk.obj.36": "blk.obj.man-uvre-d-equipage",
+  "blk.obj.37": "blk.obj.equipage-au-winch-dans-la",
+  "blk.obj.38": "blk.obj.voilier-au-pres-vu-du",
+  "blk.obj.39": "blk.obj.dans-notre-projet-un-budget",
+  "blk.obj.40": "blk.obj.demain-en-entreprise-cadrer-budget",
+  "blk.obj.41": "blk.obj.sur-l-eau-choisir-la",
+  "blk.obj.42": "blk.obj.demain-en-entreprise-decider-sans",
+  "blk.obj.43": "blk.obj.sur-le-bateau-regler-entretenir",
+  "blk.obj.44": "blk.obj.demain-en-entreprise-fiabiliser-co",
+  "blk.obj.45": "blk.obj.a-bord-personne-ne-gagne",
+  "blk.obj.46": "blk.obj.demain-en-entreprise-travailler-av",
+  "blk.obj.47": "blk.obj.en-course-mer-formee-fatigue",
+  "blk.obj.48": "blk.obj.demain-en-entreprise-garder-son",
+  "blk.obj.49": "blk.obj.pour-nos-partenaires-chaque-euro",
+  "blk.obj.50": "blk.obj.demain-en-entreprise-agir-avec",
+  "blk.obj.52": "blk.obj.un-projet-serieux-a-un",
+  "blk.budget.1": "blk.budget.budget-previsionnel",
+  "blk.budget.2": "blk.budget.un-budget-construit-poste-par",
+  "blk.budget.3": "blk.budget.ou-va-chaque-euro",
+  "blk.budget.4": "blk.budget.votre-soutien-concretement",
+  "blk.budget.5": "blk.budget.chaque-euro-est-affecte-a",
+  "blk.why.1": "blk.why.partenariat",
+  "blk.why.2": "blk.why.pourquoi-nous-avons-besoin-de",
+  "blk.why.3": "blk.why.pourquoi-avons-nous-besoin-de",
+  "blk.why.4": "blk.why.nous-apportons-le-temps-le",
+  "blk.gain.1": "blk.gain.ce-que-votre-entreprise-y",
+  "blk.gain.4": "blk.gain.rencontrez-vos-futurs-ingenieurs-a",
+  "blk.gain.5": "blk.gain.diffusion-de-vos-offres-de",
+  "blk.gain.6": "blk.gain.intervention-de-votre-entreprise-a",
+  "blk.gain.7": "blk.gain.des-etudiants-qui-montent-un",
+  "blk.gain.9": "blk.gain.votre-logo-la-ou-le",
+  "blk.gain.10": "blk.gain.camera-et-drone-pendant-la",
+  "blk.gain.11": "blk.gain.votre-logo-sur-le-drapeau",
+  "blk.gain.12": "blk.gain.remerciements-sur-instagram-et-lin",
+  "blk.gain.14": "blk.gain.un-recit-concret-a-partager",
+  "blk.gain.15": "blk.gain.intervention-de-l-equipage-dans",
+  "blk.gain.16": "blk.gain.visite-du-bateau-ou-sortie",
+  "blk.gain.17": "blk.gain.cohesion-d-equipe-depassement-de",
+  "blk.gain.18": "blk.gain.des-valeurs-partagees-2",
+  "blk.gain.19": "blk.gain.ce-sont-les-valeurs-de",
+  "blk.gain.20": "blk.gain.oser-se-mesurer-aux-grandes",
+  "blk.gain.21": "blk.gain.des-ingenieurs-qui-preparent-regle",
+  "blk.gain.22": "blk.gain.un-equipage-ou-personne-ne",
+  "blk.gain.23": "blk.gain.un-budget-suivi-poste-par",
+  "blk.gain.26": "blk.gain.pret-a-embarquer-choisissez-la",
+  "blk.formules.1": "blk.formules.nos-formules-de-partenariat",
+  "blk.formules.2": "blk.formules.chaque-formule-inclut-les-contrepa",
+  "blk.formules.3": "blk.formules.logo-sur-coque-marquage-adhesif",
+  "blk.sim.1": "blk.sim.simulation-de-logo",
+  "blk.sim.2": "blk.sim.indiquez-le-site-de-votre",
+  "blk.sim.3": "blk.sim.sur-le-bateau",
+  "blk.sim.4": "blk.sim.votre-logo-sur-la-grand",
+  "blk.sim.5": "blk.sim.le-logo-epouse-la-courbure",
+  "blk.sim.6": "blk.sim.sur-la-veste-de-quart",
+  "blk.sim.7": "blk.sim.votre-logo-sur-les-vestes",
+  "blk.sim.8": "blk.sim.votre-simulation",
+  "blk.sim.9": "blk.sim.aucun-fichier-n-est-envoye",
+  "blk.sponsors.1": "blk.sponsors.la-suite-s-ecrit-avec",
+  "blk.sponsors.2": "blk.sponsors.ils-nous-ont-fait-confiance",
+  "blk.sponsors.3": "blk.sponsors.ils-nous-ont-fait-confiance-2",
+  "blk.sponsors.4": "blk.sponsors.merci-aux-entreprises-qui-ont",
+  "blk.sponsors.5": "blk.sponsors.sptally",
+  "blk.sponsors.6": "blk.sponsors.votre-entreprise-a-t-elle",
+  "blk.sponsors.7": "blk.sponsors.2026-en-images-2",
+  "blk.sponsors.8": "blk.sponsors.et-si-la-prochaine-edition",
+  "blk.contact.1": "blk.contact.et-si-nous-construisions-notre",
+  "blk.contact.2": "blk.contact.rencontrons-nous-pour-echanger-sur",
+  "blk.contact.3": "blk.contact.comment-ca-se-passe",
+  "blk.contact.4": "blk.contact.skipper-concentre-a-la-barre",
+  "blk.contact.5": "blk.contact.reglages-au-pied-du-mat",
+  "blk.contact.6": "blk.contact.flotte-de-j80-au-pres",
+  "blk.contact.7": "blk.contact.33-7-66-88-23",
+  "blk.contact.8": "blk.contact.timothee-stevens-2028-icam-fr",
+  "blk.contact.9": "blk.contact.msg",
+  "blk.contact.10": "blk.contact.ctokt",
+  "blk.contact.11": "blk.contact.demande-envoyee-vous-recevez-un"
+ }
+}

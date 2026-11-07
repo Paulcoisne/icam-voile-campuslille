@@ -1,0 +1,22 @@
+{"pages":[
+{"id":"index","file":"index.html","label":"Accueil","home":true,
+ "title":"Icam Voile Lille | Partenaires de notre campagne CCE 59",
+ "description":"Icam Voile Lille engage deux voiliers et une équipe terre à la Course Croisière EDHEC 2027 (59e édition, Les Sables-d'Olonne). Un projet sportif et collectif : devenez partenaire.",
+ "og_title":"Icam Voile Lille | Course Croisière EDHEC 2027",
+ "og_description":"18 élèves ingénieurs de l'Icam, deux voiliers de course et une équipe terre. Découvrez le projet et devenez partenaire.",
+ "parts":["000-base","000-core","010-nav","020-hero",
+  {"chapter":"who","label":"Qui sommes-nous ?","parts":["030-icam","040-asso"]},
+  {"chapter":"what","label":"À quoi participons-nous ?","parts":["050-cce"]},
+  {"chapter":"aim","label":"Notre asso à la CCE","parts":["070-obj","080-budget"]},
+  {"chapter":"partner","label":"Partenariats","parts":["090-why","100-gain","110-formules","120-sim"]},
+  {"chapter":"end","label":"La suite s'écrit avec vous","parts":["130-sponsors","140-contact"]},
+  "150-footer","900-boot"]},
+{"id":"vocabulaire","file":"vocabulaire.html","label":"Vocabulaire de la Course","home":false,
+ "title":"Vocabulaire de la Course | Icam Voile Lille",
+ "description":"Les mots de la voile en quelques minutes : angle du vent, schéma du bateau, vocabulaire en images et glossaire complet, pour suivre la Course Croisière EDHEC avec Icam Voile Lille.",
+ "og_title":"Vocabulaire de la Course | Icam Voile Lille",
+ "og_description":"Allures, parties du bateau, glossaire et quiz : tout le vocabulaire pour suivre la Course Croisière EDHEC.",
+ "parts":["000-base","000-core","010-nav",
+  {"chapter":"vocab","label":"Vocabulaire de la course","parts":["060-vocab"]},
+  "150-footer","900-boot"]}
+]}
